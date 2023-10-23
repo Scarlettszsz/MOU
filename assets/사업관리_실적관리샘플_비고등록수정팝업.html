@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>통일부 통합지원시스템</title>
+
+    <link type="text/css" href="./css/style.css" rel='stylesheet'>
+    <link type="text/css" href="./js/jquery-ui.min.css" rel="stylesheet">
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+
+</head>
+<body>
+
+    <div class="system_wrap">
+        <aside class="left_contents">
+            <h1 class="home">
+                <img src="./images/logo.png" alt="통일부">
+                <p>통합지원시스템</p>
+            </h1>
+    
+            <a href="#" class="mon_item">위기징후 모니터링</a>
+    
+            <nav>
+                <ul class="menu_list">
+                    <li>
+                        <a href="#" class="menu_item ico_subject">대상자관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_crisis">위기관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_support">위기통합지원</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_communication">소통관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_statistics">통계</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_counsel">상담관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_business active">사업관리</a>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <div class="bottom_area">
+
+                <ul class="menu_list">
+                    <li>
+                        <a href="#" class="menu_item ico_adm">시스템관리</a>
+                    </li>
+                </ul>
+
+                <div class="banner_area">
+                    <a href="#" class="banner_wrap">
+                        <img src="./images/img_bann1.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </aside>
+    
+        <main>
+            <header>
+                <div class="header_left">
+                    <div class="search_person">
+                        <input type="text" class="nobg_inp" placeholder="대상자 통합조회">
+                        <button type="button" class="search_btn">검색</button>
+                    </div>
+                </div>
+                <div class="header_right">
+                    <div class="notification_wrap">
+                        <button type="button" class="btn_notif">알림<span>12</span></button>
+                    </div>
+                    <div class="user_info">
+                        <span class="part_name">통일부</span>
+                        <p class="user_name">
+                            <span>강안전</span> 주무관
+                        </p>
+                        <div class="user_menu_wrap">
+                            <button type="button" class="btn_usermenu">사용자메뉴 토글</button>
+                            <ul class="user_menus">
+                                <li>
+                                    <a href="#">로그아웃</a>
+                                </li>
+                                <li>
+                                    <a href="#">개인정보수정</a>
+                                </li>
+                                <li>
+                                    <a href="#">비밀번호 변경</a>
+                                </li>   
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="col_top">
+                <ul class="sub_tab">
+                    <li>
+                        <a href="#">일정관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="selected">실적관리</a>
+                    </li>
+                    <li>
+                        <a href="#">자원관리</a>
+                    </li>
+                    <li>
+                        <a href="#">센터사업관리</a>
+                    </li>
+                </ul>
+
+                <div class="breadcrumb">
+                    <p class="bread_item">홈 > 사업관리 > <span>실적관리</span></p>
+                </div>
+            </div>
+
+            
+            <div class="contents">
+                <div class="col_box top_tab_box">
+                    <ul class="top_tab_list">
+                        <li>
+                            <a href="#" class="top_tab_item">전입인원</a>
+                        </li>
+                        <li>
+                            <a href="#" class="top_tab_item active">초기교육</a>
+                        </li>
+                        <li>
+                            <a href="#" class="top_tab_item">분야별지원</a>
+                        </li>
+                        <li>
+                            <a href="#" class="top_tab_item">외부협력기관</a>
+                        </li>   
+                        <li>
+                            <a href="#" class="top_tab_item">법률지원(교육), 양성평등(4대 폭력) 등</a>
+                        </li>
+                        <li>
+                            <a href="#" class="top_tab_item">기타</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                
+                <div class="col_box table_box">
+                    
+                    <div class="input_row">
+                        <p class="inp_label">실적구분</p>
+                        <div class="row_cont">
+                            <select class="comm_select auto_m_select">
+                                <option>2023년</option>
+                                <option>항목1</option>
+                                <option>항목2</option>
+                                <option>항목3</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="inner_area_box lmt">
+                        <ul class="cont_inner_tab_wrap">
+                            <li>
+                                <a href="#" class="cont_inner_tab">현황</a>
+                            </li>
+                            <li>
+                                <a href="#" class="cont_inner_tab active">미참가, 미수료</a>
+                            </li>
+                        </ul>
+                        
+                        <button type="button" class="btn_down">엑셀 다운로드</button>
+                    </div>
+
+
+                    <div style="background: #f1f1f1; text-align: center; font-size: 18px; padding: 100px 0;">
+                        테이블 영역(통계쪽 테이블 참조해주세요)
+                    </div>
+
+                    <div class="comm_table etc_table horizontal">
+                        <table>
+                            <colgroup>
+                                <col style="width: 160px">
+                                <col style="width: auto">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">비고 내용</th>
+                                    <td>
+                                        <p class="tb_txt">1월 특이사항 입니다.<br>1월 특이사항 입니다.</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="bottom_btns">
+                        <div class="left_side">
+                        </div>
+                        <div class="right_side">
+                            <a href="#" class="comm_btn col_blue etc_submit_btn">비고 등록 및 수정</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <div class="pop_area">
+        <div class="dim"></div>
+
+        <!-- s: 팝업 컨텐츠 div -->
+        <div class="popup_wrap size_sm h_auto etc_submit">
+            <div class="pop_cont">
+                <h3 class="box_tit">비고 등록 및 수정</h3>
+                <div class="comm_table">
+                    <table>
+                        <colgroup>
+                            <col style="width: 100%">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td class="al_ri">
+                                    <textarea class="comm_tarea large_item" placeholder=""></textarea>
+                                    <p class="nor_txt">입력제한 : 3,000 Byte</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="bottom_btns">
+                    <div class="left_side"></div>
+                    <div class="right_side">
+                        <a href="#" class="comm_btn col_blue">저장</a>
+                        <a href="#" class="comm_btn pop_close_btn">취소</a>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="pop_close">닫기</button>
+        </div>
+        <!-- e: 팝업 컨텐츠 div -->
+    </div>
+
+    <script>
+        // datepicker용 스크립트
+        $(function() {
+            $.datepicker.setDefaults({
+                dateFormat: 'yy-mm-dd',
+                prevText: '이전 달',
+                nextText: '다음 달',
+                monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+                monthNamesShort: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+                dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+                dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+                dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+                showMonthAfterYear: true,
+                showButtonPanel: true,
+                currentText: "오늘",
+                closeText : '닫기',
+                showOtherMonths: true,
+                changeMonth: true,
+                changeYear: true
+            });
+
+            $(".inp_date").datepicker( $.datepicker.regional[ "kr" ] );
+        });
+
+
+        // 대상자배정 팝업용 샘플 스크립트
+        $(".etc_submit_btn").on("click",function(e){
+            e.preventDefault();
+            if(  !$(".pop_area").hasClass("_show") ){
+                $(".pop_area").addClass("_show");
+                $(".etc_submit").addClass("_show");
+                $("body").addClass("_lock");
+            }
+            else {
+                $(".pop_area").removeClass("_show");
+                $(".etc_submit").removeClass("_show");
+                $("body").removeClass("_lock");
+            }
+        });
+
+        $(".pop_close").on("click",function(e){
+            $(this).parents(".popup_wrap").removeClass("_show");
+            $(this).parents(".pop_area").removeClass("_show");
+            $("body").removeClass("_lock");
+        });
+
+        $(".pop_close_btn").on("click",function(e){
+            e.preventDefault();
+            $(this).parents(".popup_wrap").removeClass("_show");
+            $(this).parents(".pop_area").removeClass("_show");
+            $("body").removeClass("_lock");
+        });
+
+        $(".dim").on("click",function(e){
+            $(this).siblings("._show").removeClass("_show");
+            $(".pop_area").removeClass("_show");
+            $("body").removeClass("_lock");
+        });
+
+         // 사용자 메뉴 스크립트
+         $(".btn_usermenu").on("click",function(){
+            if( !$(this).hasClass("_opened") ){
+                $(this).addClass("_opened");
+                $(this).siblings(".user_menus").stop().slideDown(200);
+            }
+            else {
+                $(this).removeClass("_opened");
+                $(this).siblings(".user_menus").stop().slideUp(200);
+            }
+        });
+        
+
+     </script>
+
+
+</body>
+</html>

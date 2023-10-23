@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>통일부 통합지원시스템</title>
+
+    <link type="text/css" href="./css/style.css" rel='stylesheet'>
+    <link type="text/css" href="./js/jquery-ui.min.css" rel="stylesheet">
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+
+</head>
+<body>
+
+    <div class="system_wrap">
+        <aside class="left_contents">
+            <h1 class="home">
+                <img src="./images/logo.png" alt="통일부">
+                <p>통합지원시스템</p>
+            </h1>
+    
+            <a href="#" class="mon_item">위기징후 모니터링</a>
+    
+            <nav>
+                <ul class="menu_list">
+                    <li>
+                        <a href="#" class="menu_item ico_subject">대상자관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_crisis">위기관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_support">위기통합지원</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_communication">소통관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_statistics">통계</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_counsel active">전문상담관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_business">사업관리</a>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <div class="bottom_area">
+
+                <ul class="menu_list">
+                    <li>
+                        <a href="#" class="menu_item ico_adm">시스템관리</a>
+                    </li>
+                </ul>
+
+                <div class="banner_area">
+                    <a href="#" class="banner_wrap">
+                        <img src="./images/img_bann1.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </aside>
+    
+        <main>
+            <header>
+                <div class="header_left">
+                    <div class="search_person">
+                        <input type="text" class="nobg_inp" placeholder="대상자 통합조회">
+                        <button type="button" class="search_btn">검색</button>
+                    </div>
+                </div>
+                <div class="header_right">
+                    <div class="notification_wrap">
+                        <button type="button" class="btn_notif">알림<span>12</span></button>
+                    </div>
+                    <div class="user_info">
+                        <span class="part_name">통일부</span>
+                        <p class="user_name">
+                            <span>강안전</span> 주무관
+                        </p>
+                        <div class="user_menu_wrap">
+                            <button type="button" class="btn_usermenu">사용자메뉴 토글</button>
+
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="col_top">
+                <ul class="sub_tab">
+                    <li>
+                        <a href="#">생활상담</a>
+                    </li>
+                    <li>
+                        <a href="#" class="selected">심리상담</a>
+                    </li>
+                    <li>
+                        <a href="#">콜센터 상담</a>
+                    </li>
+                </ul>
+
+                <div class="breadcrumb">
+                    <p class="bread_item">홈 > 전문상담관리 > <span>심리상담</span></p>
+                </div>
+            </div>
+
+            
+            <div class="contents">
+
+                <div class="col_box top_tab_box">
+                    <ul class="top_tab_list">
+                        <li>
+                            <a href="#" class="top_tab_item active">초기상담일지</a>
+                        </li>
+                        <li>
+                            <a href="#" class="top_tab_item">사례회의</a>
+                        </li>
+                        <li>
+                            <a href="#" class="top_tab_item">심리상담일지</a>
+                        </li>
+                        <li>
+                            <a href="#" class="top_tab_item">종결일지</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col_box user_box">
+                    <div class="user_basic">
+                        <img src="./images/dummy_user.png" alt="">
+
+                        <div class="data_box">
+                            <p class="user_name">홍길동 (김센터 <span class="name_tag">개명전</span>)</p>
+                            <p class="user_birth">1974.12.12<span class="gender_tag">남</span></p>
+                        </div>
+
+                        <div class="data_box">
+                            <p class="user_rank">하나원 기수 : 151<a href="#" class="service_btn">지원서비스 내역 조회</a></p>
+                            <p class="user_phone">010-1111-2222</p>
+                        </div>
+                    </div>
+                    <div class="user_detail">
+                        <div class="detail_box">
+                            <p class="head_label">관할 지자체</p>
+                            <span class="border_txt">서울 성북구</span>
+                        </div>
+                        <div class="detail_box">
+                            <p class="head_label">생계급여</p>
+                            <span class="border_txt">YES</span>
+                        </div>
+                        <div class="detail_box">
+                            <p class="head_label">의료급여</p>
+                            <span class="border_txt">NO</span>
+                        </div>
+                        <div class="detail_box">
+                            <p class="head_label">가족구성</p>
+                            <span class="border_txt">기혼</span><span class="addt_txt">남1, 여 2</span>
+                        </div>
+                        <div class="detail_box">
+                            <p class="status_box col_red">위기가구<br>대상</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col_box mid_tab_box">
+                    <ul class="mid_tab_list al_left">
+                        <li>
+                            <a href="#" class="mid_tab_item active">초기상담일지</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mid_tab_item">심리검사 및 상담 신청</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mid_tab_item">심리평가</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mid_tab_item">개인정보 수집이용 및 제공동의서</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mid_tab_item">심리상담 동의서</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mid_tab_item">자살방지 서약서</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col_box table_box">
+
+                    <div class="cont_top_btns">
+                        <button type="button" class="btn_print">인쇄하기</button>
+                    </div>
+
+                    <h2 class="box_tit tit_mt">상담 정보</h2>
+
+                    <div class="comm_table horizontal">
+                        <table>
+                            <colgroup>
+                                <col style="width: 20%;">
+                                <col style="width: 30%">
+                                <col style="width: 20%;">
+                                <col style="width: 30%;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">기관명</th>
+                                    <td>남북하나재단</td>
+                                    <th scope="row">작성자</th>
+                                    <td>김삿갓</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">등록일자</th>
+                                    <td>2023.01.05</td>
+                                    <th scope="row">수정일자</th>
+                                    <td>2023.01.05</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">사례번호</th>
+                                    <td colspan="3">1111111</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">상담일자</th>
+                                    <td colspan="3">2022.12.24</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                    
+
+
+                </div>
+
+                <div class="col_box table_box">
+                    <h2 class="box_tit tit_mt">대상자 정보</h2>
+
+                    <div class="comm_table horizontal">
+                        <table>
+                            <colgroup>
+                                <col style="width: 20%;">
+                                <col style="width: 80%">
+                            </colgroup>
+                            <tbody>
+
+                                <tr>
+                                    <th scope="row">주소</th>
+                                    <td>서울특별시 마포구 마포로 1길 1로</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">직업</th>
+                                    <td>사무직</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">학력</th>
+                                    <td>대학교졸</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">종교</th>
+                                    <td>불교</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">보호자 성명</th>
+                                    <td>홍지명</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">보호자 연락처</th>
+                                    <td>02-1111-2222</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">상담경위</th>
+                                    <td>홍보물</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col_box table_box">
+                    <h2 class="box_tit tit_mt">가족사항</h2>
+
+                    <div class="comm_table">
+                        <table>
+                            <colgroup>
+                                <col style="width: 7%;">
+                                <col style="width: 7%;">
+                                <col style="width: 8%;">
+                                <col style="width: 10%;">
+                                <col style="width: 12%;">
+                                <col style="width: 12%;">
+                                <col style="width: 60px;">
+                                <col style="width: 60px;">
+                                <col style="width: 60px;">
+                                <col style="width: 60px;">
+                                <col style="width: 60px;">
+                                <col style="width: auto;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col" rowspan="2">번호</th>
+                                    <th scope="col" rowspan="2">관계</th>
+                                    <th scope="col" rowspan="2">성명</th>
+                                    <th scope="col" rowspan="2">생년월일</th>
+                                    <th scope="col" rowspan="2">학력</th>
+                                    <th scope="col" rowspan="2">직업</th>
+                                    <th scope="colgroup" colspan="5">친밀도 (나쁨 <-> 좋음)</th>
+                                    <th scope="col" rowspan="2">비고(동거여부)</th>
+                                </tr>
+                                <tr>
+                                    <th scope="col">1</th>
+                                    <th scope="col">2</th>
+                                    <th scope="col">3</th>
+                                    <th scope="col">4</th>
+                                    <th scope="col">5</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>999</td>
+                                    <td>부</td>
+                                    <td>김동그</td>
+                                    <td>1963.09.09</td>
+                                    <td>중졸</td>
+                                    <td>기슬직</td>
+                                    <td>
+                                        <div class="chk_box no_lb">
+                                            <input type="checkbox" name="chkgroup0" id="chk1" disabled>
+                                            <label for="chk1"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="chk_box no_lb">
+                                            <input type="checkbox" name="chkgroup0" id="chk2" disabled>
+                                            <label for="chk2"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="chk_box no_lb">
+                                            <input type="checkbox" name="chkgroup0" id="chk3" checked disabled>
+                                            <label for="chk3"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="chk_box no_lb">
+                                            <input type="checkbox" name="chkgroup0" id="chk4" disabled>
+                                            <label for="chk4"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="chk_box no_lb">
+                                            <input type="checkbox" name="chkgroup0" id="chk5" disabled>
+                                            <label for="chk5"></label>
+                                        </div>
+                                    </td>
+                                    <td>비고 없음</td>
+                                </tr>
+                                <tr>
+                                    <td>999</td>
+                                    <td>모</td>
+                                    <td>이라미</td>
+                                    <td>1963.09.09</td>
+                                    <td>중졸</td>
+                                    <td>전문직</td>
+                                    <td>
+                                        <div class="chk_box no_lb">
+                                            <input type="checkbox" name="chkgroup1" id="chk11" disabled>
+                                            <label for="chk11"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="chk_box no_lb">
+                                            <input type="checkbox" name="chkgroup1" id="chk12" disabled>
+                                            <label for="chk12"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="chk_box no_lb">
+                                            <input type="checkbox" name="chkgroup1" id="chk13" disabled>
+                                            <label for="chk13"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="chk_box no_lb">
+                                            <input type="checkbox" name="chkgroup1" id="chk14" checked disabled>
+                                            <label for="chk14"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="chk_box no_lb">
+                                            <input type="checkbox" name="chkgroup1" id="chk15" disabled>
+                                            <label for="chk15"></label>
+                                        </div>
+                                    </td>
+                                    <td>비고 없음</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col_box table_box">
+                    <h2 class="box_tit tit_mt">건강상태</h2>
+
+                    <div class="comm_table horizontal">
+                        <table>
+                            <colgroup>
+                                <col style="width: 20%;">
+                                <col style="width: 30%">
+                                <col style="width: 20%;">
+                                <col style="width: 30%;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">질병 및 장애</th>
+                                    <td colspan="3">없음</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">수면</th>
+                                    <td>7h/일</td>
+                                    <th scope="row">수면상태</th>
+                                    <td>수면 문제 없음</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">식사</th>
+                                    <td>3끼/일</td>
+                                    <th scope="row">소화상태</th>
+                                    <td>소화불량으로 미음으로만 식사</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">약물복용 및 정신건강의학과</th>
+                                    <td colspan="3">없음</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">특이사항</th>
+                                    <td colspan="3">없음</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">주 호소문제</th>
+                                    <td colspan="3">우울</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col_box table_box">
+                    <h2 class="box_tit tit_mt">심리검사 및 상담 신청</h2>
+                    <div class="comm_table horizontal">
+                        <table>
+                            <colgroup>
+                                <col style="width: 20%;">
+                                <col style="width: 80%">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">상담구분</th>
+                                    <td>개인상담</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">상담검사</th>
+                                    <td>정서</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">심리치료</th>
+                                    <td>인지학습치료</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">기타</th>
+                                    <td>특이사항 없음</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">심리검사 및 상담의 경험 유무</th>
+                                    <td class="inner_table_layout">
+                                        
+                                        <div class="comm_table horizontal">
+                                            <table>
+                                                <colgroup>
+                                                    <col style="width: 100px;">
+                                                    <col style="width: auto;">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="2">있음</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col">언제 </th>
+                                                        <td>2023.01.01</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col">어디서 </th>
+                                                        <td>집근처 심리상담센터</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col">내용 </th>
+                                                        <td>심리치료 및 약물치료</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col">이유</th>
+                                                        <td>경미한 우울증세 치료</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">상담희망 일시</th>
+                                    <td>2023.02.02</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">상담희망 시간</th>
+                                    <td>09시 30분 ~ 10시 30분</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">상담희망 장소</th>
+                                    <td>집근처 심리상담센터</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">해결하고 싶은 내용</th>
+                                    <td>경미한 우울증세 호전 희망</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">가계도 및 생태도 / 가족사회 관계망</th>
+                                    <td>생태도 / 가족사회 관계망 노출란입니다.
+                                        <ul class="att_file_wrap mt5">
+                                            <li>
+                                                <div class="att_file_item">
+                                                    <span class="txt_ico">파일명</span>
+                                                    <p class="att_file_name">첨부파일예시.png <span>(0.54 Mbyte)</span></p>
+                                                    <button type="button" class="btn_down">다운로드</button>
+                                                </div>
+                                            </li>
+
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">내담자의 주 후소문제(상세)</th>
+                                    <td>내담자의 주 호소문제 노출란입니다.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">내담자의 강점 / 자원과 근거</th>
+                                    <td>내담자의 강점 및 자원과 근거 노출란입니다.</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">종합소견 및 상담 계획</th>
+                                    <td>종합소견 및 상담계획 노출란입니다.</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="bottom_btns">
+                    <div class="left_side">
+                        <a href="#" class="comm_btn col_blue">목록</a>
+                    </div>
+
+                    <div class="right_side">
+                        <a href="#" class="comm_btn">삭제</a>
+                        <a href="#" class="comm_btn col_blue">수정</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </main>
+    </div>
+
+    <div class="pop_area">
+        <div class="dim"></div>
+
+        <!-- s: 팝업 컨텐츠 div -->
+        <div class="popup_wrap service">
+            <div class="pop_cont">
+                <h3 class="box_tit">지원서비스 내역 조회</h3>
+                <div class="user_box">
+                    <div class="user_basic">
+                        <img src="./images/dummy_user.png" alt="">
+
+                        <div class="data_box">
+                            <p class="user_name">홍길동 (김센터 <span class="name_tag">개명전</span>)</p>
+                            <p class="user_birth">1974.12.12<span class="gender_tag">남</span></p>
+                        </div>
+
+                        <div class="data_box">
+                            <p class="user_rank">하나원 기수 : 151</p>
+                            <p class="user_phone">010-1111-2222</p>
+                        </div>
+                    </div>
+                    <div class="user_detail">
+                        <div class="detail_box">
+                            <p class="head_label">관할 지자체</p>
+                            <span class="border_txt">서울 성북구</span>
+                        </div>
+                        <div class="detail_box">
+                            <p class="head_label">생계급여</p>
+                            <span class="border_txt">YES</span>
+                        </div>
+                        <div class="detail_box">
+                            <p class="head_label">의료급여</p>
+                            <span class="border_txt">NO</span>
+                        </div>
+                        <div class="detail_box">
+                            <p class="head_label">가족구성</p>
+                            <span class="border_txt">기혼</span><span class="addt_txt">남1, 여 2</span>
+                        </div>
+                        <div class="detail_box">
+                            <p class="status_box col_red">위기가구<br>대상</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll_area">
+                    <div class="comm_table">
+                        <table>
+                            <colgroup>
+                                <col style="width: 8%">
+                                <col style="width: 14%">
+                                <col style="width: 14%;">
+                                <col style="width: 12%;">
+                                <col style="width: 10%;">
+                                <col style="width: 10%;">
+                                <col style="width: 10%;">
+                                <col style="width: 10%;">
+                                <col style="width: 10%;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">번호</th>
+                                    <th scope="col">센터명</th>
+                                    <th scope="col">사업명</th>
+                                    <th scope="col">지원일자</th>
+                                    <th scope="col">지원영역</th>
+                                    <th scope="col">지원내용</th>
+                                    <th scope="col">지원방법</th>
+                                    <th scope="col">지원내역</th>
+                                    <th scope="col">지원금</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>서울북부하나센터</td>
+                                    <td>국고(지역적응지원)</td>
+                                    <td>2020.03.11</td>
+                                    <td>취업지원</td>
+                                    <td>현물지원</td>
+                                    <td>내방</td>
+                                    <td>바우처</td>
+                                    <td>100,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>서울북부하나센터</td>
+                                    <td>국고(지역적응지원)</td>
+                                    <td>2020.03.11</td>
+                                    <td>취업지원</td>
+                                    <td>현물지원</td>
+                                    <td>내방</td>
+                                    <td>바우처</td>
+                                    <td>100,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>서울북부하나센터</td>
+                                    <td>국고(지역적응지원)</td>
+                                    <td>2020.03.11</td>
+                                    <td>취업지원</td>
+                                    <td>현물지원</td>
+                                    <td>내방</td>
+                                    <td>바우처</td>
+                                    <td>100,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>서울북부하나센터</td>
+                                    <td>국고(지역적응지원)</td>
+                                    <td>2020.03.11</td>
+                                    <td>취업지원</td>
+                                    <td>현물지원</td>
+                                    <td>내방</td>
+                                    <td>바우처</td>
+                                    <td>100,000원</td>
+                                </tr>
+
+                                <!-- 조회데이터가 없을때 -->
+                                <tr>
+                                    <td colspan="9" class="no_data">조회된 데이터가 없습니다.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="pagination_wrap">
+                        <div class="pagination">
+                            <span>
+                                <a href="#" class="pg_item" title="첫 페이지">&lt;&lt;</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="이전 페이지">&lt;</a>
+                            </span>
+                            <span>
+                                <!-- <a href="#" class="pg_item" title="1 페이지">1</a> -->
+                                <span class="pg_item on_page" title="현재 페이지">1</span>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="2 페이지">2</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="3 페이지">3</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="4 페이지">4</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="5 페이지">5</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="6 페이지">6</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="다음 페이지">&gt;</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="맨 뒤 페이지">&gt;&gt;</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="pop_close">닫기</button>
+        </div>
+        <!-- e: 팝업 컨텐츠 div -->
+    </div>
+
+    <script>
+        // datepicker용 스크립트
+        $(function() {
+            $.datepicker.setDefaults({
+                dateFormat: 'yy-mm-dd',
+                prevText: '이전 달',
+                nextText: '다음 달',
+                monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+                monthNamesShort: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+                dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+                dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+                dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+                showMonthAfterYear: true,
+                showButtonPanel: true,
+                currentText: "오늘",
+                closeText : '닫기',
+                showOtherMonths: true,
+                changeMonth: true,
+                changeYear: true
+            });
+
+            $(".inp_date").datepicker( $.datepicker.regional[ "kr" ] );
+        });
+
+
+        // 지원서비스 팝업용 샘플 스크립트
+        $(".service_btn").on("click",function(e){
+            e.preventDefault();
+            if(  !$(".pop_area").hasClass("_show") ){
+                $(".pop_area").addClass("_show");
+                $(".service").addClass("_show");
+                $("body").addClass("_lock");
+            }
+            else {
+                $(".pop_area").removeClass("_show");
+                $(".service").removeClass("_show");
+                $("body").removeClass("_lock");
+            }
+        });
+
+        $(".pop_close").on("click",function(e){
+            $(this).parents(".popup_wrap").removeClass("_show");
+            $(this).parents(".pop_area").removeClass("_show");
+            $("body").removeClass("_lock");
+        });
+
+        $(".dim").on("click",function(e){
+            $(this).siblings("._show").removeClass("_show");
+            $(".pop_area").removeClass("_show");
+            $("body").removeClass("_lock");
+        });
+        
+
+     </script>
+
+
+</body>
+</html>

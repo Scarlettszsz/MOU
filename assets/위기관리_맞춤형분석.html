@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>통일부 통합지원시스템</title>
+
+    <link type="text/css" href="./css/style.css" rel='stylesheet'>
+    <link type="text/css" href="./js/jquery-ui.min.css" rel="stylesheet">
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+
+</head>
+<body>
+
+    <div class="system_wrap">
+        <aside class="left_contents">
+            <h1 class="home">
+                <img src="./images/logo.png" alt="통일부">
+                <p>통합지원시스템</p>
+            </h1>
+    
+            <a href="#" class="mon_item">위기징후 모니터링</a>
+    
+            <nav>
+                <ul class="menu_list">
+                    <li>
+                        <a href="#" class="menu_item ico_subject">대상자관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_crisis active">위기관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_support">위기통합지원</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_communication">소통관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_statistics">통계</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_counsel">상담관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_business">사업관리</a>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <div class="bottom_area">
+
+                <ul class="menu_list">
+                    <li>
+                        <a href="#" class="menu_item ico_adm">시스템관리</a>
+                    </li>
+                </ul>
+
+                <div class="banner_area">
+                    <a href="#" class="banner_wrap">
+                        <img src="./images/img_bann1.png" alt="">
+                    </a>
+                </div>
+
+            </div>
+        </aside>
+    
+        <main>
+            <header>
+                <div class="header_left">
+                    <div class="search_person">
+                        <input type="text" class="nobg_inp" placeholder="대상자 통합조회">
+                        <button type="button" class="search_btn">검색</button>
+                    </div>
+                </div>
+                <div class="header_right">
+                    <div class="notification_wrap">
+                        <button type="button" class="btn_notif">알림<span>12</span></button>
+                    </div>
+                    <div class="user_info">
+                        <span class="part_name">통일부</span>
+                        <p class="user_name">
+                            <span>강안전</span> 주무관
+                        </p>
+                        <div class="user_menu_wrap">
+                            <button type="button" class="btn_usermenu">사용자메뉴 토글</button>
+                            <!-- 
+                                현재 미결정 사항
+                                <ul>
+                                    <li></li>
+                                </ul>
+                             -->
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="col_top">
+                <ul class="sub_tab">
+                    <li>
+                        <a href="#">위기가구 대상자</a>
+                    </li>
+                    <li>
+                        <a href="#" class="selected">맞춤형 분석</a>
+                    </li>
+                    <li>
+                        <a href="#">서비스 의뢰</a>
+                    </li>
+                    <li>
+                        <a href="#">위기상황 보고</a>
+                    </li>
+                    <li>
+                        <a href="#">위기징후 모니터링</a>
+                    </li>
+                </ul>
+
+                <div class="breadcrumb">
+                    <p class="bread_item">홈 > 위기관리 > <span>맞춤형 분석</span></p>
+                </div>
+            </div>
+
+            
+            <div class="contents">
+
+               
+                <form class="col_box input_box inner_area_box fl_wrap">
+                    <div class="input_row type_db">
+                        <p class="inp_label">조사구분</p>
+                        <div class="row_cont db_item">
+                            <select class="comm_select auto_m_select">
+                                <option>선택</option>
+                                <option>항목1</option>
+                                <option>항목2</option>
+                                <option>항목3</option>
+                            </select>
+
+                            <select class="comm_select auto_m_select">
+                                <option>선택</option>
+                                <option>항목1</option>
+                                <option>항목2</option>
+                                <option>항목3</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input_row type34">
+                        <label class="inp_label" for="inp11">분석 조회조건 불러오기</label>
+                        <div class="row_cont with_hdbtn">
+                            <select class="comm_select" id="inp11">
+                                <option>전체</option>
+                                <option>항목1</option>
+                                <option>항목2</option>
+                                <option>항목3</option>
+                            </select>
+                            <button type="button" class="hideshow_btn">검색 토글</button>
+                        </div>
+                    </div>
+
+                    <div class="input_row_full hideshow_area">
+
+                        <div class="top_bd_box">
+                            <div class="input_row full_size">
+                                <p class="inp_label">누적 차수</p>
+                                
+                                <div class="row_cont">
+                                    
+                                    <ul class="fifth_box">
+                                        <li>
+                                            <div class="rad_box">
+                                                <input type="radio" name="radgroup" id="rad1">
+                                                <label for="rad1">1회</label>
+                                            </div>
+                                           
+                                        </li>
+                                        <li>
+                                            <div class="rad_box">
+                                                <input type="radio" name="radgroup" id="rad2">
+                                                <label for="rad2">3회 이상 ~ 5회 이하</label>
+                                            </div>
+                                            
+                                        </li>
+                                        <li>
+                                            <div class="rad_box">
+                                                <input type="radio" name="radgroup" id="rad3">
+                                                <label for="rad3">10회 이상 ~ 15회 이하</label>
+                                            </div>
+                                           
+                                        </li>
+                                        <li>
+                                            <div class="rad_box">
+                                                <input type="radio" name="radgroup" id="rad4">
+                                                <label for="rad4">20회 이상 ~ 25회 이하</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="rad_box">
+                                                <input type="radio" name="radgroup" id="rad5">
+                                                <label for="rad5">30회 이상</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="rad_box">
+                                                <input type="radio" name="radgroup" id="rad6">
+                                                <label for="rad6">1회 이상 ~ 3회 이하</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="rad_box">
+                                                <input type="radio" name="radgroup" id="rad7">
+                                                <label for="rad7">5회 이상 ~ 10회 이하</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="rad_box">
+                                                <input type="radio" name="radgroup" id="rad8">
+                                                <label for="rad8">15회 이상 ~ 20회 이하</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="rad_box">
+                                                <input type="radio" name="radgroup" id="rad9">
+                                                <label for="rad9">25회 이상 ~ 30회 이하</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="top_bd_box">
+                            <div class="input_row full_size">
+                                <p class="inp_label">위기지표</p>
+                                
+                                <div class="row_cont">
+
+                                    <div class="inner_area_box">
+                                        <ul class="cont_inner_tab_wrap">
+                                            <li>
+                                                <a href="#" class="cont_inner_tab active">상세</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="cont_inner_tab">누적 탐지건수</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- 상세 선택시 -->
+                                    <ul class="fifth_box">
+                                        <li>
+                                            <div class="input_group_box vertical_item">
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup1" id="chkg11">
+                                                    <label for="chkg11">단전</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup1" id="chkg12">
+                                                    <label for="chkg12">단수</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup1" id="chkg13">
+                                                    <label for="chkg13">단가스</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup1" id="chkg14">
+                                                    <label for="chkg14">전기료체납</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup1" id="chkg15">
+                                                    <label for="chkg15">화재피해</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup1" id="chkg16">
+                                                    <label for="chkg16">주거위기(전세)</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup1" id="chkg17">
+                                                    <label for="chkg17">주거위기(월세)</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup1" id="chkg18">
+                                                    <label for="chkg18">주거위기(임대료)</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup1" id="chkg19">
+                                                    <label for="chkg19">공동주택 관리비 체납자</label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="input_group_box vertical_item">
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup1" id="chkg21">
+                                                    <label for="chkg21">국민연금체납</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup1" id="chkg22">
+                                                    <label for="chkg22">건보료체납</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup1" id="chkg23">
+                                                    <label for="chkg23">개별연장급여</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup1" id="chkg24">
+                                                    <label for="chkg24">실업급여수급</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup1" id="chkg25">
+                                                    <label for="chkg25">실업급여미수급</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup1" id="chkg26">
+                                                    <label for="chkg26">일용근로자 중 실업급여 미수급자</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup1" id="chkg27">
+                                                    <label for="chkg27">산재보험</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup1" id="chkg28">
+                                                    <label for="chkg28">금융연체</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup1" id="chkg29">
+                                                    <label for="chkg29">휴폐업자</label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="input_group_box vertical_item">
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup1" id="chkg31">
+                                                    <label for="chkg31">기초교육급여</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup1" id="chkg32">
+                                                    <label for="chkg32">기초주거급여</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup1" id="chkg33">
+                                                    <label for="chkg33">기초생계급여</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup1" id="chkg34">
+                                                    <label for="chkg34">기초의료급여</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup1" id="chkg35">
+                                                    <label for="chkg35">기초긴급탈락</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup1" id="chkg36">
+                                                    <label for="chkg36">세대주가 사망한 가구</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup1" id="chkg37">
+                                                    <label for="chkg37">시설퇴소자</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup1" id="chkg38">
+                                                    <label for="chkg38">재난피해</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup1" id="chkg39">
+                                                    <label for="chkg39">범죄피해</label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="input_group_box vertical_item">
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup1" id="chkg41">
+                                                    <label for="chkg41">자살고위험군</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup1" id="chkg42">
+                                                    <label for="chkg42">자살자해시도자</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup1" id="chkg43">
+                                                    <label for="chkg43">방문건강관리</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup1" id="chkg44">
+                                                    <label for="chkg44">장기요양</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup1" id="chkg45">
+                                                    <label for="chkg45">의료위기(본인부담금과다)</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup1" id="chkg46">
+                                                    <label for="chkg46">영양플러스미지원자</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup1" id="chkg47">
+                                                    <label for="chkg47">장애수당, 장애아동수당</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup1" id="chkg48">
+                                                    <label for="chkg48">장애인연금 자격여부</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup1" id="chkg49">
+                                                    <label for="chkg49">노인돌봄종합서비스 대상자</label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="input_group_box vertical_item">
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup1" id="chkg51">
+                                                    <label for="chkg51">유아학비 여부</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup1" id="chkg52">
+                                                    <label for="chkg52">영유아보육여부</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup1" id="chkg53">
+                                                    <label for="chkg53">한부모가족여부</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup1" id="chkg54">
+                                                    <label for="chkg54">아이돌봄여부</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup1" id="chkg55">
+                                                    <label for="chkg55">양육수당여부</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup1" id="chkg56">
+                                                    <label for="chkg56">기저귀조제분유</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup1" id="chkg57">
+                                                    <label for="chkg57">위기학생(교육비)</label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <!-- 누적탐지건수 선택시 -->
+                                    <ul class="fifth_box">
+                                        <li>
+                                            <div class="rad_box">
+                                                <input type="radio" name="radgroup1" id="rad11">
+                                                <label for="rad11">1건</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="rad_box">
+                                                <input type="radio" name="radgroup1" id="rad12">
+                                                <label for="rad12">3건 이상 ~ 5건 이하</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="rad_box">
+                                                <input type="radio" name="radgroup1" id="rad13">
+                                                <label for="rad13">10건 이상 ~ 15건 이하</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="rad_box">
+                                                <input type="radio" name="radgroup1" id="rad14">
+                                                <label for="rad14">20건 이상 ~ 25건 이하</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="rad_box">
+                                                <input type="radio" name="radgroup1" id="rad15">
+                                                <label for="rad15">30건 이상</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="rad_box">
+                                                <input type="radio" name="radgroup1" id="rad16">
+                                                <label for="rad16">1건 이상 ~ 3건 이하</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="rad_box">
+                                                <input type="radio" name="radgroup1" id="rad17">
+                                                <label for="rad17">5건 이상 ~ 10건 이하</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="rad_box">
+                                                <input type="radio" name="radgroup1" id="rad18">
+                                                <label for="rad18">20건 이상 ~ 30건 이하</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="rad_box">
+                                                <input type="radio" name="radgroup1" id="rad19">
+                                                <label for="rad19">40건 이상 ~ 50건 이하</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="top_bd_box">
+                            <ul class="fifth_box non_mt">
+                                <li>
+                                    <div class="input_row full_size">
+                                        <p class="inp_label">위기지표</p>
+                                        <div class="row_cont row_mg">
+                                            <div class="input_group_box vertical_item">
+                                                <div class="rad_box">
+                                                    <input type="radio" name="radgroup2" id="rad21">
+                                                    <label for="rad21">월 100만원 이하</label>
+                                                </div>
+                                                <div class="rad_box">
+                                                    <input type="radio" name="radgroup2" id="rad22">
+                                                    <label for="rad22">월 100만원 이하</label>
+                                                </div>
+                                                <div class="rad_box">
+                                                    <input type="radio" name="radgroup2" id="rad23">
+                                                    <label for="rad23">월 100만원 이하</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="input_row full_size">
+                                        <p class="inp_label">세대유형</p>
+                                        <div class="row_cont row_mg">
+                                            <div class="input_group_box vertical_item">
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup3" id="chk1">
+                                                    <label for="chk1">단독(1인)</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup3" id="chk2">
+                                                    <label for="chk2">한부모 가정</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup3" id="chk3">
+                                                    <label for="chk3"> 가족(3인 이상)</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup3" id="chk4">
+                                                    <label for="chk4">조손가정</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup3" id="chk5">
+                                                    <label for="chk5">독거노인(65세 이상)</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup3" id="chk6">
+                                                    <label for="chk6">2인 가구(사실혼 등)</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup3" id="chk7">
+                                                    <label for="chk7">기타</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="input_row full_size">
+                                        <p class="inp_label">주거형태</p>
+                                        <div class="row_cont row_mg">
+                                            <div class="input_group_box vertical_item">
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup4" id="chk11">
+                                                    <label for="chk11">고시원, 쉼터 등 임시거주시설</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup4" id="chk12">
+                                                    <label for="chk12">영구임대</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup4" id="chk13">
+                                                    <label for="chk13">국민임대</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup4" id="chk14">
+                                                    <label for="chk14">일반주택(전세·월세·전월세)</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup4" id="chk15">
+                                                    <label for="chk15">일반주택(자가)</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="input_row full_size">
+                                        <p class="inp_label">대상유형</p>
+                                        <div class="row_cont row_mg">
+                                            <div class="input_group_box vertical_item">
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup5" id="chk21">
+                                                    <label for="chk21">무연고 청소년</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup5" id="chk22">
+                                                    <label for="chk22">비보호자</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup5" id="chk23">
+                                                    <label for="chk23">고령자</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup5" id="chk24">
+                                                    <label for="chk24">일반</label>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="input_row full_size">
+                                        <p class="inp_label">기타</p>
+                                        <div class="row_cont row_mg">
+                                            <div class="input_group_box vertical_item">
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup6" id="chk31">
+                                                    <label for="chk31">보호결정 미대상</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup6" id="chk32">
+                                                    <label for="chk32">거주지 보호 미대상</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup6" id="chk33">
+                                                    <label for="chk33">신변보호 미대상</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup6" id="chk34">
+                                                    <label for="chk34">재단 긴급 생계비지원 내역없음</label>
+                                                </div>
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup6" id="chk35">
+                                                    <label for="chk35">재단 의료지원 내역없음</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="top_bd_box end_box">
+                            <div class="inner_area_box no_bm">
+                                <div class="multi_item_row">
+                                    <input type="text" class="comm_input m_size" placeholder="10자 이하">
+                                    <span class="txt_item">으로 조회조건 저장 후</span>
+                                    <a href="#" class="comm_btn search_type">검색</a>
+                                </div>
+                                <div class="multi_btns">
+                                    <a href="#" class="comm_btn search_type">검색</a>
+                                    <a href="#" class="comm_btn search_type col_white">초기화</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="col_box table_box">
+                    
+                    <div class="inner_area_box no_bm">
+                        <p class="tab_sc_result">총 <span>26,403</span>건이 검색 되었습니다.<a href="#" class="comm_btn search_type">선택담기</a></p>
+
+                        <div class="multi_item_row has_mb">
+                            <span class="txt_item">위기가구 대상자로</span>
+                            <input type="text" class="comm_input s_size" placeholder="">
+                            <span class="txt_item">명이 선택됨</span>
+                            <button type="button" class="btn_select sel_items_toggle">선택보기</button>
+
+                            <div class="selected_items">
+                                <div class="sel_items_top">
+                                    <div class="multi_item_row fl_end">
+                                        <p class="txt_item">선택한 대상자를 위기가구 대상자로</p>
+                                        <a href="#" class="comm_btn search_type">등록</a>
+                                    </div>
+                                </div>
+                                <div class="sel_items_cont">
+                                    <div class="comm_table">
+                                        <table>
+                                            <colgroup>
+                                                <col style="width: 100px;">
+                                                <col style="width: 100px">
+                                                <col style="width: 200px;">
+                                                <col style="width: 90px;">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <td>151</td>
+                                                    <td>홍길동</td>
+                                                    <td>1974.12.12 (40대)</td>
+                                                    <td>
+                                                        <button type="button" class="btn_comm sm_size">빼기</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>151</td>
+                                                    <td>홍길동</td>
+                                                    <td>1974.12.12 (40대)</td>
+                                                    <td>
+                                                        <button type="button" class="btn_comm sm_size">빼기</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>151</td>
+                                                    <td>홍길동</td>
+                                                    <td>1974.12.12 (40대)</td>
+                                                    <td>
+                                                        <button type="button" class="btn_comm sm_size">빼기</button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comm_table">
+                        <table>
+                            <colgroup>
+                                <col style="width: 50px">
+                                <col style="width: 7%">
+                                <col style="width: 6%;">
+                                <col style="width: 6%;">
+                                <col style="width: 6%;">
+                                <col style="width: 7%">
+                                <col style="width: 6%;">
+                                <col style="width: 7%;">
+                                <col style="width: auto;">
+                                <col style="width: 8%">
+                                <col style="width: 5%;">
+                                <col style="width: 5%;">
+                                <col style="width: 8%">
+                                <col style="width: 130px">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col" rowspan="2">
+                                        <div class="chk_box no_lb">
+                                            <input type="checkbox" name="chkgroup" id="chkall">
+                                            <label for="chkall"></label>
+                                        </div>
+                                    </th>
+                                    <th scope="col" rowspan="2">조사 구분</th>
+                                    <th scope="col" rowspan="2">최근 차수 탐지 건수</th>
+                                    <th scope="col" rowspan="2">누적 차수(회)</th>
+                                    <th scope="col" rowspan="2">누적 탐지 건수</th>
+                                    <th scope="col" rowspan="2">기수</th>
+                                    <th scope="col" rowspan="2">성명</th>
+                                    <th scope="col" rowspan="2">개명전 성명</th>
+                                    <th scope="col" rowspan="2">생년월일</th>
+                                    <th scope="col" rowspan="2">거주지</th>
+                                    <th scope="colgroup" colspan="2">관리대상</th>
+                                    <th scope="col" rowspan="2">관할센터</th>
+                                    <th scope="col" rowspan="2">상세조회</th>
+                                </tr>
+                                <tr>
+                                    <th scope="col">센터</th>
+                                    <th scope="col">상시</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="chk_box no_lb">
+                                            <input type="checkbox" name="chkgroup1" id="chkg1">
+                                            <label for="chkg1"></label>
+                                        </div>
+                                    </td>
+                                    <td>23년 1차</td>
+                                    <td>5</td>
+                                    <td>3</td>
+                                    <td>26</td>
+                                    <td>151</td>
+                                    <td>홍길동</td>
+                                    <td>홍개명</td>
+                                    <td>1974.12.12 (40대)</td>
+                                    <td>서울 종로구</td>
+                                    <td>Y</td>
+                                    <td>N</td>
+                                    <td>관계기관</td>
+                                    <td>
+                                        <button type="button" class="btn_comm sm_size">상세보기</button>
+                                    </td>
+                                </tr>
+
+
+                                
+
+                                <!-- 조회데이터가 없을때 -->
+                                <tr>
+                                    <td colspan="14" class="no_data">조회된 데이터가 없습니다. <br>검색조건을 다시 입력해주세요.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="pagination_wrap">
+                        <div class="pagination">
+                            <span>
+                                <a href="#" class="pg_item" title="첫 페이지">&lt;&lt;</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="이전 페이지">&lt;</a>
+                            </span>
+                            <span>
+                                <!-- <a href="#" class="pg_item" title="1 페이지">1</a> -->
+                                <span class="pg_item on_page" title="현재 페이지">1</span>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="2 페이지">2</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="3 페이지">3</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="4 페이지">4</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="5 페이지">5</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="6 페이지">6</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="다음 페이지">&gt;</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="맨 뒤 페이지">&gt;&gt;</a>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="bottom_btns">
+                        <div class="left_side">
+                            <a href="#" class="comm_btn">선택담기</a>
+                        </div>
+                        <div class="right_side">
+                            
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // datepicker용 스크립트
+        $(function() {
+            $.datepicker.setDefaults({
+                dateFormat: 'yy-mm-dd',
+                prevText: '이전 달',
+                nextText: '다음 달',
+                monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+                monthNamesShort: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+                dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+                dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+                dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+                showMonthAfterYear: true,
+                showButtonPanel: true,
+                currentText: "오늘",
+                closeText : '닫기',
+                showOtherMonths: true,
+                changeMonth: true,
+                changeYear: true
+            });
+
+            $(".inp_date").datepicker( $.datepicker.regional[ "kr" ] );
+
+            // 검색영역 온오프
+            $(".hideshow_btn").on("click",function(){
+                if( !$(this).hasClass("_active") ) {
+                    $(this).addClass("_active");
+                    $(".hideshow_area").addClass("_hide");
+                }
+                else {
+                    $(this).removeClass("_active");
+                    $(".hideshow_area").removeClass("_hide");
+                }
+            });
+
+            // 선택보기 스크립트
+            $(".sel_items_toggle").on("click",function(){
+                if( !$(this).hasClass("_open") ){
+                    $(this).addClass("_open");
+                    $(this).siblings(".selected_items").addClass("_show");
+                }
+                else {
+                    $(this).removeClass("_open");
+                    $(this).siblings(".selected_items").removeClass("_show");
+                }
+            });
+
+        });
+     </script>
+
+
+</body>
+</html>

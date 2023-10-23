@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>통일부 통합지원시스템</title>
+
+    <link type="text/css" href="./css/style.css" rel='stylesheet'>
+    <link type="text/css" href="./js/jquery-ui.min.css" rel="stylesheet">
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="system_wrap">
+        <aside class="left_contents">
+            <h1 class="home">
+                <img src="./images/logo.png" alt="통일부">
+                <p>통합지원시스템</p>
+            </h1>
+
+            <a href="#" class="mon_item">위기징후 모니터링</a>
+
+            <nav>
+                <ul class="menu_list">
+                    <li>
+                        <a href="#" class="menu_item ico_subject">대상자관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_crisis">위기관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_support">위기통합지원</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_communication">소통관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_statistics">통계</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_counsel">상담관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_business">사업관리</a>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <div class="bottom_area">
+
+                <ul class="menu_list">
+                    <li>
+                        <a href="#" class="menu_item ico_adm active">시스템관리</a>
+                    </li>
+                </ul>
+
+                <div class="banner_area">
+                    <a href="#" class="banner_wrap active">
+                        <img src="./images/img_bann1.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+        <main>
+            <header>
+                <div class="header_left">
+                    <div class="search_person">
+                        <input type="text" class="nobg_inp" placeholder="대상자 통합조회">
+                        <button type="button" class="search_btn">검색</button>
+                    </div>
+                </div>
+                <div class="header_right">
+                    <div class="cond_search_wrap">
+                        <button type="button" class="cond_search_btn">조건검색</button>
+                    </div>
+                    <div class="notification_wrap">
+                        <button type="button" class="btn_notif">알림<span>12</span></button>
+                    </div>
+                    <div class="user_info">
+                        <span class="part_name">통일부</span>
+                        <p class="user_name">
+                            <span>강안전</span> 주무관
+                        </p>
+                        <div class="user_menu_wrap">
+                            <button type="button" class="btn_usermenu">사용자메뉴 토글</button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="col_top">
+                <ul class="sub_tab">
+                    <li>
+                        <a href="#">사용자관리</a>
+                    </li>
+                    <li>
+                        <a href="#">권한관리</a>
+                    </li>
+                    <li>
+                        <a href="#">사이트관리</a>
+                    </li>
+                    <li>
+                        <a href="#">접속로그</a>
+                    </li>
+                    <li>
+                        <a href="#" class="selected">모니터링</a>
+                    </li>
+                </ul>
+
+                <div class="breadcrumb">
+                    <p class="bread_item">홈 > 시스템관리 > <span>모니터링</span></p>
+                </div>
+            </div>
+
+
+            <div class="contents">
+
+                <div class="col_box top_tab_box">
+                    <ul class="top_tab_list">
+                        <li>
+                            <a href="#" class="top_tab_item active">키워드 모니터링</a>
+                        </li>
+                        <li>
+                            <a href="#" class="top_tab_item">연계 모니터링</a>
+                        </li>
+                        <li>
+                            <a href="#" class="top_tab_item">개인정보 모니터링</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="col_box table_box">
+
+                    <div class="input_box mb30">
+                        <div class="input_area">
+
+                            <div class="input_row types">
+                                <div class="row_cont">
+                                    <select class="comm_select">
+                                        <option>2023년</option>
+                                        <option>2022년</option>
+                                        <option>2021년</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="input_row type10">
+                                <div class="row_cont">
+                                    <select class="comm_select">
+                                        <option>12월</option>
+                                        <option>11월</option>
+                                        <option>10월</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inner_area_box input_box">
+                        <ul class="cont_inner_tab_wrap">
+                            <li>
+                                <a href="#" class="cont_inner_tab keyw_fst_btn active">자살 키워드</a>
+                            </li>
+                            <li>
+                                <a href="#" class="cont_inner_tab keyw_scn_btn">재입북 키워드</a>
+                            </li>
+                        </ul>
+
+                        <span class="tb_txt">단위 : 명</span>
+                    </div>
+
+                    <!-- 자살키워드 -->
+                     <div class="cht_box view_keyw_fst __show">
+                        <p style="font-size: 18px; background: #f1f1f1; padding: 100px 20px;">차트 영역</p>
+                    </div>
+
+                    <!-- 재입북키워드 -->
+                    <div class="cht_box view_keyw_scn">
+                        <p style="font-size: 18px; background: #f1f1f1; padding: 100px 20px;">2차트 영역</p>
+                    </div>
+
+
+                    <div class="inner_area_box input_box mt60">
+                        <p class="tab_sc_result">총 <span>999</span>건의 키워드</p>
+
+                        <div class="input_row type_db_27">
+                            <label class="inp_label" for="inp1">키워드 구분 선택</label>
+                            <div class="multi_item_row">
+                                <select class="comm_select" id="inp1">
+                                    <option>전체</option>
+                                    <option>자살 키워드</option>
+                                    <option>재입북 키워드</option>
+                                </select>
+
+                                <a href="#" class="comm_btn search_type">검색</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comm_table">
+                        <table>
+                            <colgroup>
+                                <col style="width: 60px;">
+                                <col style="width: 150px;">
+                                <col style="width: auto;">
+                                <col style="width: 15%">
+
+                                <col style="width: 15%">
+                                <col style="width: 10%">
+                                <col style="width: 10%">
+                                <col style="width: 10%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">선택</th>
+                                    <th scope="col">구분</th>
+                                    <th scope="col">키워드 명</th>
+                                    <th scope="col">등록일시</th>
+
+                                    <th scope="col">최종 수정일시</th>
+                                    <th scope="col">1주 합계</th>
+                                    <th scope="col">월 합계</th>
+                                    <th scope="col">총 누적</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="chk_box no_lb">
+                                            <input type="checkbox" name="chkgroup" id="chk1">
+                                            <label for="chk1"></label>
+                                        </div>
+                                    </td>
+                                    <td>자살키워드</td>
+                                    <td>삶을 포기</td>
+                                    <td>2023.11.12 15:20</td>
+                                    <td>2023.11.12 15:20</td>
+                                    <td>153</td>
+                                    <td>1,253</td>
+                                    <td>12,153</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="chk_box no_lb">
+                                            <input type="checkbox" name="chkgroup" id="chk2">
+                                            <label for="chk2"></label>
+                                        </div>
+                                    </td>
+                                    <td>재입북 키워드</td>
+                                    <td>돌아가고 싶다</td>
+                                    <td>2023.11.12 15:20</td>
+                                    <td>2023.11.12 15:20</td>
+                                    <td>153</td>
+                                    <td>1,253</td>
+                                    <td>12,153</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="bottom_btns">
+
+                        <div class="abs_right_side">
+                            <a href="#" class="comm_btn">선택삭제</a>
+                        </div>
+
+                        <div class="center_items add_pd">
+                            <div class="pagination_wrap">
+                                <div class="pagination">
+                                    <span>
+                                        <a href="#" class="pg_item" title="첫 페이지">&lt;&lt;</a>
+                                    </span>
+                                    <span>
+                                        <a href="#" class="pg_item" title="이전 페이지">&lt;</a>
+                                    </span>
+                                    <span>
+                                        <!-- <a href="#" class="pg_item" title="1 페이지">1</a> -->
+                                        <span class="pg_item on_page" title="현재 페이지">1</span>
+                                    </span>
+                                    <span>
+                                        <a href="#" class="pg_item" title="2 페이지">2</a>
+                                    </span>
+                                    <span>
+                                        <a href="#" class="pg_item" title="3 페이지">3</a>
+                                    </span>
+                                    <span>
+                                        <a href="#" class="pg_item" title="4 페이지">4</a>
+                                    </span>
+                                    <span>
+                                        <a href="#" class="pg_item" title="5 페이지">5</a>
+                                    </span>
+                                    <span>
+                                        <a href="#" class="pg_item" title="6 페이지">6</a>
+                                    </span>
+                                    <span>
+                                        <a href="#" class="pg_item" title="다음 페이지">&gt;</a>
+                                    </span>
+                                    <span>
+                                        <a href="#" class="pg_item" title="맨 뒤 페이지">&gt;&gt;</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="abs_left_side">
+                            <a href="#" class="comm_btn col_blue add_keyword_btn">키워드 등록</a>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div class="pop_area">
+        <div class="dim"></div>
+
+        <div class="popup_wrap add_keyword h_auto size_sm">
+            <div class="pop_cont">
+                <h3 class="box_tit">키워드 등록</h3>
+
+                <div class="comm_table horizontal">
+                    <table>
+                        <colgroup>
+                            <col style="width: 40%;">
+                            <col style="width: 60%">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">키워드 구분 선택<span class="inp_req">*</span></th>
+                                <td>
+                                    <select class="comm_select m_size">
+                                        <option>자살 키워드</option>
+                                        <option>재입북 키워드</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">키워드 명<span class="inp_req">*</span></th>
+                                <td>
+                                    <input type="text" class="comm_input" placeholder="최대 10자까지 입력 가능합니다.">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">키워드 설명</th>
+                                <td>
+                                    <textarea class="comm_tarea large_item" placeholder="최대 2000자까지 입력 가능합니다."></textarea>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+
+                <div class="bottom_btns">
+                    <div class="left_side"></div>
+                    <div class="right_side">
+                        <a href="#" class="comm_btn col_blue">등록</a>
+                        <a href="#" class="comm_btn pop_close_btn">취소</a>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="pop_close">닫기</button>
+        </div>
+    </div>
+
+    <script>
+        $(function () {
+
+             // 수정 팝업 샘플 스크립트
+             $(".add_keyword_btn").on("click",function(e){
+                e.preventDefault();
+                if(  !$(".pop_area").hasClass("_show") ){
+                    $(".pop_area").addClass("_show");
+                    $(".add_keyword").addClass("_show");
+                    $("body").addClass("_lock");
+                }
+                else {
+                    $(".pop_area").removeClass("_show");
+                    $(".add_keyword").removeClass("_show");
+                    $("body").removeClass("_lock");
+                }
+            });
+
+            
+            $(".pop_close").on("click",function(e){
+                $(this).parents(".popup_wrap").removeClass("_show");
+                $(this).parents(".pop_area").removeClass("_show");
+                $("body").removeClass("_lock");
+            });
+
+            $(".pop_close_btn").on("click",function(e){
+                e.preventDefault();
+                $(this).parents(".popup_wrap").removeClass("_show");
+                $(this).parents(".pop_area").removeClass("_show");
+                $("body").removeClass("_lock");
+            });
+
+            $(".dim").on("click",function(e){
+                $(this).siblings("._show").removeClass("_show");
+                $(".pop_area").removeClass("_show");
+                $("body").removeClass("_lock");
+            });
+
+
+             // 키워드 선택
+             $(".keyw_fst_btn").on("click",function(e){
+                e.preventDefault();
+                if( !$(this).hasClass("active") ){
+                    $(this).parent().siblings("li").children().removeClass("active");
+                    $(this).addClass("active");
+                    $(".view_keyw_fst").addClass("__show");
+                    $(".view_keyw_scn").removeClass("__show");
+                }
+            });
+
+            $(".keyw_scn_btn").on("click",function(e){
+                e.preventDefault();
+                if( !$(this).hasClass("active") ){
+                    $(this).parent().siblings("li").children().removeClass("active");
+                    $(this).addClass("active");
+                    $(".view_keyw_scn").addClass("__show");
+                    $(".view_keyw_fst").removeClass("__show");
+                }
+            });
+
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>

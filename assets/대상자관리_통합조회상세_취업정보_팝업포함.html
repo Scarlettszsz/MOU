@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>통일부 통합지원시스템</title>
+
+    <link type="text/css" href="./css/style.css" rel='stylesheet'>
+    <link type="text/css" href="./js/jquery-ui.min.css" rel="stylesheet">
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+
+</head>
+<body>
+
+    <div class="system_wrap">
+        <aside class="left_contents">
+            <h1 class="home">
+                <img src="./images/logo.png" alt="통일부">
+                <p>통합지원시스템</p>
+            </h1>
+    
+            <a href="#" class="mon_item">위기징후 모니터링</a>
+    
+            <nav>
+                <ul class="menu_list">
+                    <li>
+                        <a href="#" class="menu_item ico_subject active">대상자관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_crisis">위기관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_support">위기통합지원</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_communication">소통관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_statistics">통계</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_counsel">상담관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_business">사업관리</a>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <div class="bottom_area">
+
+                <ul class="menu_list">
+                    <li>
+                        <a href="#" class="menu_item ico_adm">시스템관리</a>
+                    </li>
+                </ul>
+
+                <div class="banner_area">
+                    <a href="#" class="banner_wrap">
+                        <img src="./images/img_bann1.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </aside>
+    
+        <main>
+            <header>
+                <div class="header_left">
+                    <div class="search_person">
+                        <input type="text" class="nobg_inp" placeholder="대상자 통합조회">
+                        <button type="button" class="search_btn">검색</button>
+                    </div>
+                </div>
+                <div class="header_right">
+                    <div class="notification_wrap">
+                        <button type="button" class="btn_notif">알림<span>12</span></button>
+                    </div>
+                    <div class="user_info">
+                        <span class="part_name">통일부</span>
+                        <p class="user_name">
+                            <span>강안전</span> 주무관
+                        </p>
+                        <div class="user_menu_wrap">
+                            <button type="button" class="btn_usermenu">사용자메뉴 토글</button>
+                            <ul class="user_menus">
+                                <li>
+                                    <a href="#">로그아웃</a>
+                                </li>
+                                <li>
+                                    <a href="#">개인정보수정</a>
+                                </li>
+                                <li>
+                                    <a href="#">비밀번호 변경</a>
+                                </li>   
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="col_top">
+                <ul class="sub_tab">
+                    <li>
+                        <a href="#" class="selected">통합조회</a>
+                    </li>
+                    <li>
+                        <a href="#">미배정 대상자</a>
+                    </li>
+                </ul>
+
+                <div class="breadcrumb">
+                    <p class="bread_item">홈 > 대상자관리 > <span>통합조회</span></p>
+                </div>
+            </div>
+
+
+            <div class="contents">
+                <div class="col_box user_box">
+                    <div class="user_basic">
+                        <img src="./images/dummy_user.png" alt="">
+
+                        <div class="data_box">
+                            <p class="user_name">홍길동 (김센터 <span class="name_tag">개명전</span>)</p>
+                            <p class="user_birth">1974.12.12<span class="gender_tag">남</span></p>
+                        </div>
+
+                        <div class="data_box">
+                            <p class="user_rank">하나원 기수 : 151<a href="#" class="service_btn">지원서비스 내역 조회</a></p>
+                            <p class="user_phone">010-1111-2222</p>
+                        </div>
+                    </div>
+                    <div class="user_detail">
+                        <div class="detail_box">
+                            <p class="head_label">관할 지자체</p>
+                            <span class="border_txt">서울 성북구</span>
+                        </div>
+                        <div class="detail_box">
+                            <p class="head_label">생계급여</p>
+                            <span class="border_txt">YES</span>
+                        </div>
+                        <div class="detail_box">
+                            <p class="head_label">의료급여</p>
+                            <span class="border_txt">NO</span>
+                        </div>
+                        <div class="detail_box">
+                            <p class="head_label">가족구성</p>
+                            <span class="border_txt">기혼</span><span class="addt_txt">남1, 여 2</span>
+                        </div>
+                        <div class="detail_box">
+                            <p class="status_box col_red">위기가구<br>대상</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col_box mid_tab_box">
+                    <ul class="mid_tab_list">
+                        <li>
+                            <a href="#" class="mid_tab_item">기본인적</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mid_tab_item">세대정보</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mid_tab_item">가족정보</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mid_tab_item">학력정보</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mid_tab_item">경력정보</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mid_tab_item">진로상담</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mid_tab_item">직업훈련/자격증</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mid_tab_item active">취업정보</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mid_tab_item">지원금내역</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mid_tab_item">기초생활수급내역</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mid_tab_item">지원서비스 내역</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="col_box table_box">
+
+                    <h2 class="box_tit tit_mt">취업현황</h2>
+
+                    <div class="comm_table">
+                        <table>
+                            <colgroup>
+                                <col style="width: 10%;">
+                                <col style="width: 12%">
+                                <col style="width: 12%;">
+                                <col style="width: auto;">
+                                <col style="width: 10%;">
+                                <col style="width: 10%;">
+                                <col style="width: 10%;">
+                                <col style="width: 14%;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">근무상태</th>
+                                    <th scope="col">채용일자</th>
+                                    <th scope="col">채용 확인일자</th>
+                                    <th scope="col">구인업체</th>
+                                    <th scope="col">입사자명</th>
+                                    <th scope="col">고용형태</th>
+                                    <th scope="col">채용상담사</th>
+                                    <th scope="col">관리센터</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>취업중</td>
+                                    <td>1990.12.12</td>
+                                    <td>1990.12.12</td>
+                                    <td class="al_le">티센크루프엘리베이터</td>
+                                    <td>
+                                        <a href="#" class="pop_employ lnk_ud">홍길동</a>
+                                    </td>
+                                    <td>정규직</td>
+                                    <td>최보람</td>
+                                    <td>서울동부하나센터</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+                <div class="col_box table_box">
+                    <h2 class="box_tit tit_mt">창업현황</h2>
+                    <div class="comm_table">
+                        <table>
+                            <colgroup>
+                                <col style="width: 8%;">
+                                <col style="width: auto">
+                                <col style="width: 12%;">
+                                <col style="width: 28%;">
+                                <col style="width: 9%;">
+                                <col style="width: 9%;">
+                                <col style="width: 9%;">
+                                <col style="width: 10%;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">번호</th>
+                                    <th scope="col">기업명</th>
+                                    <th scope="col">사업자번호</th>
+                                    <th scope="col">엄종</th>
+                                    <th scope="col">대표자</th>
+                                    <th scope="col">개업연도</th>
+                                    <th scope="col">폐업연도</th>
+                                    <th scope="col">지역</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>261</td>
+                                    <td>
+                                        <a href="#" class="pop_founded lnk_ud">다연남북결혼정보</a>
+                                    </td>
+                                    <td>121-52-65231</td>
+                                    <td>협회 및 단체, 수리 및 기타 개인 서비스업</td>
+                                    <td>홍길동</td>
+                                    <td>2016</td>
+                                    <td>2016</td>
+                                    <td>경기 김포</td>
+                                </tr>
+
+                                <tr>
+                                    <td>261</td>
+                                    <td>
+                                        <a href="#" class="pop_founded lnk_ud">다연남북결혼정보</a>
+                                    </td>
+                                    <td>121-52-65231</td>
+                                    <td>협회 및 단체, 수리 및 기타 개인 서비스업</td>
+                                    <td>홍길동</td>
+                                    <td>2016</td>
+                                    <td></td>
+                                    <td>경기 김포</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col_box table_box">
+                    <h2 class="box_tit tit_mt">영농현황</h2>
+                    <div class="comm_table">
+                        <table>
+                            <colgroup>
+                                <col style="width: 8%;">
+                                <col style="width: auto">
+                                <col style="width: 12%;">
+                                <col style="width: 28%;">
+                                <col style="width: 9%;">
+                                <col style="width: 9%;">
+                                <col style="width: 9%;">
+                                <col style="width: 10%;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">번호</th>
+                                    <th scope="col">기업명</th>
+                                    <th scope="col">사업자번호</th>
+                                    <th scope="col">엄종</th>
+                                    <th scope="col">대표자</th>
+                                    <th scope="col">개업연도</th>
+                                    <th scope="col">폐업연도</th>
+                                    <th scope="col">지역</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>261</td>
+                                    <td>
+                                        <a href="#" class="pop_farm lnk_ud">다연남북결혼정보</a>
+                                    </td>
+                                    <td>121-52-65231</td>
+                                    <td>협회 및 단체, 수리 및 기타 개인 서비스업</td>
+                                    <td>홍길동</td>
+                                    <td>2016</td>
+                                    <td>2016</td>
+                                    <td>경기 김포</td>
+                                </tr>
+
+                                <tr>
+                                    <td>261</td>
+                                    <td>
+                                        <a href="#" class="pop_farm lnk_ud">다연남북결혼정보</a>
+                                    </td>
+                                    <td>121-52-65231</td>
+                                    <td>협회 및 단체, 수리 및 기타 개인 서비스업</td>
+                                    <td>홍길동</td>
+                                    <td>2016</td>
+                                    <td></td>
+                                    <td>경기 김포</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col_box table_box">
+                    <h2 class="box_tit tit_mt">취업알선현황</h2>
+                    <div class="comm_table">
+                        <table>
+                            <colgroup>
+                                <col style="width: 8%;">
+                                <col style="width: 10%">
+                                <col style="width: 12%;">
+                                <col style="width: auto;">
+                                <col style="width: 10%;">
+                                <col style="width: 20%;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">구분</th>
+                                    <th scope="col">알선 시작일자</th>
+                                    <th scope="col">상태</th>
+                                    <th scope="col">알선업체</th>
+                                    <th scope="col">알선 상담사</th>
+                                    <th scope="col">관리센터</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>구직</td>
+                                    <td>1990.12.12</td>
+                                    <td>취업확정</td>
+                                    <td>티센크루프엘리베이터</td>
+                                    <td>최보람</td>
+                                    <td>서울동부하나센터</td>
+                                </tr>
+                                <tr>
+                                    <td>구직</td>
+                                    <td>1990.12.12</td>
+                                    <td>진행중</td>
+                                    <td>티센크루프엘리베이터</td>
+                                    <td>최보람</td>
+                                    <td>서울동부하나센터</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="bottom_btns">
+                    <div class="left_side">
+                    </div>
+                    <div class="right_side">
+                        <a href="#" class="comm_btn col_blue">목록</a>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </main>
+    </div>
+
+    <div class="pop_area">
+        <div class="dim"></div>
+
+        <!-- s: 팝업 컨텐츠 div -->
+
+        <div class="popup_wrap employ">
+            <div class="pop_cont">
+                <h3 class="box_tit">취업현황 상세</h3>
+
+                <div class="scroll_area">
+
+                    <h4 class="pop_inner_tit">구인구직 정보</h4>
+
+                    <div class="comm_table horizontal">
+                        <table>
+                            <colgroup>
+                                <col style="width: 20%;">
+                                <col style="width: 30%">
+                                <col style="width: 20%;">
+                                <col style="width: 30%;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">업체명</th>
+                                    <td>효사랑방문요양센터</td>
+                                    <th scope="row">입사자</th>
+                                    <td>홍길동 / 남</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">업종</th>
+                                    <td>보건업 및 사회복지 서비스 업</td>
+                                    <th scope="row">생년월일</th>
+                                    <td>1982.02.01(양)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">전화번호</th>
+                                    <td>02-1256-3256</td>
+                                    <th scope="row">휴대폰번호</th>
+                                    <td>010-2563-1452</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">구인신청일</th>
+                                    <td>2023.02.05</td>
+                                    <th scope="row">구직신청일</th>
+                                    <td>2023.02.05</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h4 class="pop_inner_tit">채용정보</h4>
+
+                    <div class="comm_table horizontal">
+                        <table>
+                            <colgroup>
+                                <col style="width: 20%;">
+                                <col style="width: 30%">
+                                <col style="width: 20%;">
+                                <col style="width: 30%;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">직종</th>
+                                    <td colspan="3">전기-전자-전자제품수리-컴퓨터수리</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">단기연수</th>
+                                    <td>체험형</td>
+                                    <th scope="row">급여</th>
+                                    <td>월 200만원</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">연수비용</th>
+                                    <td>150만원</td>
+                                    <th scope="row">외부기관연계</th>
+                                    <td>취업성공 패키지</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">연수기간</th>
+                                    <td>2개월</td>
+                                    <th scope="row">퇴사일자</th>
+                                    <td>2023.02.05</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">채용일자</th>
+                                    <td>2023.02.05</td>
+                                    <th scope="row">퇴사사유</th>
+                                    <td>급여체납</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">업무내용</th>
+                                    <td>생산포장</td>
+                                    <th scope="row">고용형태</th>
+                                    <td>상용직</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">임금형태</th>
+                                    <td>연봉</td>
+                                    <th scope="row">채용상담사</th>
+                                    <td>홍담당</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">근무지역</th>
+                                    <td>경기 김포</td>
+                                    <th scope="row">관리센터</th>
+                                    <td>경기남부하나센터</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">근무시간</th>
+                                    <td colspan="3">08:00 ~ 06:00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                </div>
+
+                <div class="bottom_btns">
+                    <div class="left_side"></div>
+                    <div class="right_side">
+                        <a href="#" class="comm_btn pop_close_btn">닫기</a>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="pop_close">닫기</button>
+        </div>
+
+        <div class="popup_wrap founded">
+            <div class="pop_cont">
+                <h3 class="box_tit">창업현황 상세</h3>
+
+                <div class="scroll_area">
+                    <div class="comm_table horizontal">
+                        <table>
+                            <colgroup>
+                                <col style="width: 20%;">
+                                <col style="width: 30%">
+                                <col style="width: 20%;">
+                                <col style="width: 30%;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">기업명</th>
+                                    <td>다연남북결혼정보</td>
+                                    <th scope="row">개업연도</th>
+                                    <td>2016년</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">대표자</th>
+                                    <td>홍길동</td>
+                                    <th scope="row">휴대폰번호</th>
+                                    <td>010-2563-2563</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">사업자번호</th>
+                                    <td>214-11-15236</td>
+                                    <th scope="row">지역</th>
+                                    <td>대전 동구</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">업종</th>
+                                    <td colspan="3">협회 및 단체, 수리 및 기타 개인서비스 업</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">주소</th>
+                                    <td colspan="3">
+                                        <p class="addr_txt">
+                                            <span class="add_type">지번</span>
+                                            <span class="add_det">서울특별시 은평구 진관동 242-24 </span>
+                                        </p>
+                                        <p class="addr_txt">
+                                            <span class="add_type">도로명</span>
+                                            <span class="add_det">서울특별시 은평구 갈현호47길 42-39 (진관동, 사현사)</span>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">경영개선자금지원</th>
+                                    <td colspan="3">
+                                        <p>2017년 / 150 만원 / 경영개선 자금 지원</p>
+                                        <p>2016년 / 150 만원 / 경영개선 자금 지원</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">컨설팅지원</th>
+                                    <td colspan="3">
+                                        <p>2017.6.19 / 경영개선자금 현장실사</p>
+                                        <p>2017.6.19 / 경영개선자금 현장실사</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">세무기장료지원</th>
+                                    <td colspan="3">
+                                        <p>2016년 / 세무기장료 지원 - 11회 / 110 만원</p>
+                                        <p>2015년 / 세무기장료 지원 - 10회 / 110 만원</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">기타지원</th>
+                                    <td colspan="3">2017년 상반기경영개선지원사업 신청</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">비고</th>
+                                    <td colspan="3">비고 내용이 출력됩니다.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+                <div class="bottom_btns">
+                    <div class="left_side"></div>
+                    <div class="right_side">
+                        <a href="#" class="comm_btn pop_close_btn">닫기</a>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="pop_close">닫기</button>
+        </div>
+
+        <div class="popup_wrap farm">
+            <div class="pop_cont">
+                <h3 class="box_tit">영농현황 상세</h3>
+
+                <div class="scroll_area">
+                    <div class="comm_table horizontal">
+                        <table>
+                            <colgroup>
+                                <col style="width: 20%;">
+                                <col style="width: 30%">
+                                <col style="width: 20%;">
+                                <col style="width: 30%;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">기업명</th>
+                                    <td>다연남북결혼정보</td>
+                                    <th scope="row">개업연도</th>
+                                    <td>2016년</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">대표자</th>
+                                    <td>홍길동</td>
+                                    <th scope="row">휴대폰번호</th>
+                                    <td>010-2563-2563</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">사업자번호</th>
+                                    <td>214-11-15236</td>
+                                    <th scope="row">지역</th>
+                                    <td>대전 동구</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">업종</th>
+                                    <td colspan="3">협회 및 단체, 수리 및 기타 개인서비스 업</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">주소</th>
+                                    <td colspan="3">
+                                        <p class="addr_txt">
+                                            <span class="add_type">지번</span>
+                                            <span class="add_det">서울특별시 은평구 진관동 242-24 </span>
+                                        </p>
+                                        <p class="addr_txt">
+                                            <span class="add_type">도로명</span>
+                                            <span class="add_det">서울특별시 은평구 갈현호47길 42-39 (진관동, 사현사)</span>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">경영개선자금지원</th>
+                                    <td colspan="3">
+                                        <p>2017년 / 150 만원 / 경영개선 자금 지원</p>
+                                        <p>2016년 / 150 만원 / 경영개선 자금 지원</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">컨설팅지원</th>
+                                    <td colspan="3">
+                                        <p>2017.6.19 / 경영개선자금 현장실사</p>
+                                        <p>2017.6.19 / 경영개선자금 현장실사</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">세무기장료지원</th>
+                                    <td colspan="3">
+                                        <p>2016년 / 세무기장료 지원 - 11회 / 110 만원</p>
+                                        <p>2015년 / 세무기장료 지원 - 10회 / 110 만원</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">기타지원</th>
+                                    <td colspan="3">2017년 상반기경영개선지원사업 신청</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">비고</th>
+                                    <td colspan="3">비고 내용이 출력됩니다.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+                <div class="bottom_btns">
+                    <div class="left_side"></div>
+                    <div class="right_side">
+                        <a href="#" class="comm_btn pop_close_btn">닫기</a>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="pop_close">닫기</button>
+        </div>
+        <!-- e: 팝업 컨텐츠 div -->
+    </div>
+
+    <script>
+        // datepicker용 스크립트
+        $(function() {
+            $.datepicker.setDefaults({
+                dateFormat: 'yy-mm-dd',
+                prevText: '이전 달',
+                nextText: '다음 달',
+                monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+                monthNamesShort: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+                dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+                dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+                dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+                showMonthAfterYear: true,
+                showButtonPanel: true,
+                currentText: "오늘",
+                closeText : '닫기',
+                showOtherMonths: true,
+                changeMonth: true,
+                changeYear: true
+            });
+
+            $(".inp_date").datepicker( $.datepicker.regional[ "kr" ] );
+
+             // 사용자 메뉴 스크립트
+             $(".btn_usermenu").on("click",function(){
+                if( !$(this).hasClass("_opened") ){
+                    $(this).addClass("_opened");
+                    $(this).siblings(".user_menus").stop().slideDown(200);
+                }
+                else {
+                    $(this).removeClass("_opened");
+                    $(this).siblings(".user_menus").stop().slideUp(200);
+                }
+            });
+
+
+             // 취업정보 팝업 샘플 스크립트
+             $(".pop_employ").on("click",function(e){
+                e.preventDefault();
+                if(  !$(".pop_area").hasClass("_show") ){
+                    $(".pop_area").addClass("_show");
+                    $(".employ").addClass("_show");
+                    $("body").addClass("_lock");
+                }
+                else {
+                    $(".pop_area").removeClass("_show");
+                    $(".employ").removeClass("_show");
+                    $("body").removeClass("_lock");
+                }
+            });
+
+            // 창업현황 팝업 샘플 스크립트
+            $(".pop_founded").on("click",function(e){
+                e.preventDefault();
+                if(  !$(".pop_area").hasClass("_show") ){
+                    $(".pop_area").addClass("_show");
+                    $(".founded").addClass("_show");
+                    $("body").addClass("_lock");
+                }
+                else {
+                    $(".pop_area").removeClass("_show");
+                    $(".founded").removeClass("_show");
+                    $("body").removeClass("_lock");
+                }
+            });
+
+            // 영농현황 팝업 샘플 스크립트
+            $(".pop_farm").on("click",function(e){
+                e.preventDefault();
+                if(  !$(".pop_area").hasClass("_show") ){
+                    $(".pop_area").addClass("_show");
+                    $(".farm").addClass("_show");
+                    $("body").addClass("_lock");
+                }
+                else {
+                    $(".pop_area").removeClass("_show");
+                    $(".farm").removeClass("_show");
+                    $("body").removeClass("_lock");
+                }
+            });
+
+            $(".pop_close").on("click",function(e){
+                $(this).parents(".popup_wrap").removeClass("_show");
+                $(this).parents(".pop_area").removeClass("_show");
+                $("body").removeClass("_lock");
+            });
+
+            $(".pop_close_btn").on("click",function(e){
+                e.preventDefault();
+                $(this).parents(".popup_wrap").removeClass("_show");
+                $(this).parents(".pop_area").removeClass("_show");
+                $("body").removeClass("_lock");
+            });
+
+            $(".dim").on("click",function(e){
+                $(this).siblings("._show").removeClass("_show");
+                $(".pop_area").removeClass("_show");
+                $("body").removeClass("_lock");
+            });
+
+
+        });
+
+     </script>
+
+
+</body>
+</html>

@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>통일부 통합지원시스템</title>
+
+    <link type="text/css" href="./css/style.css" rel='stylesheet'>
+    <link type="text/css" href="./js/jquery-ui.min.css" rel="stylesheet">
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+
+</head>
+<body>
+
+    <div class="system_wrap">
+        <aside class="left_contents">
+            <h1 class="home">
+                <img src="./images/logo.png" alt="통일부">
+                <p>통합지원시스템</p>
+            </h1>
+    
+            <a href="#" class="mon_item">위기징후 모니터링</a>
+    
+            <nav>
+                <ul class="menu_list">
+                    <li>
+                        <a href="#" class="menu_item ico_subject">대상자관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_crisis">위기관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_support">위기통합지원</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_communication">소통관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_statistics">통계</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_counsel">전문상담관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_business">사업관리</a>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <div class="bottom_area">
+
+                <ul class="menu_list">
+                    <li>
+                        <a href="#" class="menu_item ico_adm">시스템관리</a>
+                    </li>
+                </ul>
+
+                <div class="banner_area">
+                    <a href="#" class="banner_wrap">
+                        <img src="./images/img_bann1.png" alt="">
+                    </a>
+                </div>
+
+            </div>
+        </aside>
+    
+        <main>
+            <header>
+                <div class="header_left">
+                    <div class="search_person">
+                        <input type="text" class="nobg_inp" placeholder="대상자 통합조회">
+                        <button type="button" class="search_btn">검색</button>
+                    </div>
+                </div>
+                <div class="header_right">
+                    <div class="notification_wrap">
+                        <button type="button" class="btn_notif">알림<span>12</span></button>
+                    </div>
+                    <div class="user_info">
+                        <span class="part_name">통일부</span>
+                        <p class="user_name">
+                            <span>강안전</span> 주무관
+                        </p>
+                        <div class="user_menu_wrap">
+                            <button type="button" class="btn_usermenu">사용자메뉴 토글</button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="col_top">
+                <ul class="sub_tab">
+                    
+                </ul>
+
+                <div class="breadcrumb">
+                    <p class="bread_item">홈 > <span></span></p>
+                </div>
+            </div>
+
+            
+            <div class="contents">
+
+                <button type="button" class="comm_btn col_blue cond_sch_btn">조건검색 열기</button>
+
+            </div>
+        </main>
+    </div>
+
+
+
+    <div class="pop_area">
+        <div class="dim"></div>
+
+        <!-- s: 팝업컨텐츠 -->
+        <div class="popup_wrap size_l popup_search h_fix_max cond_sch">
+            <div class="pop_cont">
+
+                <div class="sc_top">
+                    <h3 class="sc_tit">상세조회</h3>
+                </div>
+
+                <div class="sc_cont">
+                    
+                    <div class="favo_sch_wrap">
+                        <p class="pop_inner_tit">즐겨찾는 검색 조건</p>
+                        <div class="favo_sch_list_wrap">
+                            <div class="favo_sch_list">
+                                <div class="favo_item">
+                                    <span class="favo_name">60대 이상 고령자</span>
+                                    <button type="button" title="바로검색" class="favo_btn ico_sch">바로검색</button>
+                                    <button type="button" title="조건 수정" class="favo_btn ico_edit">조건 수정</button>
+                                    <button type="button" title="조건 삭제" class="favo_btn ico_del">조건 삭제</button>
+                                </div>
+                                <div class="favo_item">
+                                    <span class="favo_name">임대주택 거주자</span>
+                                    <button type="button" title="바로검색" class="favo_btn ico_sch">바로검색</button>
+                                    <button type="button" title="조건 수정" class="favo_btn ico_edit">조건 수정</button>
+                                    <button type="button" title="조건 삭제" class="favo_btn ico_del">조건 삭제</button>
+                                </div>
+                                <div class="favo_item">
+                                    <span class="favo_name">분기보고용 검색조건</span>
+                                    <button type="button" title="바로검색" class="favo_btn ico_sch">바로검색</button>
+                                    <button type="button" title="조건 수정" class="favo_btn ico_edit">조건 수정</button>
+                                    <button type="button" title="조건 삭제" class="favo_btn ico_del">조건 삭제</button>
+                                </div>
+                                <div class="favo_item">
+                                    <span class="favo_name">23년 1분기 위기가구 대상자 조사 조건</span>
+                                    <button type="button" title="바로검색" class="favo_btn ico_sch">바로검색</button>
+                                    <button type="button" title="조건 수정" class="favo_btn ico_edit">조건 수정</button>
+                                    <button type="button" title="조건 삭제" class="favo_btn ico_del">조건 삭제</button>
+                                </div>
+
+
+                                <div class="no_favo_item">저장된 검색조건이 없습니다.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sm_inp_list_wrap">
+                        <p class="pop_inner_tit">상세검색 조건</p>
+                        <ul class="fifth_box b_row_gap">
+                            <li>
+                                <div class="input_row full_size">
+                                    <p class="inp_label">하나원 기수</p>
+                                    <div class="row_cont">
+                                        <input type="text" class="comm_input s_size" placeholder="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="input_row full_size">
+                                    <p class="inp_label">성별</p>
+                                    <div class="row_cont">
+                                        <div class="input_group_box vertical_item l_row_gap">
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup0" id="chkg01">
+                                                <label for="chkg01">남</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup0" id="chkg02">
+                                                <label for="chkg02">여</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="input_row full_size">
+                                    <p class="inp_label">연령대</p>
+                                    <div class="row_cont">
+                                        <div class="input_group_box vertical_item l_row_gap">
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup1" id="chkg11">
+                                                <label for="chkg11">9살 이하</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup1" id="chkg12">
+                                                <label for="chkg12">10세 ~ 19세</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup1" id="chkg13">
+                                                <label for="chkg13">20세 ~ 29세</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup1" id="chkg14">
+                                                <label for="chkg14">30세 ~ 39세</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup1" id="chkg15">
+                                                <label for="chkg15">40세 ~ 49세</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup1" id="chkg16">
+                                                <label for="chkg16">50세 ~ 59세</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup1" id="chkg17">
+                                                <label for="chkg17">60세 ~ 69세</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup1" id="chkg18">
+                                                <label for="chkg18">70대 이상</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="input_row full_size">
+                                    <p class="inp_label">세대유형</p>
+                                    <div class="row_cont">
+                                        <div class="input_group_box vertical_item l_row_gap">
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup2" id="chkg21">
+                                                <label for="chkg21">단독(1인)</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup2" id="chkg22">
+                                                <label for="chkg22">한부모 가정</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup2" id="chkg23">
+                                                <label for="chkg23">가족(3인 이상)</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup2" id="chkg24">
+                                                <label for="chkg24">조손가정</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup2" id="chkg25">
+                                                <label for="chkg25">독거노인(65세 이상)</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup2" id="chkg26">
+                                                <label for="chkg26">2인 가구(사실혼 등)</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup2" id="chkg27">
+                                                <label for="chkg27">기타</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="input_row full_size">
+                                    <p class="inp_label">주거형태</p>
+                                    <div class="row_cont">
+                                        <div class="input_group_box vertical_item l_row_gap">
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup3" id="chkg31">
+                                                <label for="chkg31">고시원, 쉼터 등 임시거주시설</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup3" id="chkg32">
+                                                <label for="chkg32">영구임대</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup3" id="chkg33">
+                                                <label for="chkg33">국민임대</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup3" id="chkg34">
+                                                <label for="chkg34">일반주택(전세·월세·전월세)</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup3" id="chkg35">
+                                                <label for="chkg35">일반주택(자가)</label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="input_row full_size">
+                                    <p class="inp_label">개명여부</p>
+                                    <div class="row_cont">
+                                        <div class="input_group_box vertical_item l_row_gap">
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup4" id="chkg41">
+                                                <label for="chkg41">개명함</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup4" id="chkg42">
+                                                <label for="chkg42">개명안함</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="input_row full_size">
+                                    <p class="inp_label">의료급여</p>
+                                    <div class="row_cont">
+                                        <div class="input_group_box vertical_item l_row_gap">
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup5" id="chkg51">
+                                                <label for="chkg51">의료급여(1~2종)</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup5" id="chkg52">
+                                                <label for="chkg52">지역건강보험</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup5" id="chkg53">
+                                                <label for="chkg53">직장건강보험</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup5" id="chkg54">
+                                                <label for="chkg54">상실. 없음</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="input_row full_size">
+                                    <p class="inp_label">경제소득(지원포함)</p>
+                                    <div class="row_cont">
+                                        <div class="input_group_box vertical_item l_row_gap">
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup6" id="chkg61">
+                                                <label for="chkg61">월 40만원 이하</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup6" id="chkg62">
+                                                <label for="chkg62">월 41~50만원 이하</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup6" id="chkg63">
+                                                <label for="chkg63">월 51~80만원 이하</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup6" id="chkg64">
+                                                <label for="chkg64">월 81~100만원 이하</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup6" id="chkg65">
+                                                <label for="chkg65">월 101~120만원 이하</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup6" id="chkg66">
+                                                <label for="chkg66">월 120만원 이상</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="input_row full_size">
+                                    <p class="inp_label">사회보장</p>
+                                    <div class="row_cont">
+                                        <div class="input_group_box vertical_item l_row_gap">
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup7" id="chkg71">
+                                                <label for="chkg71">일반수급자</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup7" id="chkg72">
+                                                <label for="chkg72">조건부 수급자</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup7" id="chkg73">
+                                                <label for="chkg73">차상위계층</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup7" id="chkg74">
+                                                <label for="chkg74">저소득층</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup7" id="chkg75">
+                                                <label for="chkg75">비해당</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="input_row full_size">
+                                    <p class="inp_label">대상유형</p>
+                                    <div class="row_cont">
+                                        <div class="input_group_box vertical_item l_row_gap">
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup8" id="chkg81">
+                                                <label for="chkg81">무연고 청소년</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup8" id="chkg82">
+                                                <label for="chkg82">재소자</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup8" id="chkg83">
+                                                <label for="chkg83">출소자</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup8" id="chkg84">
+                                                <label for="chkg84">비보호자</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup8" id="chkg85">
+                                                <label for="chkg85">고령자</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup8" id="chkg86">
+                                                <label for="chkg86">일반</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="bottom_btns">
+                            <div class="center_items">
+                                <a href="#" class="comm_btn col_blue ">검색</a>
+                                <a href="#" class="comm_btn pop_close_btn">취소</a>
+                            </div>
+    
+                            <div class="abs_left_side">
+                                <a href="#" class="comm_btn col_blue inner_pop_btn">검색 조건 저장</a>
+                            </div>
+                        </div>  
+                    </div>
+                                      
+                </div>
+                
+            </div>
+            <button type="button" class="pop_close">닫기</button>
+
+            <div class="inner_pop_wrap cond popup_search">
+                <div class="pop_cont">
+                    <div class="sc_top">
+                        <h3 class="sc_tit">검색 조건 저장</h3>
+                    </div>
+                    <div class="sc_cont">
+                        <div class="favo_save">
+                            <p class="favo_label">저장할 검색 조건의 이름을 입력해 주세요.</p>
+                            <input type="text" class="comm_input" placeholder="">
+                            <p class="favo_txt_count">50자 이내 ( <span>25</span> / 50 )</p>
+                        </div>
+                        <div class="bottom_btns">
+                            <div class="left_side"></div>
+                            <div class="right_side">
+                                <a href="#" class="comm_btn col_blue in_pop_close_btn">저장</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="in_pop_close">닫기</button>
+            </div>
+        </div>
+
+        <!-- e: 팝업 컨텐츠 -->
+    </div>
+
+
+
+
+    <script>
+        // datepicker용 스크립트
+        $(function() {
+            $.datepicker.setDefaults({
+                dateFormat: 'yy-mm-dd',
+                prevText: '이전 달',
+                nextText: '다음 달',
+                monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+                monthNamesShort: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+                dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+                dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+                dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+                showMonthAfterYear: true,
+                showButtonPanel: true,
+                currentText: "오늘",
+                closeText : '닫기',
+                showOtherMonths: true,
+                changeMonth: true,
+                changeYear: true
+            });
+
+            $(".inp_date").datepicker( $.datepicker.regional[ "kr" ] );
+
+            // 일정등록 샘플 스크립트
+            $(".cond_sch_btn").on("click",function(e){
+                e.preventDefault();
+                if(  !$(".pop_area").hasClass("_show") ){
+                    $(".pop_area").addClass("_show");
+                    $(".cond_sch").addClass("_show");
+                    $("body").addClass("_lock");
+                }
+                else {
+                    $(".pop_area").removeClass("_show");
+                    $(".cond_sch").removeClass("_show");
+                    $("body").removeClass("_lock");
+                }
+            });
+
+            $(".pop_close").on("click",function(e){
+                $(this).parents(".popup_wrap").removeClass("_show");
+                $(this).parents(".pop_area").removeClass("_show");
+                $("body").removeClass("_lock");
+            });
+
+            $(".pop_close_btn").on("click",function(e){
+                e.preventDefault();
+                $(this).parents(".popup_wrap").removeClass("_show");
+                $(this).parents(".pop_area").removeClass("_show");
+                $("body").removeClass("_lock");
+            });
+
+            $(".dim").on("click",function(e){
+                $(this).siblings("._show").removeClass("_show");
+                $(".pop_area").removeClass("_show");
+                $("body").removeClass("_lock");
+            });
+
+
+            $(".inner_pop_btn").on("click",function(e){
+                e.preventDefault();
+                if(  !$(this).parents(".popup_wrap").hasClass("on_sub_pop") ){
+                    $(this).parents(".popup_wrap").addClass("on_sub_pop");
+                }
+            });
+
+            $(".in_pop_close").on("click",function(e){
+                e.preventDefault();
+                $(this).parents(".popup_wrap").removeClass("on_sub_pop");
+            });
+
+            $(".in_pop_close_btn").on("click",function(e){
+                e.preventDefault();
+                $(this).parents(".popup_wrap").removeClass("on_sub_pop");
+            });
+
+        });
+
+     </script>
+
+
+</body>
+</html>

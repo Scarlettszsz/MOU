@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>통일부 통합지원시스템</title>
+
+    <link type="text/css" href="./css/style.css" rel='stylesheet'>
+    <link type="text/css" href="./js/jquery-ui.min.css" rel="stylesheet">
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+
+</head>
+<body>
+
+    <div class="system_wrap">
+        <aside class="left_contents">
+            <h1 class="home">
+                <img src="./images/logo.png" alt="통일부">
+                <p>통합지원시스템</p>
+            </h1>
+    
+            <a href="#" class="mon_item">위기징후 모니터링</a>
+    
+            <nav>
+                <ul class="menu_list">
+                    <li>
+                        <a href="#" class="menu_item ico_subject">대상자관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_crisis">위기관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_support">위기통합지원</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_communication">소통관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_statistics">통계</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_counsel active">전문상담관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_business">사업관리</a>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <div class="bottom_area">
+
+                <ul class="menu_list">
+                    <li>
+                        <a href="#" class="menu_item ico_adm">시스템관리</a>
+                    </li>
+                </ul>
+
+                <div class="banner_area">
+                    <a href="#" class="banner_wrap">
+                        <img src="./images/img_bann1.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </aside>
+    
+        <main>
+            <header>
+                <div class="header_left">
+                    <div class="search_person">
+                        <input type="text" class="nobg_inp" placeholder="대상자 통합조회">
+                        <button type="button" class="search_btn">검색</button>
+                    </div>
+                </div>
+                <div class="header_right">
+                    <div class="notification_wrap">
+                        <button type="button" class="btn_notif">알림<span>12</span></button>
+                    </div>
+                    <div class="user_info">
+                        <span class="part_name">통일부</span>
+                        <p class="user_name">
+                            <span>강안전</span> 주무관
+                        </p>
+                        <div class="user_menu_wrap">
+                            <button type="button" class="btn_usermenu">사용자메뉴 토글</button>
+
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="col_top">
+                <ul class="sub_tab">
+                    <li>
+                        <a href="#">생활상담</a>
+                    </li>
+                    <li>
+                        <a href="#" class="selected">심리상담</a>
+                    </li>
+                    <li>
+                        <a href="#">콜센터 상담</a>
+                    </li>
+                </ul>
+
+                <div class="breadcrumb">
+                    <p class="bread_item">홈 > 전문상담관리 > <span>심리상담</span></p>
+                </div>
+            </div>
+
+            
+            <div class="contents">
+
+                <div class="col_box top_tab_box">
+                    <ul class="top_tab_list">
+                        <li>
+                            <a href="#" class="top_tab_item active">초기상담일지</a>
+                        </li>
+                        <li>
+                            <a href="#" class="top_tab_item">사례회의</a>
+                        </li>
+                        <li>
+                            <a href="#" class="top_tab_item">심리상담일지</a>
+                        </li>
+                        <li>
+                            <a href="#" class="top_tab_item">종결일지</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col_box user_box">
+                    <div class="user_basic">
+                        <img src="./images/dummy_user.png" alt="">
+
+                        <div class="data_box">
+                            <p class="user_name">홍길동 (김센터 <span class="name_tag">개명전</span>)</p>
+                            <p class="user_birth">1974.12.12<span class="gender_tag">남</span></p>
+                        </div>
+
+                        <div class="data_box">
+                            <p class="user_rank">하나원 기수 : 151<a href="#" class="service_btn">지원서비스 내역 조회</a></p>
+                            <p class="user_phone">010-1111-2222</p>
+                        </div>
+                    </div>
+                    <div class="user_detail">
+                        <div class="detail_box">
+                            <p class="head_label">관할 지자체</p>
+                            <span class="border_txt">서울 성북구</span>
+                        </div>
+                        <div class="detail_box">
+                            <p class="head_label">생계급여</p>
+                            <span class="border_txt">YES</span>
+                        </div>
+                        <div class="detail_box">
+                            <p class="head_label">의료급여</p>
+                            <span class="border_txt">NO</span>
+                        </div>
+                        <div class="detail_box">
+                            <p class="head_label">가족구성</p>
+                            <span class="border_txt">기혼</span><span class="addt_txt">남1, 여 2</span>
+                        </div>
+                        <div class="detail_box">
+                            <p class="status_box col_red">위기가구<br>대상</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col_box mid_tab_box">
+                    <ul class="mid_tab_list al_left">
+                        <li>
+                            <a href="#" class="mid_tab_item active">초기상담일지</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mid_tab_item">심리검사 및 상담 신청</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mid_tab_item">심리평가</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mid_tab_item">개인정보 수집이용 및 제공동의서</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mid_tab_item">심리상담 동의서</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mid_tab_item">자살방지 서약서</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col_box table_box">
+
+                    <h2 class="box_tit tit_mt">상담 정보</h2>
+
+                    <div class="comm_table horizontal">
+                        <table>
+                            <colgroup>
+                                <col style="width: 20%;">
+                                <col style="width: 30%">
+                                <col style="width: 20%;">
+                                <col style="width: 30%;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">기관명</th>
+                                    <td>남북하나재단</td>
+                                    <th scope="row">작성자</th>
+                                    <td>김삿갓</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">등록일자</th>
+                                    <td>2023.01.05</td>
+                                    <th scope="row">수정일자</th>
+                                    <td>2023.01.05</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">상담 일시</th>
+                                    <td colspan="3">
+                                        <input type="text" class="comm_input inp_date" placeholder="선택하세요.">
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">상담 시간</th>
+                                    <td colspan="3">
+                                        <div class="time_sec_range_wrap">
+                                            <select class="comm_select time_select">
+                                                <option>선택</option>
+                                                <option>15</option>
+                                                <option>16</option>
+                                                <option>17</option>
+                                            </select>
+                                            <span class="time_label">시</span>
+                                            <select class="comm_select time_select">
+                                                <option>선택</option>
+                                                <option>15</option>
+                                                <option>16</option>
+                                                <option>17</option>
+                                            </select>
+                                            <span class="time_label">분</span>
+                                            <span class="range_txt">~</span>
+                                            <select class="comm_select time_select">
+                                                <option>선택</option>
+                                                <option>15</option>
+                                                <option>16</option>
+                                                <option>17</option>
+                                            </select>
+                                            <span class="time_label">시</span>
+                                            <select class="comm_select time_select">
+                                                <option>선택</option>
+                                                <option>15</option>
+                                                <option>16</option>
+                                                <option>17</option>
+                                            </select>
+                                            <span class="time_label">분</span>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                </div>
+
+                <div class="col_box table_box">
+                    
+                    <h2 class="box_tit tit_mt">대상자 정보</h2>
+
+                    <div class="comm_table horizontal">
+                        <table>
+                            <colgroup>
+                                <col style="width: 20%;">
+                                <col style="width: 80%">
+                            </colgroup>
+                            <tbody>
+
+                                <tr>
+                                    <th scope="row">주소</th>
+                                    <td>
+                                        <div class="addr_search">
+                                            <button type="button" class="blk_btn addr_btn">주소검색</button>
+                                            <input type="text" class="comm_input" placeholder="주소 검색 버튼을 클릭하여 주소를 검색하세요" disabled="">
+                                            <input type="text" class="comm_input" placeholder="주소 검색 버튼을 클릭하여 상세주소를 검색하세요" disabled="">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">직업</th>
+                                    <td>
+                                        <select class="comm_select m_size">
+                                            <option>선택</option>
+                                            <option>항목1</option>
+                                            <option>항목2</option>
+                                            <option>항목3</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">학력</th>
+                                    <td>
+                                        <select class="comm_select m_size">
+                                            <option>선택</option>
+                                            <option>항목1</option>
+                                            <option>항목2</option>
+                                            <option>항목3</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">종교</th>
+                                    <td>
+                                        <select class="comm_select m_size">
+                                            <option>선택</option>
+                                            <option>항목1</option>
+                                            <option>항목2</option>
+                                            <option>항목3</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">보호자 성명</th>
+                                    <td>
+                                        <input type="text" class="comm_input" placeholder="최대 100자까지 입력 가능합니다.">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">보호자 연락처<span class="inp_req">*</span></th>
+                                    <td>
+                                        <div class="conn_items">
+                                            <select class="comm_select size90">
+                                                <option>선택</option>
+                                                <option>010</option>
+                                                <option>031</option>
+                                                <option>02</option>
+                                            </select>
+                                            <span class="divider">-</span>
+                                            <input type="text" class="comm_input size90" placeholder="">
+                                            <span class="divider">-</span>
+                                            <input type="text" class="comm_input size90" placeholder="">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">상담경위</th>
+                                    <td>
+                                        <div class="input_group_box box_gab">
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup" id="chkg1">
+                                                <label for="chkg1">홍보물</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup" id="chkg2">
+                                                <label for="chkg2">인터넷</label>
+                                            </div>
+
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup" id="chkg3">
+                                                <label for="chkg3">주변권유</label>
+                                            </div>
+
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup" id="chkg4">
+                                                <label for="chkg4">이용자권유</label>
+                                            </div>
+
+                                            <div class="etc_item_box full_block">
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup" id="chkg5">
+                                                    <label for="chkg5">기타</label>
+                                                </div>
+
+                                                <input type="text" class="comm_input" placeholder="기타 입력항목" disabled>
+                                            </div>
+
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col_box table_box">
+                    <h2 class="box_tit tit_mt">가족사항</h2>
+
+                    <div class="comm_table">
+                        <table>
+                            <colgroup>
+                                <col style="width: 7%;">
+                                <col style="width: 7%;">
+                                <col style="width: 8%;">
+                                <col style="width: 10%;">
+                                <col style="width: 12%;">
+                                <col style="width: 12%;">
+                                <col style="width: 60px;">
+                                <col style="width: 60px;">
+                                <col style="width: 60px;">
+                                <col style="width: 60px;">
+                                <col style="width: 60px;">
+                                <col style="width: auto;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col" rowspan="2">번호</th>
+                                    <th scope="col" rowspan="2">관계</th>
+                                    <th scope="col" rowspan="2">성명</th>
+                                    <th scope="col" rowspan="2">생년월일</th>
+                                    <th scope="col" rowspan="2">학력</th>
+                                    <th scope="col" rowspan="2">직업</th>
+                                    <th scope="colgroup" colspan="5">친밀도 (나쁨 <-> 좋음)</th>
+                                    <th scope="col" rowspan="2">비고(동거여부)</th>
+                                </tr>
+                                <tr>
+                                    <th scope="col">1</th>
+                                    <th scope="col">2</th>
+                                    <th scope="col">3</th>
+                                    <th scope="col">4</th>
+                                    <th scope="col">5</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>999</td>
+                                    <td>부</td>
+                                    <td>김동그</td>
+                                    <td>1963.09.09</td>
+                                    <td>
+                                        <select class="comm_select">
+                                            <option>선택</option>
+                                            <option>항목1</option>
+                                            <option>항목2</option>
+                                            <option>항목3</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select class="comm_select">
+                                            <option>선택</option>
+                                            <option>항목1</option>
+                                            <option>항목2</option>
+                                            <option>항목3</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <div class="chk_box no_lb">
+                                            <input type="checkbox" name="chkgroup0" id="chk1">
+                                            <label for="chk1"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="chk_box no_lb">
+                                            <input type="checkbox" name="chkgroup0" id="chk2">
+                                            <label for="chk2"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="chk_box no_lb">
+                                            <input type="checkbox" name="chkgroup0" id="chk3">
+                                            <label for="chk3"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="chk_box no_lb">
+                                            <input type="checkbox" name="chkgroup0" id="chk4">
+                                            <label for="chk4"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="chk_box no_lb">
+                                            <input type="checkbox" name="chkgroup0" id="chk5">
+                                            <label for="chk5"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="comm_input" placeholder="최대 100자까지 입력 가능합니다.">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>999</td>
+                                    <td>모</td>
+                                    <td>이라미</td>
+                                    <td>1963.09.09</td>
+                                    <td>
+                                        <select class="comm_select">
+                                            <option>선택</option>
+                                            <option>항목1</option>
+                                            <option>항목2</option>
+                                            <option>항목3</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select class="comm_select">
+                                            <option>선택</option>
+                                            <option>항목1</option>
+                                            <option>항목2</option>
+                                            <option>항목3</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <div class="chk_box no_lb">
+                                            <input type="checkbox" name="chkgroup1" id="chk11">
+                                            <label for="chk11"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="chk_box no_lb">
+                                            <input type="checkbox" name="chkgroup1" id="chk12">
+                                            <label for="chk12"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="chk_box no_lb">
+                                            <input type="checkbox" name="chkgroup1" id="chk13">
+                                            <label for="chk13"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="chk_box no_lb">
+                                            <input type="checkbox" name="chkgroup1" id="chk14">
+                                            <label for="chk14"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="chk_box no_lb">
+                                            <input type="checkbox" name="chkgroup1" id="chk15">
+                                            <label for="chk15"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="comm_input" placeholder="최대 100자까지 입력 가능합니다.">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col_box table_box">
+                    <h2 class="box_tit tit_mt">건강상태</h2>
+
+                    <div class="comm_table horizontal">
+                        <table>
+                            <colgroup>
+                                <col style="width: 20%;">
+                                <col style="width: 30%">
+                                <col style="width: 20%;">
+                                <col style="width: 30%;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">질병 및 장애</th>
+                                    <td colspan="3">
+                                        <input type="text" class="comm_input" placeholder="최대 200자까지 입력 가능합니다.">
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">수면</th>
+                                    <td>
+                                        <input type="text" class="comm_input s_size" placeholder="숫자 입력"> h/일
+                                    </td>
+                                    <th scope="row">수면상태</th>
+                                    <td>
+                                        <input type="text" class="comm_input" placeholder="최대 100자까지 입력 가능합니다.">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">식사</th>
+                                    <td>
+                                        <input type="text" class="comm_input s_size" placeholder="숫자 입력"> 끼/일
+                                    </td>
+                                    <th scope="row">소화상태</th>
+                                    <td>
+                                        <input type="text" class="comm_input" placeholder="최대 100자까지 입력 가능합니다.">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">약물복용 및 정신건강의학과</th>
+                                    <td colspan="3">
+                                        <input type="text" class="comm_input" placeholder="최대 200자까지 입력 가능합니다.">
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">특이사항</th>
+                                    <td colspan="3">
+                                        <textarea class="comm_tarea" placeholder="최대 500자까지 입력 가능합니다."></textarea>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">주 호소문제</th>
+                                    <td colspan="3" class="inner_table_layout">
+                                        <div class="comm_table horizontal">
+                                            <table>
+                                                <colgroup>
+                                                    <col style="width: 120px;">
+                                                    <col style="width: auto;">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="col">대표문제<br>(1개)</th>
+                                                        <td>
+                                                            <div class="input_group_box">
+                                                                <div class="rad_box">
+                                                                    <input type="radio" name="radgroup" id="rad1">
+                                                                    <label for="rad1">발달</label>
+                                                                </div>
+                                                                <div class="rad_box">
+                                                                    <input type="radio" name="radgroup" id="rad2">
+                                                                    <label for="rad2">우울</label>
+                                                                </div>
+                    
+                                                                <div class="rad_box">
+                                                                    <input type="radio" name="radgroup" id="rad3">
+                                                                    <label for="rad3">분노</label>
+                                                                </div>
+                    
+                                                                <div class="rad_box">
+                                                                    <input type="radio" name="radgroup" id="rad4">
+                                                                    <label for="rad4">진로 적성</label>
+                                                                </div>
+                    
+                                                                <div class="rad_box">
+                                                                    <input type="radio" name="radgroup" id="rad5">
+                                                                    <label for="rad5">학습</label>
+                                                                </div>
+                    
+                                                                <div class="rad_box">
+                                                                    <input type="radio" name="radgroup" id="rad6">
+                                                                    <label for="rad6">성격,심리,정서 등</label>
+                                                                </div>
+                    
+                                                                <div class="rad_box">
+                                                                    <input type="radio" name="radgroup" id="rad7">
+                                                                    <label for="rad7">약물 중독(성, 음주, 흡연, 약물, 인터넷, 스마트폰 중독 등)</label>
+                                                                </div>
+                    
+                                                                <div class="rad_box">
+                                                                    <input type="radio" name="radgroup" id="rad8">
+                                                                    <label for="rad8">가족문제</label>
+                                                                </div>
+                    
+                                                                <div class="rad_box">
+                                                                    <input type="radio" name="radgroup" id="rad9">
+                                                                    <label for="rad9">위기상담(성폭력, 성희롱, 가정폭력, 자살위기 등)</label>
+                                                                </div>
+                    
+                    
+                                                                <div class="etc_item_box">
+                                                                    <div class="rad_box">
+                                                                        <input type="radio" name="radgroup" id="rad10">
+                                                                        <label for="rad10">기타</label>
+                                                                    </div>
+                    
+                                                                    <input type="text" class="comm_input" placeholder="기타 입력항목" disabled>
+                                                                </div>
+                    
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col">그 외 문제<br>(중복가능)</th>
+                                                        <td>
+                                                            <div class="input_group_box">
+                                                                <div class="chk_box">
+                                                                    <input type="checkbox" name="chkgroup4" id="chkg11">
+                                                                    <label for="chkg11">발달</label>
+                                                                </div>
+                                                                <div class="chk_box">
+                                                                    <input type="checkbox" name="chkgroup4" id="chkg12">
+                                                                    <label for="chkg12">우울</label>
+                                                                </div>
+                    
+                                                                <div class="chk_box">
+                                                                    <input type="checkbox" name="chkgroup4" id="chkg13">
+                                                                    <label for="chkg13">분노</label>
+                                                                </div>
+                    
+                                                                <div class="chk_box">
+                                                                    <input type="checkbox" name="chkgroup4" id="chkg14">
+                                                                    <label for="chkg14">진로 적성</label>
+                                                                </div>
+                    
+                                                                <div class="chk_box">
+                                                                    <input type="checkbox" name="chkgroup4" id="chkg15">
+                                                                    <label for="chkg15">학습</label>
+                                                                </div>
+                    
+                                                                <div class="chk_box">
+                                                                    <input type="checkbox" name="chkgroup4" id="chkg16">
+                                                                    <label for="chkg16">성격,심리,정서 등</label>
+                                                                </div>
+                    
+                                                                <div class="chk_box">
+                                                                    <input type="checkbox" name="chkgroup4" id="chkg17">
+                                                                    <label for="chkg17">약물 중독(성, 음주, 흡연, 약물, 인터넷, 스마트폰 중독 등)</label>
+                                                                </div>
+                    
+                                                                <div class="chk_box">
+                                                                    <input type="checkbox" name="chkgroup4" id="chkg18">
+                                                                    <label for="chkg18">가족문제</label>
+                                                                </div>
+                    
+                                                                <div class="chk_box">
+                                                                    <input type="checkbox" name="chkgroup4" id="chkg19">
+                                                                    <label for="chkg19">위기상담(성폭력, 성희롱, 가정폭력, 자살위기 등)</label>
+                                                                </div>
+                    
+                    
+                                                                <div class="etc_item_box">
+                                                                    <div class="chk_box">
+                                                                        <input type="checkbox" name="chkgroup4" id="chkg20">
+                                                                        <label for="chkg20">기타</label>
+                                                                    </div>
+                    
+                                                                    <input type="text" class="comm_input" placeholder="기타 입력항목" disabled>
+                                                                </div>
+                    
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col_box table_box">
+                    <h2 class="box_tit tit_mt">심리검사 및 상담 신청</h2>
+
+                    <div class="comm_table horizontal">
+                        <table>
+                            <colgroup>
+                                <col style="width: 20%;">
+                                <col style="width: 80%">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">상담구분</th>
+                                    <td>
+                                        <div class="input_group_box box_gab">
+                                            <div class="rad_box">
+                                                <input type="radio" name="radgroup1" id="radg11">
+                                                <label for="radg11">개인상담</label>
+                                            </div>
+                                            <div class="rad_box">
+                                                <input type="radio" name="radgroup1" id="radg12">
+                                                <label for="radg12">가족상담</label>
+                                            </div>
+                                            <div class="rad_box">
+                                                <input type="radio" name="radgroup1" id="radg13">
+                                                <label for="radg13">집단상담</label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">상담검사</th>
+                                    <td>
+                                        <div class="input_group_box box_gab">
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup3" id="chkg31">
+                                                <label for="chkg31">지능(인지)</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup3" id="chkg32">
+                                                <label for="chkg32">성격</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup3" id="chkg33">
+                                                <label for="chkg33">정서</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup3" id="chkg34">
+                                                <label for="chkg34">행동</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup3" id="chkg35">
+                                                <label for="chkg35">학습</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup3" id="chkg36">
+                                                <label for="chkg36">진로</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup3" id="chkg37">
+                                                <label for="chkg37">발달</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup3" id="chkg38">
+                                                <label for="chkg38">가족</label>
+                                            </div>
+                                            
+                                            <div class="etc_item_box full_block">
+                                                <div class="chk_box">
+                                                    <input type="checkbox" name="chkgroup3" id="chkg39">
+                                                    <label for="chkg39">기타</label>
+                                                </div>
+
+                                                <input type="text" class="comm_input" placeholder="" disabled="">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">심리치료</th>
+                                    <td>
+                                        <div class="input_group_box box_gab">
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup5" id="chkg51">
+                                                <label for="chkg51">놀이치료</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup5" id="chkg52">
+                                                <label for="chkg52">미술치료</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup5" id="chkg53">
+                                                <label for="chkg53">언어치료</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup5" id="chkg54">
+                                                <label for="chkg54">인지학습치료</label>
+                                            </div>
+                                            <div class="chk_box">
+                                                <input type="checkbox" name="chkgroup5" id="chkg55">
+                                                <label for="chkg55">모래놀이치료</label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">기타</th>
+                                    <td>
+                                        <textarea class="comm_tarea" placeholder=""></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">심리검사 및 상담의 경험 유무</th>
+                                    <td class="inner_table_layout">
+                                        
+                                        <div class="comm_table horizontal">
+                                            <table>
+                                                <colgroup>
+                                                    <col style="width: 100px;">
+                                                    <col style="width: auto;">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="2">
+                                                            <div class="input_group_box box_gab">
+                                                                <div class="rad_box">
+                                                                    <input type="radio" name="radgroup2" id="radg21">
+                                                                    <label for="radg21">없음</label>
+                                                                </div>
+                                                                <div class="rad_box">
+                                                                    <input type="radio" name="radgroup2" id="radg22">
+                                                                    <label for="radg22">있음</label>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col">언제 </th>
+                                                        <td>
+                                                            <input type="text" class="comm_input" placeholder="">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col">어디서 </th>
+                                                        <td>
+                                                            <input type="text" class="comm_input" placeholder="">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col">내용 </th>
+                                                        <td>
+                                                            <input type="text" class="comm_input" placeholder="">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col">이유</th>
+                                                        <td>
+                                                            <input type="text" class="comm_input" placeholder="">
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">상담희망 일시</th>
+                                    <td>
+                                        <input type="text" class="comm_input inp_date" placeholder="선택하세요.">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">상담희망 시간</th>
+                                    <td>
+                                        <div class="time_sec_range_wrap">
+                                            <select class="comm_select time_select">
+                                                <option>선택</option>
+                                                <option>15</option>
+                                                <option>16</option>
+                                                <option>17</option>
+                                            </select>
+                                            <span class="time_label">시</span>
+                                            <select class="comm_select time_select">
+                                                <option>선택</option>
+                                                <option>15</option>
+                                                <option>16</option>
+                                                <option>17</option>
+                                            </select>
+                                            <span class="time_label">분</span>
+                                            <span class="range_txt">~</span>
+                                            <select class="comm_select time_select">
+                                                <option>선택</option>
+                                                <option>15</option>
+                                                <option>16</option>
+                                                <option>17</option>
+                                            </select>
+                                            <span class="time_label">시</span>
+                                            <select class="comm_select time_select">
+                                                <option>선택</option>
+                                                <option>15</option>
+                                                <option>16</option>
+                                                <option>17</option>
+                                            </select>
+                                            <span class="time_label">분</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">상담희망 장소</th>
+                                    <td>
+                                        <input type="text" class="comm_input" placeholder="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">해결하고 싶은 내용</th>
+                                    <td>
+                                        <textarea class="comm_tarea" placeholder=""></textarea>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">가계도 및 생태도 / 가족사회 관계망</th>
+                                    <td>
+                                        <textarea class="comm_tarea" placeholder=""></textarea>
+
+                                        <ul class="att_file_wrap mt5">
+                                            <li>
+                                                <div class="att_file_before">
+                                                    <button type="button" class="btn_add_file">파일첨부</button>
+                                                </div>
+                                            </li>
+                                             <!-- 첨부파일 있는 경우 -->
+                                            <li>
+                                                <div class="att_file_item">
+                                                    <span class="txt_ico">파일명</span>
+                                                    <p class="att_file_name">파일명.png <span>(0.54 Mbyte)</span></p>
+                                                    <button type="button" class="del_att_file" title="첨부파일 삭제">삭제</button>
+                                                    <button type="button" class="btn_down">다운로드</button>
+                                                </div>
+                                            </li>
+
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">내담자의 주 후소문제(상세)</th>
+                                    <td>
+                                        <textarea class="comm_tarea" placeholder=""></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">내담자의 강점 / 자원과 근거</th>
+                                    <td>
+                                        <textarea class="comm_tarea" placeholder=""></textarea>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">종합소견 및 상담 계획</th>
+                                    <td>
+                                        <textarea class="comm_tarea" placeholder=""></textarea>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="bottom_btns">
+                    <div class="left_side">
+                        <a href="#" class="comm_btn col_blue">목록</a>
+                    </div>
+
+                    <div class="right_side">
+                        <a href="#" class="comm_btn">삭제</a>
+                        <a href="#" class="comm_btn col_blue">수정</a>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <div class="pop_area">
+        <div class="dim"></div>
+
+        <!-- s: 팝업 컨텐츠 div -->
+        <div class="popup_wrap service">
+            <div class="pop_cont">
+                <h3 class="box_tit">지원서비스 내역 조회</h3>
+                <div class="user_box">
+                    <div class="user_basic">
+                        <img src="./images/dummy_user.png" alt="">
+
+                        <div class="data_box">
+                            <p class="user_name">홍길동 (김센터 <span class="name_tag">개명전</span>)</p>
+                            <p class="user_birth">1974.12.12<span class="gender_tag">남</span></p>
+                        </div>
+
+                        <div class="data_box">
+                            <p class="user_rank">하나원 기수 : 151</p>
+                            <p class="user_phone">010-1111-2222</p>
+                        </div>
+                    </div>
+                    <div class="user_detail">
+                        <div class="detail_box">
+                            <p class="head_label">관할 지자체</p>
+                            <span class="border_txt">서울 성북구</span>
+                        </div>
+                        <div class="detail_box">
+                            <p class="head_label">생계급여</p>
+                            <span class="border_txt">YES</span>
+                        </div>
+                        <div class="detail_box">
+                            <p class="head_label">의료급여</p>
+                            <span class="border_txt">NO</span>
+                        </div>
+                        <div class="detail_box">
+                            <p class="head_label">가족구성</p>
+                            <span class="border_txt">기혼</span><span class="addt_txt">남1, 여 2</span>
+                        </div>
+                        <div class="detail_box">
+                            <p class="status_box col_red">위기가구<br>대상</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll_area">
+                    <div class="comm_table">
+                        <table>
+                            <colgroup>
+                                <col style="width: 8%">
+                                <col style="width: 14%">
+                                <col style="width: 14%;">
+                                <col style="width: 12%;">
+                                <col style="width: 10%;">
+                                <col style="width: 10%;">
+                                <col style="width: 10%;">
+                                <col style="width: 10%;">
+                                <col style="width: 10%;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">번호</th>
+                                    <th scope="col">센터명</th>
+                                    <th scope="col">사업명</th>
+                                    <th scope="col">지원일자</th>
+                                    <th scope="col">지원영역</th>
+                                    <th scope="col">지원내용</th>
+                                    <th scope="col">지원방법</th>
+                                    <th scope="col">지원내역</th>
+                                    <th scope="col">지원금</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>서울북부하나센터</td>
+                                    <td>국고(지역적응지원)</td>
+                                    <td>2020.03.11</td>
+                                    <td>취업지원</td>
+                                    <td>현물지원</td>
+                                    <td>내방</td>
+                                    <td>바우처</td>
+                                    <td>100,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>서울북부하나센터</td>
+                                    <td>국고(지역적응지원)</td>
+                                    <td>2020.03.11</td>
+                                    <td>취업지원</td>
+                                    <td>현물지원</td>
+                                    <td>내방</td>
+                                    <td>바우처</td>
+                                    <td>100,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>서울북부하나센터</td>
+                                    <td>국고(지역적응지원)</td>
+                                    <td>2020.03.11</td>
+                                    <td>취업지원</td>
+                                    <td>현물지원</td>
+                                    <td>내방</td>
+                                    <td>바우처</td>
+                                    <td>100,000원</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>서울북부하나센터</td>
+                                    <td>국고(지역적응지원)</td>
+                                    <td>2020.03.11</td>
+                                    <td>취업지원</td>
+                                    <td>현물지원</td>
+                                    <td>내방</td>
+                                    <td>바우처</td>
+                                    <td>100,000원</td>
+                                </tr>
+
+                                <!-- 조회데이터가 없을때 -->
+                                <tr>
+                                    <td colspan="9" class="no_data">조회된 데이터가 없습니다.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="pagination_wrap">
+                        <div class="pagination">
+                            <span>
+                                <a href="#" class="pg_item" title="첫 페이지">&lt;&lt;</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="이전 페이지">&lt;</a>
+                            </span>
+                            <span>
+                                <!-- <a href="#" class="pg_item" title="1 페이지">1</a> -->
+                                <span class="pg_item on_page" title="현재 페이지">1</span>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="2 페이지">2</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="3 페이지">3</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="4 페이지">4</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="5 페이지">5</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="6 페이지">6</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="다음 페이지">&gt;</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="맨 뒤 페이지">&gt;&gt;</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="pop_close">닫기</button>
+        </div>
+        <!-- e: 팝업 컨텐츠 div -->
+    </div>
+
+    <script>
+        // datepicker용 스크립트
+        $(function() {
+            $.datepicker.setDefaults({
+                dateFormat: 'yy-mm-dd',
+                prevText: '이전 달',
+                nextText: '다음 달',
+                monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+                monthNamesShort: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+                dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+                dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+                dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+                showMonthAfterYear: true,
+                showButtonPanel: true,
+                currentText: "오늘",
+                closeText : '닫기',
+                showOtherMonths: true,
+                changeMonth: true,
+                changeYear: true
+            });
+
+            $(".inp_date").datepicker( $.datepicker.regional[ "kr" ] );
+        });
+
+
+        // 지원서비스 팝업용 샘플 스크립트
+        $(".service_btn").on("click",function(e){
+            e.preventDefault();
+            if(  !$(".pop_area").hasClass("_show") ){
+                $(".pop_area").addClass("_show");
+                $(".service").addClass("_show");
+                $("body").addClass("_lock");
+            }
+            else {
+                $(".pop_area").removeClass("_show");
+                $(".service").removeClass("_show");
+                $("body").removeClass("_lock");
+            }
+        });
+
+        $(".pop_close").on("click",function(e){
+            $(this).parents(".popup_wrap").removeClass("_show");
+            $(this).parents(".pop_area").removeClass("_show");
+            $("body").removeClass("_lock");
+        });
+
+        $(".dim").on("click",function(e){
+            $(this).siblings("._show").removeClass("_show");
+            $(".pop_area").removeClass("_show");
+            $("body").removeClass("_lock");
+        });
+        
+
+     </script>
+
+
+</body>
+</html>

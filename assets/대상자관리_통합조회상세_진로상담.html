@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>통일부 통합지원시스템</title>
+
+    <link type="text/css" href="./css/style.css" rel='stylesheet'>
+    <link type="text/css" href="./js/jquery-ui.min.css" rel="stylesheet">
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+
+</head>
+<body>
+
+    <div class="system_wrap">
+        <aside class="left_contents">
+            <h1 class="home">
+                <img src="./images/logo.png" alt="통일부">
+                <p>통합지원시스템</p>
+            </h1>
+    
+            <a href="#" class="mon_item">위기징후 모니터링</a>
+    
+            <nav>
+                <ul class="menu_list">
+                    <li>
+                        <a href="#" class="menu_item ico_subject active">대상자관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_crisis">위기관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_support">위기통합지원</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_communication">소통관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_statistics">통계</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_counsel">상담관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_business">사업관리</a>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <div class="bottom_area">
+
+                <ul class="menu_list">
+                    <li>
+                        <a href="#" class="menu_item ico_adm">시스템관리</a>
+                    </li>
+                </ul>
+
+                <div class="banner_area">
+                    <a href="#" class="banner_wrap">
+                        <img src="./images/img_bann1.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </aside>
+    
+        <main>
+            <header>
+                <div class="header_left">
+                    <div class="search_person">
+                        <input type="text" class="nobg_inp" placeholder="대상자 통합조회">
+                        <button type="button" class="search_btn">검색</button>
+                    </div>
+                </div>
+                <div class="header_right">
+                    <div class="notification_wrap">
+                        <button type="button" class="btn_notif">알림<span>12</span></button>
+                    </div>
+                    <div class="user_info">
+                        <span class="part_name">통일부</span>
+                        <p class="user_name">
+                            <span>강안전</span> 주무관
+                        </p>
+                        <div class="user_menu_wrap">
+                            <button type="button" class="btn_usermenu">사용자메뉴 토글</button>
+                            <ul class="user_menus">
+                                <li>
+                                    <a href="#">로그아웃</a>
+                                </li>
+                                <li>
+                                    <a href="#">개인정보수정</a>
+                                </li>
+                                <li>
+                                    <a href="#">비밀번호 변경</a>
+                                </li>   
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="col_top">
+                <ul class="sub_tab">
+                    <li>
+                        <a href="#" class="selected">통합조회</a>
+                    </li>
+                    <li>
+                        <a href="#">미배정 대상자</a>
+                    </li>
+                </ul>
+
+                <div class="breadcrumb">
+                    <p class="bread_item">홈 > 대상자관리 > <span>통합조회</span></p>
+                </div>
+            </div>
+
+
+            <div class="contents">
+                <div class="col_box user_box">
+                    <div class="user_basic">
+                        <img src="./images/dummy_user.png" alt="">
+
+                        <div class="data_box">
+                            <p class="user_name">홍길동 (김센터 <span class="name_tag">개명전</span>)</p>
+                            <p class="user_birth">1974.12.12<span class="gender_tag">남</span></p>
+                        </div>
+
+                        <div class="data_box">
+                            <p class="user_rank">하나원 기수 : 151<a href="#" class="service_btn">지원서비스 내역 조회</a></p>
+                            <p class="user_phone">010-1111-2222</p>
+                        </div>
+                    </div>
+                    <div class="user_detail">
+                        <div class="detail_box">
+                            <p class="head_label">관할 지자체</p>
+                            <span class="border_txt">서울 성북구</span>
+                        </div>
+                        <div class="detail_box">
+                            <p class="head_label">생계급여</p>
+                            <span class="border_txt">YES</span>
+                        </div>
+                        <div class="detail_box">
+                            <p class="head_label">의료급여</p>
+                            <span class="border_txt">NO</span>
+                        </div>
+                        <div class="detail_box">
+                            <p class="head_label">가족구성</p>
+                            <span class="border_txt">기혼</span><span class="addt_txt">남1, 여 2</span>
+                        </div>
+                        <div class="detail_box">
+                            <p class="status_box col_red">위기가구<br>대상</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col_box mid_tab_box">
+                    <ul class="mid_tab_list">
+                        <li>
+                            <a href="#" class="mid_tab_item">기본인적</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mid_tab_item">세대정보</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mid_tab_item">가족정보</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mid_tab_item">학력정보</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mid_tab_item">경력정보</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mid_tab_item active">진로상담</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mid_tab_item">직업훈련/자격증</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mid_tab_item">취업정보</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mid_tab_item">지원금내역</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mid_tab_item">기초생활수급내역</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mid_tab_item">지원서비스 내역</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="col_box table_box">
+
+                    <h2 class="box_tit tit_mt">학력, 경력</h2>
+
+                    <div class="comm_table horizontal">
+                        <table>
+                            <colgroup>
+                                <col style="width: 20%;">
+                                <col style="width: 80%;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">학력</th>
+                                    <td>전문학교</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">자격, 면허</th>
+                                    <td>없음</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">경력</th>
+                                    <td>노동자 및 농장원</td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+                <div class="col_box table_box">
+                    <h2 class="box_tit tit_mt">직업선호도 검사 결과</h2>
+
+                    <div class="comm_table horizontal">
+                        <table>
+                            <colgroup>
+                                <col style="width: 20%;">
+                                <col style="width: 80%">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">흥미코드</th>
+                                    <td>CS(관습-사회형)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">적합직종</th>
+                                    <td>비서, 의복수선원, 전화교환원[안내/접수/전화 교환원], 출납원 및 기타계산대사무원</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">흥미특성</th>
+                                    <td>규칙적이고 신중하며 꼼꼼하고 안정적인 것인 추구, 명확하지 않고 모호한 과제 등은 회피하는 특성</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col_box table_box">
+                    <h2 class="box_tit tit_mt">직업선호도 원 점수</h2>
+
+                    <div class="comm_table">
+                        <table>
+                            <colgroup>
+                                <col style="width: auto;">
+                                <col style="width: auto;">
+                                <col style="width: auto;">
+                                <col style="width: auto;">
+                                <col style="width: auto;">
+                                <col style="width: auto;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">현실형</th>
+                                    <th scope="col">탐구형</th>
+                                    <th scope="col">예술형</th>
+                                    <th scope="col">사회형</th>
+                                    <th scope="col">진취형</th>
+                                    <th scope="col">관습형</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>10</td>
+                                    <td>5</td>
+                                    <td>5</td>
+                                    <td>5</td>
+                                    <td>5</td>
+                                    <td>25</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col_box table_box">
+                    <h2 class="box_tit tit_mt">직업가치관 검사결과</h2>
+
+                    <div class="comm_table">
+                        <table>
+                            <colgroup>
+                                <col style="width: auto;">
+                                <col style="width: auto">
+                                <col style="width: auto;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">1순위</th>
+                                    <th scope="col">2순위</th>
+                                    <th scope="col">3순위</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>능력</td>
+                                    <td>보수</td>
+                                    <td>봉사</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col_box table_box">
+                    <h2 class="box_tit tit_mt">하나원 직업훈련</h2>
+
+                    <div class="comm_table">
+                        <table>
+                            <colgroup>
+                                <col style="width: 50%;">
+                                <col style="width: 50%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">직종 심화반</th>
+                                    <th scope="col">자격취득반</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>직종 : 간호, 요양</td>
+                                    <td>직종 : 한식조리</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col_box table_box">
+                    <h2 class="box_tit tit_mt">자격취득(필기시험)</h2>
+
+                    <div class="comm_table">
+                        <table>
+                            <colgroup>
+                                <col style="width: 50%;">
+                                <col style="width: 50%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">운전면허</th>
+                                    <th scope="col">국가기술 자격취득</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2종 보통</td>
+                                    <td>한식조리사</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col_box table_box">
+                    <h2 class="box_tit tit_mt">희망직업</h2>
+
+                    <div class="comm_table">
+                        <table>
+                            <colgroup>
+                                <col style="width: auto;">
+                                <col style="width: auto">
+                                <col style="width: auto;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">1순위</th>
+                                    <th scope="col">2순위</th>
+                                    <th scope="col">3순위</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>간호조무사</td>
+                                    <td>생산직</td>
+                                    <td>요양보호사</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col_box table_box">
+                    <h2 class="box_tit tit_mt">직업훈련관 의견</h2>
+
+                    <div class="comm_table">
+                        <table>
+                            <colgroup>
+                                <col style="width: 25%;">
+                                <col style="width: 25%;">
+                                <col style="width: 25%;">
+                                <col style="width: 25%;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">희망직업 적합도</th>
+                                    <th scope="col">대인협업 능력</th>
+                                    <th scope="col">문제해결 능력</th>
+                                    <th scope="col">수리(계산)능력</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>상</td>
+                                    <td>상</td>
+                                    <td>상</td>
+                                    <td>상</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col_box table_box">
+                    <h2 class="box_tit tit_mt">기타</h2>
+
+                    <div class="comm_table horizontal">
+                        <table>
+                            <colgroup>
+                                <col style="width: 20%;">
+                                <col style="width: 80%;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">수료 후 진로 결정</th>
+                                    <td>기타 ( 아르바이트 )</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">하나센터 교육 희망</th>
+                                    <td>희망</td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col_box table_box">
+                    <h2 class="box_tit tit_mt">진로지도관 종합의견</h2>
+
+                    <div class="top_line_box">
+                        <p class="tit_txt">직업교육 내용</p>
+                        <p>1. 기초교육 : 직업의 이해(직업카드, 취업가이드), 영농교육, 근로기준법 이해, 멘토링, 직장 예절 상황극, 취업목표 정하기(진로목표 정하기), 직종 임금 알아보기, 지역별 취업정보, 구직활동 방법(기업요구역량이해), 근로계약서 이해(직업훈련정보 찾기), 구직서류 준비, 취업계획 수립(경력계획 수립) 실시</p>
+                        <p>2. 직업훈련: 간호.요양(산후도우미·간호조무·요양보호), 사무행정(사무행정.매장관리·관광서비스·접객서비스), 전자.전자(기계생산.전자기초), 미용(헤어·네일아트·메이크업), 요리(한식조리·양식조리·중식조리), 피부미용(피부미용), 봉제(봉제.의료수선.세탁), 제과제빵(제과,제빵.바리스타) 8개분야 22개직종 실시</p>
+                        <p>3. 개인별 맞춤 진로설계를 위한 생애설계 프로그램(취업.재무.가족.건강.학업) 실시</p>
+                        <p>4. 운전면허 2종 학과시험(필기) 합격</p>
+
+                        <p class="tit_txt">진로지도 내용</p>
+                        <p>- 생산직은 일자리도 비교적 많고 취업도 쉬운 편입니다. 그래도 경력관리가 필요하니 면접하니 면접과정에서 잘 살피셔서 오래 일할 수 있는 곳을 안내함.</p>
+                        <p>- 성실히 중국에서 일한 경험이 있으므로 이 곳에서도 잘 적응하시리라 봄.</p>
+                        <p>- 국비직업교육훈련(약1년) 통해 간호조무사 자격 취득하여 취업가능</p>
+                    </div>
+                </div>
+
+                <div class="bottom_btns">
+                    <div class="left_side">
+                    </div>
+                    <div class="right_side">
+                        <a href="#" class="comm_btn col_blue">목록</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </main>
+    </div>
+
+    <div class="pop_area">
+        <div class="dim"></div>
+
+        <!-- s: 팝업 컨텐츠 div -->
+
+        <div class="popup_wrap current">
+            <div class="pop_cont">
+                <h3 class="box_tit">취업현황 상세</h3>
+
+                <div class="input_box">
+                    <div class="input_area horizontal">
+                        <div class="input_row">
+                            <label class="inp_label" for="inp1">하나원 기수</label>
+                            <div class="row_cont">
+                                <input type="text" id="inp1" class="comm_input" placeholder="숫자를 입력하세요.">
+                            </div>
+                        </div>
+
+                        <div class="input_row">
+                            <label class="inp_label" for="inp2">생년월일</label>
+                            <div class="row_cont">
+                                <input type="text" id="inp2" class="comm_input inp_date" placeholder="날짜를 선택하세요.">
+                            </div>
+                        </div>
+
+
+
+                        <div class="input_row type4">
+                            <label class="inp_label" for="inp3">대상자명</label>
+
+                            <div class="chk_box">
+                                <input type="checkbox" id="chk2" class="">
+                                <label for="chk2">개명전 성명으로 검색</label>
+                            </div>
+
+                            <div class="row_cont">
+                                <input type="text" id="inp3" class="comm_input" placeholder="성명을 입력하세요.">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="submit_area">
+                        <a href="#" class="comm_btn search_type">검색</a>
+                    </div>
+                </div>
+
+                <div class="scroll_area">
+                    <div class="comm_table selectable">
+                        <table>
+                            <colgroup>
+                                <col style="width: 8%">
+                                <col style="width: 18%">
+                                <col style="width: 18%;">
+                                <col style="width: 18%;">
+                                <col style="width: 20%;">
+                                <col style="width: 18%;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">번호</th>
+                                    <th scope="col">대상자명</th>
+                                    <th scope="col">개명전 성함</th>
+                                    <th scope="col">성별</th>
+                                    <th scope="col">생년월일</th>
+                                    <th scope="col">하나원 기수</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>홍길동</td>
+                                    <td>홍당무</td>
+                                    <td>남</td>
+                                    <td>1999.09.09</td>
+                                    <td>44기</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>홍길동</td>
+                                    <td>홍당무</td>
+                                    <td>남</td>
+                                    <td>1999.09.09</td>
+                                    <td>44기</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>홍길동</td>
+                                    <td>홍당무</td>
+                                    <td>남</td>
+                                    <td>1999.09.09</td>
+                                    <td>44기</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>홍길동</td>
+                                    <td>홍당무</td>
+                                    <td>남</td>
+                                    <td>1999.09.09</td>
+                                    <td>44기</td>
+                                </tr>
+                               
+
+                                <!-- 조회데이터가 없을때 -->
+                                <tr>
+                                    <td colspan="6" class="no_data">조회된 데이터가 없습니다.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="pagination_wrap">
+                        <div class="pagination">
+                            <span>
+                                <a href="#" class="pg_item" title="첫 페이지">&lt;&lt;</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="이전 페이지">&lt;</a>
+                            </span>
+                            <span>
+                                <!-- <a href="#" class="pg_item" title="1 페이지">1</a> -->
+                                <span class="pg_item on_page" title="현재 페이지">1</span>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="2 페이지">2</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="3 페이지">3</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="4 페이지">4</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="5 페이지">5</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="6 페이지">6</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="다음 페이지">&gt;</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="맨 뒤 페이지">&gt;&gt;</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="pop_close">닫기</button>
+        </div>
+
+        <div class="popup_wrap founded">
+            <div class="pop_cont">
+                <h3 class="box_tit">창업현황 상세</h3>
+
+                <div class="input_box">
+                    <div class="input_area horizontal">
+                        <div class="input_row">
+                            <label class="inp_label" for="inp1">하나원 기수</label>
+                            <div class="row_cont">
+                                <input type="text" id="inp1" class="comm_input" placeholder="숫자를 입력하세요.">
+                            </div>
+                        </div>
+
+                        <div class="input_row">
+                            <label class="inp_label" for="inp2">생년월일</label>
+                            <div class="row_cont">
+                                <input type="text" id="inp2" class="comm_input inp_date" placeholder="날짜를 선택하세요.">
+                            </div>
+                        </div>
+
+
+
+                        <div class="input_row type4">
+                            <label class="inp_label" for="inp3">대상자명</label>
+
+                            <div class="chk_box">
+                                <input type="checkbox" id="chk2" class="">
+                                <label for="chk2">개명전 성명으로 검색</label>
+                            </div>
+
+                            <div class="row_cont">
+                                <input type="text" id="inp3" class="comm_input" placeholder="성명을 입력하세요.">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="submit_area">
+                        <a href="#" class="comm_btn search_type">검색</a>
+                    </div>
+                </div>
+
+                <div class="scroll_area">
+                    <div class="comm_table selectable">
+                        <table>
+                            <colgroup>
+                                <col style="width: 8%">
+                                <col style="width: 18%">
+                                <col style="width: 18%;">
+                                <col style="width: 18%;">
+                                <col style="width: 20%;">
+                                <col style="width: 18%;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">번호</th>
+                                    <th scope="col">대상자명</th>
+                                    <th scope="col">개명전 성함</th>
+                                    <th scope="col">성별</th>
+                                    <th scope="col">생년월일</th>
+                                    <th scope="col">하나원 기수</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>홍길동</td>
+                                    <td>홍당무</td>
+                                    <td>남</td>
+                                    <td>1999.09.09</td>
+                                    <td>44기</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>홍길동</td>
+                                    <td>홍당무</td>
+                                    <td>남</td>
+                                    <td>1999.09.09</td>
+                                    <td>44기</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>홍길동</td>
+                                    <td>홍당무</td>
+                                    <td>남</td>
+                                    <td>1999.09.09</td>
+                                    <td>44기</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>홍길동</td>
+                                    <td>홍당무</td>
+                                    <td>남</td>
+                                    <td>1999.09.09</td>
+                                    <td>44기</td>
+                                </tr>
+                               
+
+                                <!-- 조회데이터가 없을때 -->
+                                <tr>
+                                    <td colspan="6" class="no_data">조회된 데이터가 없습니다.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="pagination_wrap">
+                        <div class="pagination">
+                            <span>
+                                <a href="#" class="pg_item" title="첫 페이지">&lt;&lt;</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="이전 페이지">&lt;</a>
+                            </span>
+                            <span>
+                                <!-- <a href="#" class="pg_item" title="1 페이지">1</a> -->
+                                <span class="pg_item on_page" title="현재 페이지">1</span>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="2 페이지">2</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="3 페이지">3</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="4 페이지">4</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="5 페이지">5</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="6 페이지">6</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="다음 페이지">&gt;</a>
+                            </span>
+                            <span>
+                                <a href="#" class="pg_item" title="맨 뒤 페이지">&gt;&gt;</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="pop_close">닫기</button>
+        </div>
+        <!-- e: 팝업 컨텐츠 div -->
+    </div>
+
+    <script>
+        // datepicker용 스크립트
+        $(function() {
+            $.datepicker.setDefaults({
+                dateFormat: 'yy-mm-dd',
+                prevText: '이전 달',
+                nextText: '다음 달',
+                monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+                monthNamesShort: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+                dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+                dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+                dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+                showMonthAfterYear: true,
+                showButtonPanel: true,
+                currentText: "오늘",
+                closeText : '닫기',
+                showOtherMonths: true,
+                changeMonth: true,
+                changeYear: true
+            });
+
+            $(".inp_date").datepicker( $.datepicker.regional[ "kr" ] );
+
+             // 사용자 메뉴 스크립트
+             $(".btn_usermenu").on("click",function(){
+                if( !$(this).hasClass("_opened") ){
+                    $(this).addClass("_opened");
+                    $(this).siblings(".user_menus").stop().slideDown(200);
+                }
+                else {
+                    $(this).removeClass("_opened");
+                    $(this).siblings(".user_menus").stop().slideUp(200);
+                }
+            });
+
+
+             // 취업정보 팝업 샘플 스크립트
+             $(".pop_open_lnk").on("click",function(e){
+                e.preventDefault();
+                if(  !$(".pop_area").hasClass("_show") ){
+                    $(".pop_area").addClass("_show");
+                    $(".current").addClass("_show");
+                    $("body").addClass("_lock");
+                }
+                else {
+                    $(".pop_area").removeClass("_show");
+                    $(".current").removeClass("_show");
+                    $("body").removeClass("_lock");
+                }
+            });
+
+            $(".pop_close").on("click",function(e){
+                $(this).parents(".popup_wrap").removeClass("_show");
+                $(this).parents(".pop_area").removeClass("_show");
+                $("body").removeClass("_lock");
+            });
+
+            $(".dim").on("click",function(e){
+                $(this).siblings("._show").removeClass("_show");
+                $(".pop_area").removeClass("_show");
+                $("body").removeClass("_lock");
+            });
+
+
+        });
+
+     </script>
+
+
+</body>
+</html>

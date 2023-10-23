@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>통일부 통합지원시스템</title>
+
+    <link type="text/css" href="./css/style.css" rel='stylesheet'>
+    <link type="text/css" href="./js/jquery-ui.min.css" rel="stylesheet">
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+
+</head>
+<body>
+
+    <div class="system_wrap">
+        <aside class="left_contents">
+            <h1 class="home">
+                <img src="./images/logo.png" alt="통일부">
+                <p>통합지원시스템</p>
+            </h1>
+    
+            <a href="#" class="mon_item">위기징후 모니터링</a>
+    
+            <nav>
+                <ul class="menu_list">
+                    <li>
+                        <a href="#" class="menu_item ico_subject">대상자관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_crisis active">위기관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_support">위기통합지원</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_communication">소통관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_statistics">통계</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_counsel">상담관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_business">사업관리</a>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <div class="bottom_area">
+
+                <ul class="menu_list">
+                    <li>
+                        <a href="#" class="menu_item ico_adm">시스템관리</a>
+                    </li>
+                </ul>
+
+                <div class="banner_area">
+                    <a href="#" class="banner_wrap">
+                        <img src="./images/img_bann1.png" alt="">
+                    </a>
+                </div>
+
+            </div>
+        </aside>
+    
+        <main>
+            <header>
+                <div class="header_left">
+                    <div class="search_person">
+                        <input type="text" class="nobg_inp" placeholder="대상자 통합조회">
+                        <button type="button" class="search_btn">검색</button>
+                    </div>
+                </div>
+                <div class="header_right">
+                    <div class="notification_wrap">
+                        <button type="button" class="btn_notif">알림<span>12</span></button>
+                    </div>
+                    <div class="user_info">
+                        <span class="part_name">통일부</span>
+                        <p class="user_name">
+                            <span>강안전</span> 주무관
+                        </p>
+                        <div class="user_menu_wrap">
+                            <button type="button" class="btn_usermenu">사용자메뉴 토글</button>
+                            <!-- 
+                                현재 미결정 사항
+                                <ul>
+                                    <li></li>
+                                </ul>
+                             -->
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="col_top">
+                <ul class="sub_tab">
+                    <li>
+                        <a href="#" class="selected">위기가구 대상자</a>
+                    </li>
+                    <li>
+                        <a href="#">맞춤형 분석</a>
+                    </li>
+                    <li>
+                        <a href="#">서비스 의뢰</a>
+                    </li>
+                    <li>
+                        <a href="#">위기상황 보고</a>
+                    </li>
+                    <li>
+                        <a href="#">위기징후 모니터링</a>
+                    </li>
+                </ul>
+
+                <div class="breadcrumb">
+                    <p class="bread_item">홈 > 위기관리 > <span>위기가구 대상자</span></p>
+                </div>
+            </div>
+
+            
+            <div class="contents">
+
+                <div class="col_box user_box">
+                    <div class="user_basic">
+                        <img src="./images/dummy_user.png" alt="">
+
+                        <div class="data_box">
+                            <p class="user_name">홍길동 (김센터 <span class="name_tag">개명전</span>)</p>
+                            <p class="user_birth">1974.12.12<span class="gender_tag">남</span></p>
+                        </div>
+
+                        <div class="data_box">
+                            <p class="user_rank">하나원 기수 : 151<a href="#" class="service_btn">지원서비스 내역 조회</a></p>
+                            <p class="user_phone">010-1111-2222
+                                <span class="pre_num">(010-1234-4521)</span>
+                                <button type="button" class="btn_chg">변경</button>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="user_detail">
+                        <div class="detail_box">
+                            <p class="head_label">관할 지자체</p>
+                            <span class="border_txt">서울 성북구</span>
+                        </div>
+                        <div class="detail_box">
+                            <p class="head_label">생계급여</p>
+                            <span class="border_txt">YES</span>
+                        </div>
+                        <div class="detail_box">
+                            <p class="head_label">의료급여</p>
+                            <span class="border_txt">NO</span>
+                        </div>
+                        <div class="detail_box">
+                            <p class="head_label">가족구성</p>
+                            <span class="border_txt">기혼</span><span class="addt_txt">남1, 여 2</span>
+                        </div>
+                        <div class="detail_box">
+                            <p class="status_box col_red">위기<br>가구</p>
+
+                            <p class="status_box col_green">집중<br>관리</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col_box table_box">
+                    
+
+                    <h2 class="box_tit tit_mt">대상자 기본정보</h2>
+                    <div class="comm_table horizontal">
+                        <table>
+                            <colgroup>
+                                <col style="width: 20%;">
+                                <col style="width: 30%">
+                                <col style="width: 20%;">
+                                <col style="width: 30%">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">보호결정여부</th>
+                                    <td>보호결정</td>
+                                    <th scope="row">무연고 청소년 여부</th>
+                                    <td>N</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">사회진출일</th>
+                                    <td>2023.01.01</td>
+                                    <th scope="row">거주지 보호대상 여부</th>
+                                    <td>Y</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">주민번호</th>
+                                    <td>710915-1******</td>
+                                    <th scope="row">신변보호 대상 여부</th>
+                                    <td>연장</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">하나재단 긴급생계비 지원</th>
+                                    <td>
+                                        <p class="tb_txt">2023.11.11 (800,000)</p>
+                                        <p class="tb_txt">2023.11.11 (800,000)</p>
+                                        <p class="tb_txt">2023.11.11 (800,000)</p>
+                                    </td>
+                                    <th scope="row">하나재단 의료지원</th>
+                                    <td>
+                                        <p class="tb_txt">2023.11.11 (800,000)</p>
+                                        <p class="tb_txt">2023.11.11 (800,000)</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+                <div class="col_box table_box">
+                    <h2 class="box_tit tit_mt">위기지표</h2>
+
+                    <div class="inner_area_box">
+                        <ul class="cont_inner_tab_wrap">
+                            <li>
+                                <a href="#" class="cont_inner_tab view_cht_btn active">시계열</a>
+                            </li>
+                            <li>
+                                <a href="#" class="cont_inner_tab view_tbl_btn">표</a>
+                            </li>
+                        </ul>
+                        
+                        <select class="comm_select auto_m_select">
+                            <option>연도별 조회</option>
+                            <option>항목1</option>
+                            <option>항목2</option>
+                            <option>항목3</option>
+                        </select>
+                    </div>
+                   
+                    <!-- 시계열선택 시 -->
+                    <div class="cht_box view_cht __show">
+                        <p style="font-size: 18px; background: #f1f1f1; padding: 100px 20px;">차트 영역</p>
+                    </div>
+
+                    <!-- 표선택 시 -->
+                    <div class="comm_table view_tbl">
+                        <table>
+                            <colgroup>
+                                <col style="width: 15%;">
+                                <col style="width: 15%">
+                                <col style="width: 15%;">
+                                <col style="width: auto;">
+                                <col style="width: 15%;">
+                                <col style="width: 15%;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">회차</th>
+                                    <th scope="col">탐지일</th>
+                                    <th scope="col">탐지건수</th>
+                                    <th scope="col">탐지내용</th>
+                                    <th scope="col">조사방법</th>
+                                    <th scope="col">조사진행 여부</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>21년 6차</td>
+                                    <td>21.11</td>
+                                    <td>7</td>
+                                    <td class="al_le">
+                                        <p class="tb_txt">단전</p>
+                                        <p class="tb_txt">단수</p>
+                                        <p class="tb_txt">단가스</p>
+                                        <p class="tb_txt">전기료체납</p>
+                                        <p class="tb_txt">국민연금체납</p>
+                                        <p class="tb_txt">건보료체납</p>
+                                        <p class="tb_txt">화재피해</p>
+                                    </td>
+                                    <td>유선조사</td>
+                                    <td>완료</td>
+                                </tr>
+                                <tr>
+                                    <td>21년 5차</td>
+                                    <td>21.11</td>
+                                    <td>5</td>
+                                    <td class="al_le">
+                                        <p class="tb_txt">장기요양</p>
+                                        <p class="tb_txt">주거위기(전세)</p>
+                                        <p class="tb_txt">주거위기(월세)</p>
+                                        <p class="tb_txt">개별연장급여</p>
+                                        <p class="tb_txt">실업급여수급</p>
+                                    </td>
+                                    <td>유선조사</td>
+                                    <td>완료</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                </div>
+
+                <div class="col_box table_box">
+                    <h2 class="box_tit tit_mt">거주지 및 연락처 변동사항</h2>
+
+                    <div class="comm_table">
+                        <table>
+                            <colgroup>
+                                <col style="width: 13%;">
+                                <col style="width: 10%">
+                                <col style="width: auto;">
+                                <col style="width: 12%;">
+                                <col style="width: 9%;">
+                                <col style="width: 14%;">
+                                <col style="width: 10%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">거주지</th>
+                                    <th scope="col">변동일</th>
+                                    <th scope="col">실 거주지</th>
+                                    <th scope="col">실 연락처</th>
+                                    <th scope="col">등록자</th>
+                                    <th scope="col">등록자 소속</th>
+                                    <th scope="col">등록일</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>경기 시흥시 시흥구</td>
+                                    <td>2020.03.03</td>
+                                    <td>경기 시흥시 시흥구 시흥동 125-36 시흥아파트 102동 233호</td>
+                                    <td>010-5236-6985</td>
+                                    <td>홍길동</td>
+                                    <td>서울서부 하나센터</td>
+                                    <td>2022.11.22</td>
+                                </tr>
+                                <tr>
+                                    <td>경기 시흥시 시흥구</td>
+                                    <td>2020.03.03</td>
+                                    <td>경기 시흥시 시흥구 시흥동 125-36 시흥아파트 102동 233호</td>
+                                    <td>010-5236-6985</td>
+                                    <td>홍길동</td>
+                                    <td>서울서부 하나센터</td>
+                                    <td>2022.11.22</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                   
+                    <div class="bottom_btns">
+                        <div class="left_side">
+                        </div>
+                        <div class="right_side">
+                            <a href="#" class="comm_btn col_blue cur_live_info_btn">실 거주지 및 연락처 등록</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col_box table_box">
+                    <h2 class="box_tit tit_mt">위기대상 관리정보</h2>
+
+                    <div class="comm_table horizontal">
+                        <table>
+                            <colgroup>
+                                <col style="width: 20%;">
+                                <col style="width: 30%">
+                                <col style="width: 20%;">
+                                <col style="width: 30%">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">상시 관리대상</th>
+                                    <td>Y</td>
+                                    <th scope="row">안전지원과 담당자</th>
+                                    <td>홍길동</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">하나센터 주 상담사</th>
+                                    <td>김센터</td>
+                                    <th scope="row">발굴경로</th>
+                                    <td>자체(센터)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">하나센터 상담횟수(최근1년)</th>
+                                    <td>10</td>
+                                    <th scope="row">미래행복통장 해지여부</th>
+                                    <td>해지</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">고용상태</th>
+                                    <td>정규직 재직</td>
+                                    <th scope="row">최근 고용활동 시점</th>
+                                    <td>2022.11.11</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">자살키워드(최근 2년)</th>
+                                    <td>0</td>
+                                    <th scope="row">재입북 키워드(최근 2년)</th>
+                                    <td>1</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">지자체 지원내역</th>
+                                    <td colspan="3">
+                                        <p class="tb_txt">2022.11.11 지원대상</p>
+                                        <p class="tb_txt">2022.11.11 지원대상</p>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">거주지보호담당관 반기보고 내역</th>
+                                    <td colspan="3">
+                                        <p class="tb_txt">2022.11.11 출국이후 현재까지 입국내역 없음</p>
+                                        <p class="tb_txt">2022.02.01 해외로 출국</p>
+                                        <p class="tb_txt">2021.01.02 거주불명등록 / 현재 행방 알수 없음</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                   
+                    <div class="bottom_btns">
+                        <div class="left_side">
+                        </div>
+
+                        <div class="right_side">
+                            <a href="#" class="comm_btn col_blue data_tr_btn">등록 및 수정</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col_box table_box">
+                    <h2 class="box_tit tit_mt">안전지원팀 확인사항</h2>
+
+                    <div class="comm_table">
+                        <table>
+                            <colgroup>
+                                <col style="width: 10%;">
+                                <col style="width: 10%">
+                                <col style="width: auto;">
+                                <col style="width: 10%;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td>2022.11.11</td>
+                                    <td>김안전</td>
+                                    <td class="al_le">
+                                        <p class="tb_txt">출산(동거남 통해 확인, 충북 음성서) 신변보호 대상자, 연락 잘되고 있고, 하나센터에 지원 요청 해논 상태</p>
+                                        <p class="tb_txt">안전지원팀 생필품 지원</p>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn_comm sm_size col_gray chklist_btn">수정</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2022.11.11</td>
+                                    <td>김안전</td>
+                                    <td class="al_le">
+                                        <p class="tb_txt">출산(동거남 통해 확인, 충북 음성서) 신변보호 대상자, 연락 잘되고 있고, 하나센터에 지원 요청 해논 상태</p>
+                                        <p class="tb_txt">안전지원팀 생필품 지원</p>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn_comm sm_size col_gray chklist_btn">수정</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                   
+                    <div class="bottom_btns">
+                        <div class="left_side">
+                        </div>
+
+                        <div class="right_side">
+                            <a href="#" class="comm_btn col_blue chklist_btn">등록</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col_box table_box">
+                    <h2 class="box_tit tit_mt">위기관리 후속조치</h2>
+
+                    <div class="comm_table">
+                        <table>
+                            <colgroup>
+                                <col style="width: 10%;">
+                                <col style="width: 10%">
+                                <col style="width: 10%;">
+                                <col style="width: auto;">
+                                <col style="width: 10%;">
+                                <col style="width: 20%;">
+                                <col style="width: 10%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">번호</th>
+                                    <th scope="col">서비스 제공일</th>
+                                    <th scope="col">서비스 완료일</th>
+                                    <th scope="col">서비스 제목</th>
+                                    <th scope="col">서비스 상태</th>
+                                    <th scope="col">작성자 소속</th>
+                                    <th scope="col">작성자 성명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2020.03.03</td>
+                                    <td>2020.03.03</td>
+                                    <td>[사회보장지원] 서비스 제목 출력</td>
+                                    <td>
+                                        <a href="#" class="lnk_ud">완료</a>
+                                    </td>
+                                    <td>경기동부하나센터</td>
+                                    <td>홍길동</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2020.03.03</td>
+                                    <td>2020.03.03</td>
+                                    <td>[사회보장지원] 서비스 제목 출력</td>
+                                    <td>
+                                        <a href="#" class="lnk_ud">완료</a>
+                                    </td>
+                                    <td>경기동부하나센터</td>
+                                    <td>홍길동</td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                   
+                    <div class="bottom_btns">
+                        <div class="left_side">
+                        </div>
+
+                        <div class="right_side">
+                            <a href="#" class="comm_btn col_blue">후속조치 등록</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bottom_btns">
+                    <div class="left_side">
+                        <a href="#" class="comm_btn col_blue">목록</a>
+                    </div>
+
+                    <div class="right_side">
+                    </div>
+                </div>
+
+
+
+            </div>
+        </main>
+    </div>
+
+    <div class="pop_area">
+        <div class="dim"></div>
+
+        <!-- s: 팝업 컨텐츠 div -->
+        <div class="popup_wrap size_m h_auto cur_live_info">
+            <div class="pop_cont">
+                <h3 class="box_tit">실 거주지 및 연락처</h3>
+                <div class="comm_table horizontal">
+                    <table>
+                        <colgroup>
+                            <col style="width: 30%;">
+                            <col style="width: 70%">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">현재 시점 거주지 정보</th>
+                                <td>
+                                    <p>변동일 : 2020.03.03</p>
+                                    <p>경기 시흥시 시흥구 시흥동 125-36 시흥아파트 102동 233호</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">실 거주지<span class="inp_req">*</span></th>
+                                <td>
+                                    <div class="addr_search fl_wrap">
+                                        <button type="button" class="blk_btn inner_pop_btn">주소검색</button>
+                                        <input type="text" class="comm_input" placeholder="주소를 검색해주세요" disabled="">
+                                        <input type="text" class="comm_input" placeholder="" disabled="">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">실 연락처<span class="inp_req">*</span></th>
+                                <td>
+                                    <div class="conn_items">
+                                        <input type="text" class="comm_input size90" placeholder=""> 
+                                        <span class="divider">-</span>
+                                        <input type="text" class="comm_input size90" placeholder="">
+                                        <span class="divider">-</span>
+                                        <input type="text" class="comm_input size90" placeholder="">
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="bottom_btns">
+                    <div class="left_side"></div>
+                    <div class="right_side">
+                        <a href="#" class="comm_btn col_blue">저장</a>
+                        <a href="#" class="comm_btn pop_close_btn">취소</a>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="pop_close">닫기</button>
+
+            <div class="inner_pop_wrap addr popup_search">
+                <div class="pop_cont">
+
+                    <div class="sc_top">
+                        <h3 class="sc_tit">주소찾기</h3>
+                    </div>
+    
+                    <div class="sc_cont">
+    
+                        <div class="search_input_wrap normal_sc">
+                            <input type="text" class="search_input" placeholder="주소를 입력하세요.">
+                            <button type="button" class="comm_search_btn">검색</button>
+                        </div>
+    
+                        <p class="info_txt al_cnt">시/군/구 + 도로명, 동명 또는 건물명 | 도로명 + 건물번호 | 읍/면/동/리 + 지번<br>예) 동해시 중앙로, 여수 중앙동, 대전 현대아파트 | 종로 6 | 서린동 154-1</p>
+    
+                        <p class="addr_sc_result">검색결과 <span>2151</span>건</p>
+                        <div class="scroll_area">
+    
+                            <!-- 검색전인 경우
+    
+                                <p class="addr_no_item">검색어를 입력해주세요.</p>
+                            
+                            -->
+    
+                            <ul class="addr_sc_list">
+                                <li>
+                                    <a href="#" class="addr_item">
+                                        <p class="add_num">08511</p>
+                                        <div>
+                                            <p class="addr_txt">
+                                                <span class="add_type">지번</span>
+                                                <span class="add_det">서울 금천구 디지털로9길 23 (마리오2 패션타워)</span>
+                                            </p>
+                                            <p class="addr_txt">
+                                                <span class="add_type">도로명</span>
+                                                <span class="add_det">서울 금천구 가산동 60-52</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="addr_item">
+                                        <p class="add_num">08511</p>
+                                        <div>
+                                            <p class="addr_txt">
+                                                <span class="add_type">지번</span>
+                                                <span class="add_det">서울 금천구 디지털로9길 23 (마리오2 패션타워)</span>
+                                            </p>
+                                            <p class="addr_txt">
+                                                <span class="add_type">도로명</span>
+                                                <span class="add_det">서울 금천구 가산동 60-52</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="addr_item">
+                                        <p class="add_num">08511</p>
+                                        <div>
+                                            <p class="addr_txt">
+                                                <span class="add_type">지번</span>
+                                                <span class="add_det">서울 금천구 디지털로9길 23 (마리오2 패션타워)</span>
+                                            </p>
+                                            <p class="addr_txt">
+                                                <span class="add_type">도로명</span>
+                                                <span class="add_det">서울 금천구 가산동 60-52</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="addr_item">
+                                        <p class="add_num">08511</p>
+                                        <div>
+                                            <p class="addr_txt">
+                                                <span class="add_type">지번</span>
+                                                <span class="add_det">서울 금천구 디지털로9길 23 (마리오2 패션타워)</span>
+                                            </p>
+                                            <p class="addr_txt">
+                                                <span class="add_type">도로명</span>
+                                                <span class="add_det">서울 금천구 가산동 60-52</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="addr_item">
+                                        <p class="add_num">08511</p>
+                                        <div>
+                                            <p class="addr_txt">
+                                                <span class="add_type">지번</span>
+                                                <span class="add_det">서울 금천구 디지털로9길 23 (마리오2 패션타워)</span>
+                                            </p>
+                                            <p class="addr_txt">
+                                                <span class="add_type">도로명</span>
+                                                <span class="add_det">서울 금천구 가산동 60-52</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="addr_item">
+                                        <p class="add_num">08511</p>
+                                        <div>
+                                            <p class="addr_txt">
+                                                <span class="add_type">지번</span>
+                                                <span class="add_det">서울 금천구 디지털로9길 23 (마리오2 패션타워)</span>
+                                            </p>
+                                            <p class="addr_txt">
+                                                <span class="add_type">도로명</span>
+                                                <span class="add_det">서울 금천구 가산동 60-52</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="addr_item">
+                                        <p class="add_num">08511</p>
+                                        <div>
+                                            <p class="addr_txt">
+                                                <span class="add_type">지번</span>
+                                                <span class="add_det">서울 금천구 디지털로9길 23 (마리오2 패션타워)</span>
+                                            </p>
+                                            <p class="addr_txt">
+                                                <span class="add_type">도로명</span>
+                                                <span class="add_det">서울 금천구 가산동 60-52</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="addr_item">
+                                        <p class="add_num">08511</p>
+                                        <div>
+                                            <p class="addr_txt">
+                                                <span class="add_type">지번</span>
+                                                <span class="add_det">서울 금천구 디지털로9길 23 (마리오2 패션타워)</span>
+                                            </p>
+                                            <p class="addr_txt">
+                                                <span class="add_type">도로명</span>
+                                                <span class="add_det">서울 금천구 가산동 60-52</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="addr_item">
+                                        <p class="add_num">08511</p>
+                                        <div>
+                                            <p class="addr_txt">
+                                                <span class="add_type">지번</span>
+                                                <span class="add_det">서울 금천구 디지털로9길 23 (마리오2 패션타워)</span>
+                                            </p>
+                                            <p class="addr_txt">
+                                                <span class="add_type">도로명</span>
+                                                <span class="add_det">서울 금천구 가산동 60-52</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="addr_item">
+                                        <p class="add_num">08511</p>
+                                        <div>
+                                            <p class="addr_txt">
+                                                <span class="add_type">지번</span>
+                                                <span class="add_det">서울 금천구 디지털로9길 23 (마리오2 패션타워)</span>
+                                            </p>
+                                            <p class="addr_txt">
+                                                <span class="add_type">도로명</span>
+                                                <span class="add_det">서울 금천구 가산동 60-52</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            
+                        </div>
+        
+                        <div class="pagination_wrap">
+                            <div class="pagination">
+                                <span>
+                                    <a href="#" class="pg_item" title="첫 페이지">&lt;&lt;</a>
+                                </span>
+                                <span>
+                                    <a href="#" class="pg_item" title="이전 페이지">&lt;</a>
+                                </span>
+                                <span>
+                                    <!-- <a href="#" class="pg_item" title="1 페이지">1</a> -->
+                                    <span class="pg_item on_page" title="현재 페이지">1</span>
+                                </span>
+                                <span>
+                                    <a href="#" class="pg_item" title="2 페이지">2</a>
+                                </span>
+                                <span>
+                                    <a href="#" class="pg_item" title="3 페이지">3</a>
+                                </span>
+                                <span>
+                                    <a href="#" class="pg_item" title="4 페이지">4</a>
+                                </span>
+                                <span>
+                                    <a href="#" class="pg_item" title="5 페이지">5</a>
+                                </span>
+                                <span>
+                                    <a href="#" class="pg_item" title="다음 페이지">&gt;</a>
+                                </span>
+                                <span>
+                                    <a href="#" class="pg_item" title="맨 뒤 페이지">&gt;&gt;</a>
+                                </span>
+                            </div>
+                        </div>
+    
+                        <p class="info_txt">기본주소 선택 후 상세주소를 입력해주세요.</p>
+    
+                        <div class="addr_detail">
+                            <p class="auto_addr">
+                                <span>08511</span> 서울 금천구 디지털로9길 23 (마리오2 패션타워)
+                            </p>
+                            <input type="text" class="addr_inp" placeholder="상세주소" disabled="">
+                        </div>
+        
+                        <div class="bottom_btns">
+                            <div class="center_items">
+                                <a href="#" class="comm_btn col_blue">주소입력</a>
+                                <a href="#" class="comm_btn close_addr">닫기</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <button type="button" class="in_pop_close">닫기</button>
+            </div>
+        </div>
+
+        <div class="popup_wrap size_sm h_auto data_tr">
+            <div class="pop_cont">
+                <h3 class="box_tit">위기대상 관리정보 등록</h3>
+                <div class="comm_table horizontal">
+                    <table>
+                        <colgroup>
+                            <col style="width: 40%;">
+                            <col style="width: 60%">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">상시 관리대상</th>
+                                <td>
+                                    <select class="comm_select auto_full_select">
+                                        <option>선택</option>
+                                        <option>항목1</option>
+                                        <option>항목2</option>
+                                        <option>항목3</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">발굴경로</th>
+                                <td>
+                                    <select class="comm_select auto_full_select">
+                                        <option>선택</option>
+                                        <option>항목1</option>
+                                        <option>항목2</option>
+                                        <option>항목3</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">미래행복통장 해지여부</th>
+                                <td>
+                                    <select class="comm_select auto_full_select">
+                                        <option>선택</option>
+                                        <option>항목1</option>
+                                        <option>항목2</option>
+                                        <option>항목3</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="bottom_btns">
+                    <div class="left_side"></div>
+                    <div class="right_side">
+                        <a href="#" class="comm_btn col_blue">저장</a>
+                        <a href="#" class="comm_btn pop_close_btn">취소</a>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="pop_close">닫기</button>
+        </div>
+
+
+        <div class="popup_wrap size_sm h_auto chklist">
+            <div class="pop_cont">
+                <h3 class="box_tit">안전지원팀 확인사항 등록 및 수정</h3>
+                <div class="comm_table">
+                    <table>
+                        <colgroup>
+                            <col style="width: 100%">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td class="al_ri">
+                                    <div class="fl_box_bet">
+                                        <input type="text" class="comm_input inp_date" placeholder="선택하세요.">
+                                        <p class="writer_name">작성자 : 김안전</p>
+                                    </div>
+                                    <textarea class="comm_tarea large_item" placeholder=""></textarea>
+                                    <p class="nor_txt">입력제한 : 1,000 Byte</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="bottom_btns">
+                    <div class="left_side"></div>
+                    <div class="right_side">
+                        <a href="#" class="comm_btn col_blue">저장</a>
+                        <a href="#" class="comm_btn pop_close_btn">취소</a>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="pop_close">닫기</button>
+        </div>
+        <!-- e: 팝업 컨텐츠 div -->
+    </div>
+
+    <script>
+        // datepicker용 스크립트
+        $(function() {
+            $.datepicker.setDefaults({
+                dateFormat: 'yy-mm-dd',
+                prevText: '이전 달',
+                nextText: '다음 달',
+                monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+                monthNamesShort: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+                dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+                dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+                dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+                showMonthAfterYear: true,
+                showButtonPanel: true,
+                currentText: "오늘",
+                closeText : '닫기',
+                showOtherMonths: true,
+                changeMonth: true,
+                changeYear: true
+            });
+
+            $(".inp_date").datepicker( $.datepicker.regional[ "kr" ] );
+
+
+            // 거주지 및 연락처 팝업 
+            $(".cur_live_info_btn").on("click",function(e){
+                e.preventDefault();
+                if(  !$(".pop_area").hasClass("_show") ){
+                    $(".pop_area").addClass("_show");
+                    $(".cur_live_info").addClass("_show");
+                    $("body").addClass("_lock");
+                }
+                else {
+                    $(".pop_area").removeClass("_show");
+                    $(".cur_live_info").removeClass("_show");
+                    $("body").removeClass("_lock");
+                }
+            });
+
+            // 위기가구 정보 등록 팝업
+            $(".data_tr_btn").on("click",function(e){
+                e.preventDefault();
+                if(  !$(".pop_area").hasClass("_show") ){
+                    $(".pop_area").addClass("_show");
+                    $(".data_tr").addClass("_show");
+                    $("body").addClass("_lock");
+                }
+                else {
+                    $(".pop_area").removeClass("_show");
+                    $(".data_tr").removeClass("_show");
+                    $("body").removeClass("_lock");
+                }
+            });
+
+            // 안전지원팀 확인 팝업
+            $(".chklist_btn").on("click",function(e){
+                e.preventDefault();
+                if(  !$(".pop_area").hasClass("_show") ){
+                    $(".pop_area").addClass("_show");
+                    $(".chklist").addClass("_show");
+                    $("body").addClass("_lock");
+                }
+                else {
+                    $(".pop_area").removeClass("_show");
+                    $(".chklist").removeClass("_show");
+                    $("body").removeClass("_lock");
+                }
+            });
+
+            $(".inner_pop_btn").on("click",function(e){
+                e.preventDefault();
+                if(  !$(this).parents(".popup_wrap").hasClass("on_sub_pop") ){
+                    $(this).parents(".popup_wrap").addClass("on_sub_pop");
+                }
+            });
+
+            $(".pop_close").on("click",function(e){
+                $(this).parents(".popup_wrap").removeClass("_show");
+                $(this).parents(".pop_area").removeClass("_show");
+                $("body").removeClass("_lock");
+            });
+
+            $(".pop_close_btn").on("click",function(e){
+                e.preventDefault();
+                $(this).parents(".popup_wrap").removeClass("_show");
+                $(this).parents(".pop_area").removeClass("_show");
+                $("body").removeClass("_lock");
+            });
+
+            $(".in_pop_close").on("click",function(e){
+                $(this).parents(".popup_wrap").removeClass("on_sub_pop");
+            });
+
+            $(".close_addr").on("click",function(e){
+                $(this).parents(".popup_wrap").removeClass("on_sub_pop");
+            });
+
+            $(".dim").on("click",function(e){
+                $(this).siblings("._show").removeClass("_show");
+                $(".pop_area").removeClass("_show");
+                $("body").removeClass("_lock");
+            });
+
+            // 위기지표 선택
+            $(".view_cht_btn").on("click",function(e){
+                e.preventDefault();
+                if( !$(this).hasClass("active") ){
+                    $(this).parent().siblings("li").children().removeClass("active");
+                    $(this).addClass("active");
+                    $(".view_cht").addClass("__show");
+                    $(".view_tbl").removeClass("__show");
+                }
+            });
+
+            $(".view_tbl_btn").on("click",function(e){
+                e.preventDefault();
+                if( !$(this).hasClass("active") ){
+                    $(this).parent().siblings("li").children().removeClass("active");
+                    $(this).addClass("active");
+                    $(".view_tbl").addClass("__show");
+                    $(".view_cht").removeClass("__show");
+                }
+            });
+        });
+
+     </script>
+
+
+</body>
+</html>

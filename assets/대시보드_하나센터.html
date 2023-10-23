@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>통일부 통합지원시스템</title>
+
+    <link type="text/css" href="./css/style.css" rel='stylesheet'>
+    <link type="text/css" href="./js/jquery-ui.min.css" rel="stylesheet">
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="system_wrap">
+        <aside class="left_contents">
+            <h1 class="home">
+                <img src="./images/logo.png" alt="통일부">
+                <p>통합지원시스템</p>
+            </h1>
+
+            <a href="#" class="mon_item">상담일지 작성</a>
+
+            <nav>
+                <ul class="menu_list">
+                    <li>
+                        <a href="#" class="menu_item ico_subject">대상자관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_crisis">위기관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_support">위기통합지원</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_communication">소통관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_statistics active">통계</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_counsel">상담관리</a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu_item ico_business">사업관리</a>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <div class="bottom_area">
+
+                <ul class="menu_list">
+                    <li>
+                        <a href="#" class="menu_item ico_adm">시스템관리</a>
+                    </li>
+                </ul>
+
+                <div class="banner_area">
+                    <a href="#" class="banner_wrap active">
+                        <img src="./images/img_bann1.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+        <main>
+            <header>
+                <div class="header_left">
+                    <div class="search_person">
+                        <input type="text" class="nobg_inp" placeholder="대상자 통합조회">
+                        <button type="button" class="search_btn">검색</button>
+                    </div>
+                </div>
+                <div class="header_right">
+                    <div class="notification_wrap">
+                        <button type="button" class="btn_notif">알림<span>12</span></button>
+                    </div>
+                    <div class="user_info">
+                        <span class="part_name">통일부</span>
+                        <p class="user_name">
+                            <span>강안전</span> 주무관
+                        </p>
+                        <div class="user_menu_wrap">
+                            <button type="button" class="btn_usermenu">사용자메뉴 토글</button>
+                            <!-- 
+                                현재 미결정 사항
+                                <ul>
+                                    <li></li>
+                                </ul>
+                             -->
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+
+
+            <div class="contents">
+
+                <div class="dash_box">
+                    <div class="dash_box_item col_3">
+                        <div class="alarm_img_box">
+                            <img src="images/ico_alarm_2.png" alt="">
+                        </div>
+                        <div class="dash_box_text">
+                            <h3>사례관리 요청</h3>
+                            <p>대상 : 홍길동(남) 23세<br>요청 : 통일부</p>
+                        </div>
+                        <button type="button" class="more"><img src="images/ico_arr_right.png"></button>
+                        <!-- <h5>알림이 없습니다.</h5> -->
+                    </div>
+                    <div class="dash_box_item type2 col_6 blue">
+                        <div class="dash_box_top">
+                            <h1 class="dash_box_title write">즐겨찾기</h1>
+                            <button type="button" class="dash_box_top_ico btn_bookmark">
+                                <img src="images/ico_more.png" alt="">
+                            </button>
+                            <div class="bookmark_wrap">
+                                <div class="bm_top">
+                                    <h1>즐겨찾기 설정</h1>
+                                    <button type="button" class="bm_close">
+                                        <img src="images/ico_close_2.png">
+                                    </button>
+                                </div>
+                                <div class="bm_body">
+                                    <p>즐겨찾기 설정은 최대 6개 까지<br>
+                                        설정이 가능합니다.<br>
+                                        메뉴 순서대로 정렬되며, 왼쪽의 체크박스를 선택하시거나 해제 하시면 됩니다.</p>
+                                    <div class="check_list">
+                                        <div class="chk_box">
+                                            <input type="checkbox" id="chkn">
+                                            <label for="chkn">통합조회</label>
+                                        </div>
+                                        <div class="chk_box">
+                                            <input type="checkbox" id="chk01">
+                                            <label for="chk01">미배정 대상자</label>
+                                        </div>
+                                        <div class="chk_box">
+                                            <input type="checkbox" id="chk02">
+                                            <label for="chk02">위기가구 대상자</label>
+                                        </div>
+                                        <div class="chk_box">
+                                            <input type="checkbox" id="chk03">
+                                            <label for="chk03">맞춤형 분석</label>
+                                        </div>
+                                        <div class="chk_box">
+                                            <input type="checkbox" id="chk04">
+                                            <label for="chk04">서비스 의뢰</label>
+                                        </div>
+                                        <div class="chk_box">
+                                            <input type="checkbox" id="chk05">
+                                            <label for="chk05">위기상황 보고</label>
+                                        </div>
+                                        <div class="chk_box">
+                                            <input type="checkbox" id="chk06">
+                                            <label for="chk06">위기징후 모니터링</label>
+                                        </div>
+                                        <div class="chk_box">
+                                            <input type="checkbox" id="chk07">
+                                            <label for="chk07">기초정보</label>
+                                        </div>
+                                        <div class="chk_box">
+                                            <input type="checkbox" id="chk08">
+                                            <label for="chk08">사례회의</label>
+                                        </div>
+                                        <div class="chk_box">
+                                            <input type="checkbox" id="chk09">
+                                            <label for="chk09">통합조회</label>
+                                        </div>
+                                        <div class="chk_box">
+                                            <input type="checkbox" id="chk10">
+                                            <label for="chk10">통합조회</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dash_box_body">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <dl>
+                                            <dt>
+                                                <img src="images/ico_dash_01.png" alt="맞춤형 분석">
+                                            </dt>
+                                            <dd>맞춤형 분석</dd>
+                                        </dl>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <dl>
+                                            <dt>
+                                                <img src="images/ico_dash_02.png" alt="초기 상담일지">
+                                            </dt>
+                                            <dd>초기 상담일지</dd>
+                                        </dl>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <dl>
+                                            <dt>
+                                                <img src="images/ico_dash_03.png" alt="사례회의">
+                                            </dt>
+                                            <dd>사례회의</dd>
+                                        </dl>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <dl>
+                                            <dt>
+                                                <img src="images/ico_dash_04.png" alt="상담실적 통계">
+                                            </dt>
+                                            <dd>상담실적 통계</dd>
+                                        </dl>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <dl>
+                                            <dt>
+                                                <img src="images/ico_dash_05.png" alt="자원관리">
+                                            </dt>
+                                            <dd>자원관리</dd>
+                                        </dl>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <dl>
+                                            <dt>
+                                                <img src="images/ico_dash_06.png" alt="위기보고">
+                                            </dt>
+                                            <dd>위기보고</dd>
+                                        </dl>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <dl>
+                                            <dt>
+                                                <img src="images/ico_dash_01.png" alt="맞춤형 분석">
+                                            </dt>
+                                            <dd>맞춤형 분석</dd>
+                                        </dl>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- <h5 class="write">즐겨찾기 메뉴가 없습니다.</h5> -->
+                        </div>
+                    </div>
+                    <div class="dash_box_item type2 col_3">
+                        <div class="dash_box_body">
+                            <ul class="type2 type3">
+                                <li>오늘 상담건수<span>00건</span></li>
+                                <li>오늘 지원건수<span>00건</span></li>
+                                <li>현재 상담 수<span>00건</span></li>
+                                <li>이번달 신규 대상자<span>00건</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dash_box middle">
+
+                    <div class="dash_box_item type2 col_9">
+                        <div class="dash_box_top">
+                            <h1 class="dash_box_title">실적통계 <span>11월</span></h1>
+                            <div class="dropdown_group">
+                                <button class="dropdown_button" data-target="dropdownList04">월별</button>
+                                <ul id="dropdownList04" class="dropdown_list">
+                                    <li class="gray">월별</li>
+                                    <li>년도별</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- 차트 영역-->
+                        <div class="row">
+                            <div class="col_6">
+                                <div class="dash_box_chart" style="background-color: gray;"></div>
+                            </div>
+                            <div class="col_6">
+                                <div class="dash_box_chart" style="background-color: gray;"></div>
+                            </div>
+                        </div>
+                
+                    </div>
+
+                    <div class="dash_box_item type2 col_3">
+                        <div class="dash_box_top">
+                            <h1 class="dash_box_title">대상자 현황</h1>
+                            <a href="#" class="more"><img src="images/ico_arr_right.png"></a>
+                        </div>
+                        <div class="dash_box_list">
+                            <h2 class="list_top type2">21,503<span>명</span><span class="today">23.11.12 오늘</span></h2>
+                            <ul>
+                                <li>남/여<span>305/1,000 명</span></li>
+                                <li>9살 이하<span>100 명</span></li>
+                                <li>10세 ~ 19세<span>100 명</span></li>
+                                <li>20세 ~ 29세<span>100 명</span></li>
+                                <li>30세 ~ 39세<span>100 명</span></li>
+                                <li>40세 ~ 49세<span>100 명</span></li>
+                                <li>50세 ~ 59세<span>100 명</span></li>
+                                <li>60세 이상<span>100 명</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="dash_box middle">
+
+                    <div class="dash_box_item type2 col_3">
+                        <div class="dash_box_top">
+                            <h1 class="dash_box_title">최근 상담 대상자</h1>
+                            <a href="#" class="more"><img src="images/ico_arr_right.png"></a>
+                        </div>
+                        <div class="dash_box_table type2">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>성명</th>
+                                        <th>기수</th>
+                                        <th>보호</th>
+                                        <th>생년월일</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- <tr>
+                                        <td>홍길동(남)</td>
+                                        <td>159기</td>
+                                        <td>12345</td>
+                                        <td>999.12.12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>홍길동(남)</td>
+                                        <td>159기</td>
+                                        <td>12345</td>
+                                        <td>999.12.12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>홍길동(남)</td>
+                                        <td>159기</td>
+                                        <td>12345</td>
+                                        <td>999.12.12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>홍길동(남)</td>
+                                        <td>159기</td>
+                                        <td>12345</td>
+                                        <td>999.12.12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>홍길동(남)</td>
+                                        <td>159기</td>
+                                        <td>12345</td>
+                                        <td>999.12.12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>홍길동(남)</td>
+                                        <td>159기</td>
+                                        <td>12345</td>
+                                        <td>999.12.12</td>
+                                    </tr> -->
+                                    <tr class="data_none">
+                                        <td colspan="4" rowspan="6">데이터가 없습니다.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="dash_box_item type2 col_3">
+                        <div class="dash_box_top">
+                            <h1 class="dash_box_title">위기가구 대상자</h1>
+                            <a href="#" class="more"><img src="images/ico_arr_right.png"></a>
+                        </div>
+                        <div class="dash_box_table type2">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>성명</th>
+                                        <th>기수</th>
+                                        <th>보호</th>
+                                        <th>생년월일</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>홍길동(남)</td>
+                                        <td>159기</td>
+                                        <td>12345</td>
+                                        <td>999.12.12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>홍길동(남)</td>
+                                        <td>159기</td>
+                                        <td>12345</td>
+                                        <td>999.12.12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>홍길동(남)</td>
+                                        <td>159기</td>
+                                        <td>12345</td>
+                                        <td>999.12.12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>홍길동(남)</td>
+                                        <td>159기</td>
+                                        <td>12345</td>
+                                        <td>999.12.12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>홍길동(남)</td>
+                                        <td>159기</td>
+                                        <td>12345</td>
+                                        <td>999.12.12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>홍길동(남)</td>
+                                        <td>159기</td>
+                                        <td>12345</td>
+                                        <td>999.12.12</td>
+                                    </tr>
+                                    <!-- <tr class="data_none">
+                                        <td colspan="4" rowspan="6">데이터가 없습니다.</td>
+                                    </tr> -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="dash_box_item type2 col_3">
+                        <div class="dash_box_top">
+                            <h1 class="dash_box_title">11월 사업일정</h1>
+                            <a href="#" class="more"><img src="images/ico_arr_right.png"></a>
+                        </div>
+                        <div class="dash_box_schedule">
+                            <!-- <div class="data_none">
+                                <h5>데이터가 없습니다.</h5>
+                            </div> -->
+                            <ul>
+                                <li><span>3일 ~ 13일</span>법률지원사업 법률상담</li>
+                                <li><span>3일 ~ 13일</span>우리말능력지원사업</li>
+                                <li><span>3일 ~ 13일</span>폐렴구균 예방접종</li>
+                                <li><span>3일 ~ 13일</span>새마을회 열무김치 후원</li>
+                                <li><span>3일 ~ 13일</span>건강나문상자 프로젝트</li>
+                                <li><span>3일 ~ 13일</span>공항공사 멘토링 사업</li>
+                                <li><span>3일 ~ 13일</span>사회정착지원 사업</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dash_box_item type2 gray col_3">
+                        <div class="dash_box_top">
+                            <h1 class="dash_box_title write">소통 게시판</h1>
+                            <a href="#" class="more"><img src="images/ico_cal_right_w.png"></a>
+                        </div>
+                        <div class="dash_box_schedule type2">
+                            <!-- <div class="data_none">
+                                <h5 class="write">데이터가 없습니다.</h5>
+                            </div> -->
+                            <ul>
+                                <li><span class="sky">공지</span>통합지원시스템이 개편되었습니다.</li>
+                                <li><span class="sky">공지</span>사례관리 매뉴얼이 배포되었습니다.</li>
+                                <li><span class="pink">개선</span>시스템 개선이 필요합니다.</li>
+                                <li><span class="green">요청</span>지역별 지원사업 통계 데이터 서비스가 완화되었습니다.</li>
+                                <li><span class="gray">공유</span>서울지역 센터 지원서비스 목록이 강화되었습니다.</li>
+                                <li><span class="gray">공유</span>서울지역 센터 지원서비스 목록이 강화되었습니다.</li>
+                                <li><span class="green">요청</span>21년도 연령별 상담실적 데이터가 업데이트 되었습니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+    </div>
+    </main>
+    </div>
+
+    <script>
+        // arcodion용 스크립트
+        $(function () {
+            $("#accordion").accordion({
+                collapsible: true,
+                active: 0
+            });
+
+            // dropdown용 스크립트
+            $(".dropdown_list").hide();
+            $(".dropdown_button").click(function () {
+                var target = $(this).data("target");
+                $("#" + target).toggle();
+            });
+
+            // 즐겨찾기 스크립트
+            $(".bookmark_wrap").hide();
+            $(".btn_bookmark").click(function () {
+                $(this).next().show(); l
+            })
+            $(".bm_close").click(function () {
+                $(".bookmark_wrap").hide();
+            })
+        });
+
+    </script>
+
+
+</body>
+
+</html>

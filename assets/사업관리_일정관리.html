@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+		<title>통일부 통합지원시스템</title>
+
+		<link type="text/css" href="./css/style.css" rel="stylesheet" />
+		<link type="text/css" href="./js/jquery-ui.min.css" rel="stylesheet" />
+
+		<script src="./js/fullcalendar.min.js"></script>
+		<script src="./js/jquery-1.12.4.min.js"></script>
+		<script src="./js/jquery-ui.min.js"></script>
+	</head>
+	<body>
+		<div class="system_wrap">
+			<aside class="left_contents">
+				<h1 class="home">
+					<img src="./images/logo.png" alt="통일부" />
+					<p>통합지원시스템</p>
+				</h1>
+
+				<a href="#" class="mon_item">위기징후 모니터링</a>
+
+				<nav>
+					<ul class="menu_list">
+						<li>
+							<a href="#" class="menu_item ico_subject">대상자관리</a>
+						</li>
+						<li>
+							<a href="#" class="menu_item ico_crisis">위기관리</a>
+						</li>
+						<li>
+							<a href="#" class="menu_item ico_support">위기통합지원</a>
+						</li>
+						<li>
+							<a href="#" class="menu_item ico_communication">소통관리</a>
+						</li>
+						<li>
+							<a href="#" class="menu_item ico_statistics">통계</a>
+						</li>
+						<li>
+							<a href="#" class="menu_item ico_counsel">전문상담관리</a>
+						</li>
+						<li>
+							<a href="#" class="menu_item ico_business active">사업관리</a>
+						</li>
+					</ul>
+				</nav>
+
+				<div class="bottom_area">
+					<ul class="menu_list">
+						<li>
+							<a href="#" class="menu_item ico_adm">시스템관리</a>
+						</li>
+					</ul>
+
+					<div class="banner_area">
+						<a href="#" class="banner_wrap">
+							<img src="./images/img_bann1.png" alt="" />
+						</a>
+					</div>
+				</div>
+			</aside>
+
+			<main>
+				<header>
+					<div class="header_left">
+						<div class="search_person">
+							<input type="text" class="nobg_inp" placeholder="대상자 통합조회" />
+							<button type="button" class="search_btn">검색</button>
+						</div>
+					</div>
+					<div class="header_right">
+						<div class="notification_wrap">
+							<button type="button" class="btn_notif">알림<span>12</span></button>
+						</div>
+						<div class="user_info">
+							<span class="part_name">통일부</span>
+							<p class="user_name"><span>강안전</span> 주무관</p>
+							<div class="user_menu_wrap">
+								<button type="button" class="btn_usermenu">사용자메뉴 토글</button>
+							</div>
+						</div>
+					</div>
+				</header>
+
+				<div class="col_top">
+					<ul class="sub_tab">
+						<li>
+							<a href="#" class="selected">일정관리</a>
+						</li>
+						<li>
+							<a href="#">실적관리</a>
+						</li>
+						<li>
+							<a href="#">자원관리</a>
+						</li>
+						<li>
+							<a href="#">센터사업관리</a>
+						</li>
+					</ul>
+
+					<div class="breadcrumb">
+						<p class="bread_item">홈 > 사업관리 > <span>일정관리</span></p>
+					</div>
+				</div>
+
+				<div class="contents">
+					<div class="col_box schedule_box">
+						<div class="schedule_top">
+							<!-- <div class="sche_cal_controls">
+								<button type="button" class="sche_btn_prev">이전</button>
+								<span class="sche_month_txt">2018년 9월</span>
+								<button type="button" class="sche_btn_next">다음</button>
+								<button type="button" class="sche_btn_today">오늘</button>
+							</div> -->
+							<button type="button" class="comm_btn col_blue sche_add_btn">일정등록</button>
+						</div>
+						<div class="schedule_cont_wrap">
+							<div class="schedule_left">
+								<div class="sche_dep_select">
+									<button type="button" class="comm_btn">전체선택</button>
+
+									<button type="button" class="comm_btn col_white">선택해제</button>
+								</div>
+
+								<div class="dep_list">
+									<div class="input_group_box vertical_item">
+										<div class="chk_box">
+											<input type="checkbox" name="chkgroup" id="chkg1" />
+											<label for="chkg1">통일부</label>
+										</div>
+										<div class="chk_box">
+											<input type="checkbox" name="chkgroup" id="chkg2" />
+											<label for="chkg2">하나재단</label>
+										</div>
+										<div class="chk_box">
+											<input type="checkbox" name="chkgroup" id="chkg3" />
+											<label for="chkg3">강원남부하나센터</label>
+										</div>
+										<div class="chk_box">
+											<input type="checkbox" name="chkgroup" id="chkg4" />
+											<label for="chkg4">강원북부하나센터</label>
+										</div>
+										<div class="chk_box">
+											<input type="checkbox" name="chkgroup" id="chkg5" />
+											<label for="chkg5">경기남부하나센터</label>
+										</div>
+										<div class="chk_box">
+											<input type="checkbox" name="chkgroup" id="chkg6" />
+											<label for="chkg6">경기동부하나센터</label>
+										</div>
+										<div class="chk_box">
+											<input type="checkbox" name="chkgroup" id="chkg7" />
+											<label for="chkg7">경기북부하나센터</label>
+										</div>
+										<div class="chk_box">
+											<input type="checkbox" name="chkgroup" id="chkg8" />
+											<label for="chkg8">경기서북부하나센터</label>
+										</div>
+										<div class="chk_box">
+											<input type="checkbox" name="chkgroup" id="chkg9" />
+											<label for="chkg9">경기중부하나센터</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="schedule_right">
+								<div class="calendar_area" id="calendar"></div>
+
+								<div class="schedule_list">
+									<ul class="schedule_list_wrap">
+										<li>
+											<p class="sche_cont"><span class="time_txt">14:00 ~ 16:00</span><span class="part_txt">[통일부]</span><span class="det_txt">하나센터 통합집체교육</span></p>
+										</li>
+										<li>
+											<p class="sche_cont"><span class="time_txt">14:00 ~ 16:00</span><span class="part_txt">[통일부]</span><span class="det_txt">하나센터 통합집체교육</span></p>
+										</li>
+										<li>
+											<p class="sche_cont"><span class="time_txt">14:00 ~ 16:00</span><span class="part_txt">[통일부]</span><span class="det_txt">하나센터 통합집체교육</span></p>
+										</li>
+										<li>
+											<p class="sche_cont"><span class="time_txt">14:00 ~ 16:00</span><span class="part_txt">[통일부]</span><span class="det_txt">하나센터 통합집체교육</span></p>
+										</li>
+									</ul>
+								</div>
+
+								<button type="button" class="comm_btn sche_det_btn">일정상세보기 샘플</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+
+		<div class="pop_area">
+			<div class="dim"></div>
+
+			<!-- s: 팝업컨텐츠 -->
+			<div class="popup_wrap popup_search size_sm sche_editor h_auto">
+				<div class="pop_cont">
+					<div class="sc_top">
+						<h3 class="sc_tit">일정관리</h3>
+					</div>
+
+					<div class="sc_cont">
+						<div class="comm_table non_bd horizontal">
+							<table>
+								<colgroup>
+									<col style="width: 25%" />
+									<col style="width: 75%" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">일정제목<span class="inp_req">*</span></th>
+										<td>
+											<input type="text" class="comm_input" placeholder="최대 50자" />
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">일시<span class="inp_req">*</span></th>
+										<td>
+											<div class="time_range__wrap sm_size">
+												<input type="text" class="comm_input inp_date" placeholder="선택하세요." />
+												<span class="range_txt">~</span>
+												<input type="text" class="comm_input inp_date" placeholder="선택하세요." />
+											</div>
+
+											<div class="chk_box mgl">
+												<input type="checkbox" name="chkgroup" id="chk1" />
+												<label for="chk1">하루종일</label>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">소속</th>
+										<td>서울북부하나센터</td>
+									</tr>
+
+									<tr>
+										<th scope="row">부서</th>
+										<td>
+											<input type="text" class="comm_input" placeholder="" />
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">등록자</th>
+										<td>김하나</td>
+									</tr>
+									<tr>
+										<th scope="row">일정 상세내용</th>
+										<td>
+											<textarea class="comm_tarea large_item" placeholder="최대 1000자"></textarea>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="bottom_btns">
+							<div class="center_items">
+								<a href="#" class="comm_btn">등록</a>
+								<a href="#" class="comm_btn col_blue pop_close_btn">취소</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button type="button" class="pop_close">닫기</button>
+			</div>
+
+			<div class="popup_wrap popup_search size_sm sche_detail h_auto">
+				<div class="pop_cont">
+					<div class="sc_top">
+						<h3 class="sc_tit">일정상세</h3>
+					</div>
+
+					<div class="sc_cont">
+						<div class="comm_table non_bd horizontal">
+							<table>
+								<colgroup>
+									<col style="width: 25%" />
+									<col style="width: 75%" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">일정제목</th>
+										<td>191기 북한이탈주민 초기집중교육</td>
+									</tr>
+									<tr>
+										<th scope="row">일시</th>
+										<td>2023.11.11 ~ 2023.11.14</td>
+									</tr>
+									<tr>
+										<th scope="row">소속</th>
+										<td>서울북부하나센터</td>
+									</tr>
+
+									<tr>
+										<th scope="row">부서</th>
+										<td>어느어느부서</td>
+									</tr>
+									<tr>
+										<th scope="row">등록자</th>
+										<td>김하나</td>
+									</tr>
+									<tr>
+										<th scope="row">일정 상세내용</th>
+										<td>일정상세 내용이 출력 됩니다. 일정상세 내용이 출력 됩니다. 일정상세 내용이 출력 됩니다. 일정상세 내용이 출력 됩니다. 일정상세 내용이 출력 됩니다. 일정상세 내용이 출력 됩니다. 일정상세 내용이 출력 됩니다.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="bottom_btns">
+							<div class="left_side">
+								<a href="#" class="comm_btn col_blue pop_close_btn">확인</a>
+							</div>
+							<div class="right_side">
+								<a href="#" class="comm_btn">삭제</a>
+								<a href="#" class="comm_btn col_blue">수정</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button type="button" class="pop_close">닫기</button>
+			</div>
+			<!-- e: 팝업 컨텐츠 -->
+		</div>
+
+		<script>
+			// fullcalendar 예시
+			document.addEventListener('DOMContentLoaded', function () {
+				var calendarEl = document.getElementById('calendar');
+
+				var calendar = new FullCalendar.Calendar(calendarEl, {
+					headerToolbar: {
+						left: 'prev,title,next,today',
+						center: '',
+						right: '',
+						right: '',
+					},
+					height: 'auto',
+					buttonText: {
+						today: '오늘',
+					},
+					locale: 'ko',
+					navLinks: false, // can click day/week names to navigate views
+					editable: false,
+					dayMaxEvents: false, // allow "more" link when too many events
+					events: [
+						{
+							title: '[통일부]이벤트 타이틀 이벤트 타이틀',
+							start: '2023-09-05',
+							className: 'fc-bg-blue',
+							sortIdx: 0,
+						},
+						{
+							title: '[재단]이벤트 타이틀 이벤트 타이틀',
+							start: '2023-09-05',
+							className: 'fc-bg-yellow',
+							sortIdx: 1,
+						},
+						{
+							title: '[서울북부]이벤트 타이틀 이벤트 타이틀',
+							start: '2023-09-05',
+							className: 'fc-bg-purple',
+							sortIdx: 2,
+						},
+						{
+							title: '[통일부]이벤트 타이틀 이벤트 타이틀',
+							start: '2023-09-07',
+							end: '2023-09-10',
+							className: 'fc-bg-blue',
+						},
+						{
+							title: '[통일부]이벤트 타이틀 이벤트 타이틀',
+							start: '2023-09-15',
+							end: '2023-09-20',
+							className: 'fc-bg-blue',
+						},
+					],
+					eventOrder: 'sortIdx',
+					dayCellContent: function (info) {
+						// 각 일 표시 부분의 '일' 제거
+						var number = document.createElement('a');
+						number.classList.add('fc-daygrid-day-number');
+						number.innerHTML = info.dayNumberText.replace('일', '').replace('日', '');
+						if (info.view.type === 'dayGridMonth') {
+							return {
+								html: number.outerHTML,
+							};
+						}
+						return {
+							domNodes: [],
+						};
+					},
+					dateClick: function (info) {
+						const el = document.querySelectorAll('.fc-day');
+						el.forEach((target) => {
+							target.classList.remove('fc-day-select');
+						});
+						console.log('Clicked on: ' + info.dateStr);
+						// change the day's background color just for fun
+						info.dayEl.classList.add('fc-day-select');
+					},
+				});
+
+				calendar.render();
+			});
+			
+			$(function () {
+				// datepicker용 스크립트
+				$.datepicker.setDefaults({
+					dateFormat: 'yy-mm-dd',
+					prevText: '이전 달',
+					nextText: '다음 달',
+					monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+					monthNamesShort: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+					dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+					dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+					dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+					showMonthAfterYear: true,
+					showButtonPanel: true,
+					currentText: '오늘',
+					closeText: '닫기',
+					showOtherMonths: true,
+					changeMonth: true,
+					changeYear: true,
+				});
+
+				$('.inp_date').datepicker($.datepicker.regional['kr']);
+
+				// 일정등록 샘플 스크립트
+				$('.sche_add_btn').on('click', function (e) {
+					e.preventDefault();
+					if (!$('.pop_area').hasClass('_show')) {
+						$('.pop_area').addClass('_show');
+						$('.sche_editor').addClass('_show');
+						$('body').addClass('_lock');
+					} else {
+						$('.pop_area').removeClass('_show');
+						$('.sche_editor').removeClass('_show');
+						$('body').removeClass('_lock');
+					}
+				});
+
+				// 일정상세 샘플 스크립트
+				$('.sche_det_btn').on('click', function (e) {
+					e.preventDefault();
+					if (!$('.pop_area').hasClass('_show')) {
+						$('.pop_area').addClass('_show');
+						$('.sche_detail').addClass('_show');
+						$('body').addClass('_lock');
+					} else {
+						$('.pop_area').removeClass('_show');
+						$('.sche_detail').removeClass('_show');
+						$('body').removeClass('_lock');
+					}
+				});
+
+				$('.pop_close').on('click', function (e) {
+					$(this).parents('.popup_wrap').removeClass('_show');
+					$(this).parents('.pop_area').removeClass('_show');
+					$('body').removeClass('_lock');
+				});
+
+				$('.pop_close_btn').on('click', function (e) {
+					e.preventDefault();
+					$(this).parents('.popup_wrap').removeClass('_show');
+					$(this).parents('.pop_area').removeClass('_show');
+					$('body').removeClass('_lock');
+				});
+
+				$('.dim').on('click', function (e) {
+					$(this).siblings('._show').removeClass('_show');
+					$('.pop_area').removeClass('_show');
+					$('body').removeClass('_lock');
+				});
+			});
+		</script>
+	</body>
+</html>
